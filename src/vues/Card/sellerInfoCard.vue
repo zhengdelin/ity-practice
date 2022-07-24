@@ -1,28 +1,28 @@
 <template>
   <div
-    class="flex flex-col w-[940px] h-[500px] space-y-4 pt-10 pl-10 bg-[#F9F9F9]"
+    class="flex flex-col justify-center w-[940px] h-[400px] space-y-10 p-10 bg-[#F9F9F9] text-[#4B4B4B]"
   >
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
       <div><location-icon></location-icon></div>
       <p>地址：</p>
     </div>
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
       <div><time-icon></time-icon></div>
       <p>營業時間：</p>
     </div>
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
       <div><price-icon></price-icon></div>
       <p>價格區間：</p>
     </div>
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
       <div><public-Holiday-icon></public-Holiday-icon></div>
       <p>公休日：</p>
     </div>
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
       <div><website-Icon></website-Icon></div>
       <p>網站：</p>
