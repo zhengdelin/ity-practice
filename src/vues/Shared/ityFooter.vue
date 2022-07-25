@@ -2,22 +2,22 @@
   <div class="w-full h-[400px] bg-[#B983CE]">
     <div class="flex flex-row justify-center pt-12 space-x-10">
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white"
+        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <facebook-icon></facebook-icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white"
+        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <instagram-Icon></instagram-Icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white"
+        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <twitter-icon></twitter-icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white"
+        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <playstore-Icon></playstore-Icon>
       </div>
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import facebookIcon from "@/vues/Icon/facebookIcon.vue";
-import instagramIcon from "@/vues/Icon/instagramIcon.vue";
-import twitterIcon from "@/vues/Icon/twitterIcon.vue";
-import playstoreIcon from "@/vues/Icon/playstoreIcon.vue";
-import ityLogo from "@/vues/Icon/ityLogo.vue";
+import facebookIcon from "@/vues/icons/facebookIcon.vue";
+import instagramIcon from "@/vues/icons/instagramIcon.vue";
+import twitterIcon from "@/vues/icons/twitterIcon.vue";
+import playstoreIcon from "@/vues/icons/playstoreIcon.vue";
+import ityLogo from "@/vues/icons/ityLogo.vue";
 
 export default {
   name: "sharedFooter",

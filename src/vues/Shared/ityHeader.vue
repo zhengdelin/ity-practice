@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import headerElement from "@/vues/Button/headerElement.vue";
+import headerElement from "@/vues/buttons/headerElement.vue";
 
 export default {
   name: "sharedHeader",

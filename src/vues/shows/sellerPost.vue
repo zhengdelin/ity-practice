@@ -2,7 +2,7 @@
   <div
     class="border border-solid p-10 border-[#76448A] space-y-10 w-full h-[800px] bg-white"
   >
-    <div class="text-left text-[#2D2D2D] space-y-10">
+    <div class="text-left text-[#2D2D2D] space-y-10 text-xl">
       <div class="space-y-2">
         <p>台中海線必吃美食 #梧棲漁港刺身</p>
         <p>誰說海的味道都是鹹的 / 台中梧棲店</p>

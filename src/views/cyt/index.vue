@@ -15,19 +15,24 @@
       <seller-Info-Card></seller-Info-Card>
       <contact-card></contact-card>
     </div>
-    <div class="w-full h-20 bg-black"></div>
+    <div class="w-full h-40 bg-black"></div>
     <div><seller-post></seller-post></div>
+    <div><menu-item></menu-item></div>
+    <div><feedback-card></feedback-card></div>
   </div>
   <ity-footer></ity-footer>
 </template>
 
 <script>
-import ityHeader from "@/vues/Shared/ityHeader.vue";
-import sellerCard from "@/vues/Card/sellerCard.vue";
-import sellerInfoCard from "@/vues/Card/sellerInfoCard.vue";
-import contactCard from "@/vues/Card/contactCard.vue";
-import sellerPost from "@/vues/Show/sellerPost.vue";
-import ityFooter from "@/vues/Shared/ityFooter.vue";
+import ityHeader from "@/vues/shared/ityHeader.vue";
+import sellerCard from "@/vues/cards/sellerCard.vue";
+import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
+import contactCard from "@/vues/cards/contactCard.vue";
+import sellerPost from "@/vues/shows/sellerPost.vue";
+import ityFooter from "@/vues/shared/ityFooter.vue";
+//暫放
+import menuItem from "@/vues/shows/menuItem.vue";
+import feedbackCard from "@/vues/cards/feedbackCard.vue";
 
 export default {
   name: "sellerInfoPage",
@@ -38,6 +43,8 @@ export default {
     contactCard: contactCard,
     sellerPost: sellerPost,
     ityFooter: ityFooter,
+    menuItem: menuItem,
+    feedbackCard: feedbackCard,
   },
 };
 </script>

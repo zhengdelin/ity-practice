@@ -1,13 +1,13 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="h-5 w-5"
+    class="h-7 w-7"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
     <path
       fill-rule="evenodd"
-      d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
       clip-rule="evenodd"
     />
   </svg>

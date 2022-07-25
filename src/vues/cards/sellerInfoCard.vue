@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-center w-[940px] h-[400px] space-y-10 p-10 bg-[#F9F9F9] text-[#4B4B4B]"
+    class="flex flex-col justify-center w-[940px] h-[400px] space-y-10 p-10 text-2xl bg-[#F9F9F9] text-[#4B4B4B]"
   >
     <div class="flex flex-row items-center space-x-4 h-10">
       <!--icon-->
@@ -31,11 +31,11 @@
 </template>
 
 <script>
-import locationIcon from "@/vues/Icon/locationIcon.vue";
-import timeIcon from "@/vues/Icon/timeIcon.vue";
-import priceIcon from "@/vues/Icon/priceIcon.vue";
-import publicHolidayIcon from "@/vues/Icon/publicHolidayIcon.vue";
-import websiteIcon from "@/vues/Icon/websiteIcon.vue";
+import locationIcon from "@/vues/icons/locationIcon.vue";
+import timeIcon from "@/vues/icons/timeIcon.vue";
+import priceIcon from "@/vues/icons/priceIcon.vue";
+import publicHolidayIcon from "@/vues/icons/publicHolidayIcon.vue";
+import websiteIcon from "@/vues/icons/websiteIcon.vue";
 
 export default {
   name: "sellerInfo",
