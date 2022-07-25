@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-[1540px]">
+  <div class="w-full h-fit shadow-xl">
     <critic-info-card></critic-info-card>
     <rating-item></rating-item>
     <feedback-content></feedback-content>
