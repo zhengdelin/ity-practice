@@ -15,14 +15,13 @@
       <seller-Info-Card></seller-Info-Card>
       <contact-card></contact-card>
     </div>
-    <div class="w-full h-40 bg-black"></div>
     <!--Tabs-->
     <!--Below sm-->
     <select
       id="tabs"
       v-model="currentIndex"
       @change="transfer(currentIndex)"
-      class="border bg-[#F2F2F2] border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 sm:hidden"
+      class="border bg-[#F9F9F9] border-gray-300 text-[#4B4B4B] sm:text-sm rounded-lg focus:bg-[#F6F6F6] focus:border-[#9763AB] block w-full p-2.5 sm:hidden"
     >
       <option
         :class="currentIndex == index"
@@ -55,6 +54,19 @@
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>
     </div>
+    <div><accordion-Item></accordion-Item></div>
+    <div class="space-y-4">
+      <classicItem></classicItem>
+      <classicItem></classicItem>
+      <classicItem></classicItem>
+    </div>
+    <!--Map-->
+    <div class="w-full h-[1000px] bg-black">
+      <img
+        class="w-full h-full"
+        src="https://images.unsplash.com/photo-1586449480537-3a22cf98b04c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      />
+    </div>
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -71,6 +83,8 @@ import menuItem from "@/vues/shows/menuItem.vue";
 import feedbackCard from "@/vues/cards/feedbackCard.vue";
 import couponType3 from "@/vues/shows/couponType3.vue";
 import couponType4 from "@/vues/shows/couponType4.vue";
+import accordionItem from "@/vues/shows/accordionItem.vue";
+import classicItem from "@/vues/shows/classicItem.vue";
 
 export default {
   name: "sellerInfoPage",
@@ -86,6 +100,8 @@ export default {
     feedbackCard: feedbackCard,
     couponType3: couponType3,
     couponType4: couponType4,
+    accordionItem: accordionItem,
+    classicItem: classicItem,
   },
   data: function () {
     return {
