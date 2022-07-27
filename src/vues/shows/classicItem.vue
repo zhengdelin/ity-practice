@@ -2,6 +2,16 @@
   <div
     class="flex items-center border border-solid border-[#76448A] w-full h-[140px] bg-white p-10"
   >
-    <p class="text-3xl font-medium text-black">國立臺中科技大學</p>
+    <p class="text-3xl font-medium text-black">{{ name }}</p>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    name: {
+      type: String,
+    },
+  },
+};
+</script>

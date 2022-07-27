@@ -13,13 +13,29 @@
     <div
       class="flex flex-col justify-center w-[630px] h-[300px] space-y-10 pl-20 text-[#4B4B4B]"
     >
-      <p class="flex text-4xl">ししゃも</p>
-      <p class="flex text-2xl">餐點敘述......</p>
+      <p class="flex text-4xl">{{ name }}</p>
+      <p class="flex text-2xl">{{ desc }}</p>
     </div>
     <div
       class="flex items-center justify-end w-[590px] h-[300px] text-[#4B4B4B]"
     >
-      <p class="text-3xl">商品價格</p>
+      <p class="text-3xl">商品價格：{{ price }} 元</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    name: {
+      type: String,
+    },
+    desc: {
+      type: String,
+    },
+    price: {
+      type: Number,
+    },
+  },
+};
+</script>

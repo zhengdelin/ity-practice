@@ -54,26 +54,6 @@
         <component :is="id"></component>
       </keep-alive>
     </div>
-    <!--<div><seller-post></seller-post></div>
-    <div><menu-item></menu-item></div>
-    <div><feedback-card></feedback-card></div>
-    <div class="flex flex-row space-x-10">
-      <coupon-Type3></coupon-Type3>
-      <coupon-Type4></coupon-Type4>
-    </div>
-    <div><accordion-Item></accordion-Item></div>
-    <div class="space-y-4">
-      <classicItem></classicItem>
-      <classicItem></classicItem>
-      <classicItem></classicItem>
-    </div>-->
-    <!--Map-->
-    <!--<div class="w-full h-[1000px] bg-black">
-      <img
-        class="w-full h-full"
-        src="https://images.unsplash.com/photo-1586449480537-3a22cf98b04c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-      />
-    </div>-->
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -90,15 +70,7 @@ import feedbackPage from "@/vues/sellerInfo/feedbackPage.vue";
 import couponPage from "@/vues/sellerInfo/couponPage.vue";
 import specialAppointmentPage from "@/vues/sellerInfo/specialAppointmentPage.vue";
 import mapPage from "@/vues/sellerInfo/mapPage.vue";
-import sellerPost from "@/vues/shows/sellerPost.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
-//暫放
-/*import menuItem from "@/vues/shows/menuItem.vue";
-import feedbackCard from "@/vues/cards/feedbackCard.vue";
-import couponType3 from "@/vues/shows/couponType3.vue";
-import couponType4 from "@/vues/shows/couponType4.vue";
-import accordionItem from "@/vues/shows/accordionItem.vue";
-import classicItem from "@/vues/shows/classicItem.vue";*/
 
 export default {
   name: "sellerInfoPage",
@@ -114,15 +86,7 @@ export default {
     couponPage: couponPage,
     specialAppointmentPage: specialAppointmentPage,
     mapPage: mapPage,
-    sellerPost: sellerPost,
     ityFooter: ityFooter,
-    //暫放
-    /*menuItem: menuItem,
-    feedbackCard: feedbackCard,
-    couponType3: couponType3,
-    couponType4: couponType4,
-    accordionItem: accordionItem,
-    classicItem: classicItem,*/
   },
   data() {
     return {

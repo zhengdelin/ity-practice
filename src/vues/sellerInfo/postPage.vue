@@ -1,10 +1,14 @@
 <template>
-  <p>post</p>
+  <div><seller-post></seller-post></div>
 </template>
 
 <script>
+import sellerPost from "@/vues/shows/sellerPost.vue";
+
 export default {
   name: "postPage",
-  components: {},
+  components: {
+    sellerPost: sellerPost,
+  },
 };
 </script>
