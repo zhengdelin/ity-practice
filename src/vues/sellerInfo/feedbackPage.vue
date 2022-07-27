@@ -6,7 +6,7 @@
 import feedbackCard from "@/vues/cards/feedbackCard.vue";
 
 export default {
-  name: "postPage",
+  name: "feedbackPage",
   components: {
     feedbackCard: feedbackCard,
   },

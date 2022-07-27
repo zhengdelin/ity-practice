@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="flex justify-center mt-16">
-      <ity-logo></ity-logo>
+      <ity-Footer-logo></ity-Footer-logo>
     </div>
     <!--版權聲明-->
     <div class="flex justify-center mt-8 text-white">
@@ -37,7 +37,7 @@ import facebookIcon from "@/vues/icons/facebookIcon.vue";
 import instagramIcon from "@/vues/icons/instagramIcon.vue";
 import twitterIcon from "@/vues/icons/twitterIcon.vue";
 import playstoreIcon from "@/vues/icons/playstoreIcon.vue";
-import ityLogo from "@/vues/icons/ityLogo.vue";
+import ityFooterLogo from "@/vues/icons/ityFooterLogo.vue";
 
 export default {
   name: "sharedFooter",
@@ -46,7 +46,7 @@ export default {
     instagramIcon: instagramIcon,
     twitterIcon: twitterIcon,
     playstoreIcon: playstoreIcon,
-    ityLogo: ityLogo,
+    ityFooterLogo: ityFooterLogo,
   },
 };
 </script>

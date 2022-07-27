@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center space-x-8 w-[220px] h-[100px] bg-white"
+    class="flex items-center justify-center space-x-8 w-[220px] h-[100px] bg-white hover:bg-[#F6F6F6] cursor-pointer"
   >
     <p class="text-xl font-semibold tracking-wider text-[#2D2D2D]">
       {{ name }}

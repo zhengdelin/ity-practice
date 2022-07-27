@@ -2,7 +2,7 @@
   <ity-header></ity-header>
   <div class="px-[140px] space-y-20 mb-40">
     <div class="flex flex-row space-x-10">
-      <seller-card></seller-card>
+      <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
       <!--Seller Picture-->
       <div class="w-[1220px] h-[400px] overflow-hidden bg-no-repeat bg-cover">
         <img
@@ -38,7 +38,7 @@
       class="hidden w-full h-40 text-[#4B4B4B] text-3xl font-bold drop-shadow-lg sm:flex"
     >
       <div
-        class="flex flex-1 items-center justify-center cursor-pointer bg-[#F9F9F9] hover:text-[#B983CE] focus:text-[#9763AB]"
+        class="flex flex-1 items-center justify-center cursor-pointer bg-[#F9F9F9] hover:text-[#9763AB]"
         :class="currentIndex === index ? 'classic-focus' : 'classic'"
         v-for="(item, index) in tabs"
         :id="index"

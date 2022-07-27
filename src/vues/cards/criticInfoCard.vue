@@ -11,12 +11,29 @@
       />
     </div>
     <div class="flex flex-col space-y-10">
-      <p class="flex text-6xl text-[#76448A] font-bold">評論者</p>
+      <p class="flex text-6xl text-[#76448A] font-bold">{{ critic }}</p>
       <div class="flex flex-row text-3xl font-semibold">
-        <p class="flex">性別</p>
+        <p class="flex">{{ gender }}</p>
         <div class="flex">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
-        <p class="flex">學校名字</p>
+        <p class="flex">{{ school }}</p>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    critic: {
+      type: String,
+    },
+    gender: {
+      //先暫設string
+      type: String,
+    },
+    school: {
+      type: String,
+    },
+  },
+};
+</script>

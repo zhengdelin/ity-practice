@@ -1,6 +1,10 @@
 <template>
   <div class="w-full h-fit shadow-xl">
-    <critic-info-card></critic-info-card>
+    <critic-info-card
+      :critic="'daniellife'"
+      :gender="'Male'"
+      :school="'國立臺中科技大學'"
+    ></critic-info-card>
     <rating-item></rating-item>
     <feedback-content></feedback-content>
   </div>

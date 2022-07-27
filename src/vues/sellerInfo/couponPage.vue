@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import couponType3 from "@/vues/shows/couponType3.vue";
-import couponType4 from "@/vues/shows/couponType4.vue";
+import couponType3 from "@/vues/coupons/couponType3.vue";
+import couponType4 from "@/vues/coupons/couponType4.vue";
 import accordionItem from "@/vues/shows/accordionItem.vue";
 
 export default {
-  name: "postPage",
+  name: "couponPage",
   components: {
     couponType3: couponType3,
     couponType4: couponType4,
