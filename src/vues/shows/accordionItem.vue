@@ -1,9 +1,9 @@
 <template>
   <div class="accordion" id="accordionExample5">
-    <div class="accordion-item bg-white border border-gray-200 rounded-md">
+    <div class="accordion-item bg-white border border-gray-200 rounded-lg">
       <h2 class="accordion-header mb-0" id="headingOne5">
         <button
-          class="accordion-button relative flex items-center w-full h-[100px] py-8 px-10 text-3xl font-bold text-[#4B4B4B] text-left bg-[#F9F9F9] border-0 rounded-t-md transition focus:outline-none"
+          class="accordion-button relative flex items-center w-full h-[100px] py-8 px-10 text-2xl lg:text-3xl font-bold text-[#4B4B4B] text-left bg-[#F9F9F9] border-0 rounded-t-md transition focus:outline-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapseOne5"

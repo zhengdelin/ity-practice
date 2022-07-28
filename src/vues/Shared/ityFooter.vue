@@ -1,32 +1,34 @@
 <template>
-  <div class="w-full h-[400px] bg-[#B983CE]">
-    <div class="flex flex-row justify-center pt-12 space-x-10">
+  <div class="w-full h-80 lg:h-[350px] xl:h-[400px] bg-[#B983CE]">
+    <div class="flex flex-row justify-center pt-8 2xl:pt-12 space-x-10">
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
+        class="flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <facebook-icon></facebook-icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
+        class="flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <instagram-Icon></instagram-Icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
+        class="flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <twitter-icon></twitter-icon>
       </div>
       <div
-        class="flex justify-center items-center w-20 h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
+        class="flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white hover:bg-[#F9F9F9] cursor-pointer"
       >
         <playstore-Icon></playstore-Icon>
       </div>
     </div>
-    <div class="flex justify-center mt-16">
+    <div class="flex justify-center mt-8 lg:mt-10 2xl:mt-14">
       <ity-Footer-logo></ity-Footer-logo>
     </div>
     <!--版權聲明-->
-    <div class="flex justify-center mt-8 text-white">
+    <div
+      class="flex justify-center mt-4 xl:mt-16 2xl:mt-10 text-white text-sm sm:text-lg font-medium"
+    >
       <p>Copyright © ITY / I 特約 All Rights Reserved.</p>
     </div>
   </div>

@@ -1,23 +1,27 @@
 <template>
   <ity-header></ity-header>
-  <div class="px-[140px] space-y-20 mb-40">
-    <div class="flex flex-row space-x-10">
+  <div class="px-5 sm:px-10 2xl:px-[140px] space-y-10 xl:space-y-20 mb-40">
+    <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
       <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
       <!--Seller Picture-->
-      <div class="w-[1220px] h-[400px] overflow-hidden bg-no-repeat bg-cover">
+      <div
+        class="w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
+      >
         <img
           class="w-full"
           src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         />
       </div>
     </div>
-    <div class="flex flex-row space-x-20">
+    <div
+      class="flex flex-col sm:flex-row space-x-0 sm:space-x-10 2xl:space-x-20 space-y-5 sm:space-y-0"
+    >
       <seller-Info-Card></seller-Info-Card>
       <contact-card></contact-card>
     </div>
     <!--Tabs-->
     <!--Below sm-->
-    <!--<select
+    <select
       id="tabs"
       v-model="currentIndex"
       @change="transfer(currentIndex)"
@@ -31,11 +35,11 @@
       >
         {{ item.name }}
       </option>
-    </select>-->
+    </select>
     <!--Over sm-->
     <!--top-->
     <div
-      class="hidden w-full h-40 text-[#4B4B4B] text-3xl font-bold drop-shadow-lg sm:flex"
+      class="hidden w-full sm:h-20 md:h-24 xl:h-28 h-40 text-[#4B4B4B] text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold drop-shadow-lg sm:flex"
     >
       <div
         class="flex flex-1 items-center justify-center cursor-pointer bg-[#F9F9F9] hover:text-[#9763AB]"
