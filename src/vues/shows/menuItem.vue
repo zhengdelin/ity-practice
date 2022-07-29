@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-row border-b-4 border-[#BB8FCE] w-full h-[380px] space-x-5 p-10 bg-white drop-shadow-md"
+    class="flex flex-row items-center border-b-4 border-[#BB8FCE] w-full h-56 md:h-80 lg:h-96 2xl:h-[380px] space-x-5 p-10 bg-white drop-shadow-md"
   >
     <div
-      class="flex w-[300px] h-[300px] overflow-hidden bg-no-repeat bg-cover bg-center"
+      class="flex w-1/3 lg:w-4/12 2xl:w-full h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 2xl:h-[300px] overflow-hidden bg-no-repeat bg-cover bg-center"
     >
       <img
         class="w-full"
@@ -11,15 +11,27 @@
       />
     </div>
     <div
-      class="flex flex-col justify-center w-[630px] h-[300px] space-y-10 pl-20 text-[#4B4B4B]"
+      class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 space-x-0 lg:space-x-5 w-2/3 lg:w-8/12 2xl:w-full"
     >
-      <p class="flex text-4xl">{{ name }}</p>
-      <p class="flex text-2xl text-left">{{ desc }}</p>
-    </div>
-    <div
-      class="flex items-center justify-end w-[590px] h-[300px] text-[#4B4B4B]"
-    >
-      <p class="text-3xl">商品價格：{{ price }} 元</p>
+      <div
+        class="flex flex-col justify-center w-full 2xl:w-[630px] 2xl:h-[300px] space-y-5 lg:space-y-10 pl-0 lg:pl-10 2xl:pl-20 text-[#4B4B4B]"
+      >
+        <p
+          class="flex text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold text-[#76448A]"
+        >
+          {{ name }}
+        </p>
+        <p
+          class="flex text-sm lg:text-base xl:text-2xl text-left lg:font-medium"
+        >
+          {{ desc }}
+        </p>
+      </div>
+      <div
+        class="flex items-center justift-start lg:justify-end w-full 2xl:w-[590px] 2xl:h-[300px] lg:font-semibold text-[#4B4B4B]"
+      >
+        <p class="text-base lg:text-xl xl:text-3xl">商品價格：{{ price }} 元</p>
+      </div>
     </div>
   </div>
 </template>

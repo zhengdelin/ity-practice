@@ -1,6 +1,6 @@
 <template>
   <ity-header></ity-header>
-  <div class="px-5 sm:px-10 2xl:px-[140px] space-y-10 xl:space-y-20 mb-40">
+  <div class="px-5 sm:px-10 2xl:px-[140px] space-y-6 sm:space-y-10 mb-40">
     <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
       <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
       <!--Seller Picture-->
@@ -68,12 +68,12 @@ import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import contactCard from "@/vues/cards/contactCard.vue";
 //tabs
-import postPage from "@/vues/sellerInfo/postPage.vue";
-import menuPage from "@/vues/sellerInfo/menuPage.vue";
-import feedbackPage from "@/vues/sellerInfo/feedbackPage.vue";
-import couponPage from "@/vues/sellerInfo/couponPage.vue";
-import specialAppointmentPage from "@/vues/sellerInfo/specialAppointmentPage.vue";
-import mapPage from "@/vues/sellerInfo/mapPage.vue";
+import postPage from "@/vues/sellerInfoPage/postPage.vue";
+import menuPage from "@/vues/sellerInfoPage/menuPage.vue";
+import feedbackPage from "@/vues/sellerInfoPage/feedbackPage.vue";
+import couponPage from "@/vues/sellerInfoPage/couponPage.vue";
+import specialAppointmentPage from "@/vues/sellerInfoPage/specialAppointmentPage.vue";
+import mapPage from "@/vues/sellerInfoPage/mapPage.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 
 export default {

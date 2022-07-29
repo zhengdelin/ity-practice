@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-[60px]">
+  <div class="space-y-[60px] bg-black">
     <div class="flex flex-row space-x-10">
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>

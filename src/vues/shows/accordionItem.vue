@@ -1,24 +1,28 @@
 <template>
   <div class="accordion" id="accordionExample5">
     <div class="accordion-item bg-white border border-gray-200 rounded-lg">
-      <h2 class="accordion-header mb-0" id="headingOne5">
+      <h2
+        class="accordion-header mb-0 flex items-center w-full h-[100px] py-8 px-10 text-xl lg:text-2xl font-bold text-[#4B4B4B] text-left bg-[#F9F9F9]"
+        id="headingOne5"
+      >
         <button
-          class="accordion-button relative flex items-center w-full h-[100px] py-8 px-10 text-2xl lg:text-3xl font-bold text-[#4B4B4B] text-left bg-[#F9F9F9] border-0 rounded-t-md transition focus:outline-none"
+          class="accordion-button relative border-0 rounded-t-md transition focus:outline-none bg-black"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapseOne5"
           aria-expanded="true"
           aria-controls="collapseOne5"
-        >
-          賣家優惠券使用規則
-        </button>
+        ></button>
+        賣家優惠券使用規則
       </h2>
       <div
         id="collapseOne5"
         class="accordion-collapse collapse show"
         aria-labelledby="headingOne5"
       >
-        <div class="accordion-body text-left p-10 text-2xl leading-[60px]">
+        <div
+          class="accordion-body text-left px-8 py-6 lg:p-10 text-lg lg:text-xl leading-normal lg:leading-[60px]"
+        >
           <strong>This is the first item's accordion body.</strong> It is shown
           by default, until the collapse plugin adds the appropriate classes
           that we use to style each element. These classes control the overall
