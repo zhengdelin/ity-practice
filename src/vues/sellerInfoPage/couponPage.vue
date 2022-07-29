@@ -1,6 +1,8 @@
 <template>
-  <div class="space-y-[60px] bg-black">
-    <div class="flex flex-row space-x-10">
+  <div class="space-y-[60px]">
+    <div
+      class="flex flex-col items-center lg:flex-row space-x-0 lg:space-x-10 space-y-5 lg:space-y-0 2xl:justify-between"
+    >
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>
     </div>

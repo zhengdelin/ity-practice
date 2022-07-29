@@ -3,8 +3,7 @@
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="142.000000pt"
-    height="65.000000pt"
+    class="w-[148px] h-20"
     viewBox="0 0 142.000000 65.000000"
     preserveAspectRatio="xMidYMid meet"
   >

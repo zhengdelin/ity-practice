@@ -1,8 +1,8 @@
 <template>
   <div class="accordion" id="accordionExample5">
-    <div class="accordion-item bg-white border border-gray-200 rounded-lg">
+    <div class="accordion-item bg-white border border-[#76448A] rounded-lg">
       <h2
-        class="accordion-header mb-0 flex items-center w-full h-[100px] py-8 px-10 text-xl lg:text-2xl font-bold text-[#4B4B4B] text-left bg-[#F9F9F9]"
+        class="accordion-header mb-0 flex items-center w-full h-20 2xl:h-[100px] py-8 px-10 text-xl lg:text-2xl font-bold text-[#76448A] text-left bg-[#F9F9F9] rounded-t-lg border border-b-[#76448A]"
         id="headingOne5"
       >
         <button

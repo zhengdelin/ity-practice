@@ -1,11 +1,13 @@
 <template>
   <ity-header></ity-header>
-  <div class="px-5 sm:px-10 2xl:px-[140px] space-y-6 sm:space-y-10 mb-40">
+  <div
+    class="px-5 sm:px-10 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
+  >
     <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
       <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
       <!--Seller Picture-->
       <div
-        class="w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
+        class="w-7/12 sm:w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
       >
         <img
           class="w-full"
@@ -25,13 +27,13 @@
       id="tabs"
       v-model="currentIndex"
       @change="transfer(currentIndex)"
-      class="border bg-[#F9F9F9] border-gray-300 text-[#4B4B4B] sm:text-sm rounded-lg focus:bg-[#F6F6F6] focus:border-[#9763AB] block w-full p-2.5 sm:hidden"
+      class="border bg-[#B983CE] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#9763AB] focus:border-[#76448A] w-full p-3 sm:hidden"
     >
       <option
         :class="currentIndex == index"
         v-for="(item, index) in tabs"
         :key="index"
-        :value="index"
+        :id="index"
       >
         {{ item.name }}
       </option>
@@ -42,7 +44,7 @@
       class="hidden w-full sm:h-20 md:h-24 xl:h-28 h-40 text-[#4B4B4B] text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold drop-shadow-lg sm:flex"
     >
       <div
-        class="flex flex-1 items-center justify-center cursor-pointer bg-[#F9F9F9] hover:text-[#9763AB]"
+        class="flex flex-1 items-center justify-center cursor-pointer bg-[#f9f9f9] hover:text-[#76448A]"
         :class="currentIndex === index ? 'classic-focus' : 'classic'"
         v-for="(item, index) in tabs"
         :id="index"
@@ -58,6 +60,14 @@
         <component :is="id"></component>
       </keep-alive>
     </div>
+    <div class="relative" @click="backTop()">
+      <div
+        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
+      >
+        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
+        <back-To-Top-Icon></back-To-Top-Icon>
+      </div>
+    </div>
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -67,6 +77,7 @@ import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import contactCard from "@/vues/cards/contactCard.vue";
+import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 //tabs
 import postPage from "@/vues/sellerInfoPage/postPage.vue";
 import menuPage from "@/vues/sellerInfoPage/menuPage.vue";
@@ -83,6 +94,7 @@ export default {
     sellerCard: sellerCard,
     sellerInfoCard: sellerInfoCard,
     contactCard: contactCard,
+    backToTopIcon: backToTopIcon,
     //tabs
     postPage: postPage,
     menuPage: menuPage,
@@ -94,7 +106,7 @@ export default {
   },
   data() {
     return {
-      index: 0,
+      currentIndex: 0,
       id: "postPage",
       tabs: [
         { name: "店家貼文", id: "postPage" },
@@ -111,6 +123,9 @@ export default {
       console.log("item", this);
       this.id = item.id;
     },
+    backTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
   },
 };
 </script>
@@ -121,6 +136,6 @@ export default {
 }
 .classic-focus {
   background-color: #f9f9f9;
-  color: #9763ab;
+  color: #76448a;
 }
 </style>

@@ -7,15 +7,18 @@
     >
       {{ name }}
     </p>
-    <div class="w-5 h-5 2xl:w-[30px] 2xl:h-[30px] bg-black"></div>
+    <component :is="icon" class="w-5 h-5 2xl:w-[30px] 2xl:h-[30px]" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    name: {
+    /*name: {
       type: String,
+    },*/
+    props: {
+      headerElement: null,
     },
   },
 };

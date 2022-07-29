@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-row items-center w-full h-[400px] pl-20 space-x-32 bg-white"
+    class="flex flex-row items-center w-full h-48 sm:h-64 lg:h-80 2xl:h-[400px] pl-10 lg:pl-20 space-x-10 sm:space-x-14 lg:space-x-32 bg-white"
   >
     <div
-      class="flex w-[250px] h-[250px] rounded-full overflow-hidden bg-no-repeat bg-cover bg-black"
+      class="flex w-32 md:w-48 lg:w-[250px] h-32 md:h-48 lg:h-[250px] rounded-full overflow-hidden bg-no-repeat bg-cover bg-black"
     >
       <img
         class="w-full h-full"
@@ -11,8 +11,10 @@
       />
     </div>
     <div class="flex flex-col space-y-10">
-      <p class="flex text-6xl text-[#76448A] font-bold">{{ critic }}</p>
-      <div class="flex flex-row text-3xl font-semibold">
+      <p class="flex text-4xl lg:text-6xl text-[#76448A] font-bold">
+        {{ critic }}
+      </p>
+      <div class="flex flex-row text-lg sm:text-xl lg:text-3xl font-semibold">
         <p class="flex">{{ gender }}</p>
         <div class="flex">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
         <p class="flex">{{ school }}</p>

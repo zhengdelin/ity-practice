@@ -6,7 +6,7 @@
       <!--icon-->
       <div><location-icon></location-icon></div>
       <p
-        class="text-base sm:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
+        class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
         地址：
       </p>
@@ -15,7 +15,7 @@
       <!--icon-->
       <div><time-icon></time-icon></div>
       <p
-        class="text-base sm:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
+        class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
         營業時間：
       </p>
@@ -24,7 +24,7 @@
       <!--icon-->
       <div><price-icon></price-icon></div>
       <p
-        class="text-base sm:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
+        class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
         價格區間：
       </p>
@@ -33,7 +33,7 @@
       <!--icon-->
       <div><public-Holiday-icon></public-Holiday-icon></div>
       <p
-        class="text-base sm:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
+        class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
         公休日：
       </p>
@@ -42,7 +42,7 @@
       <!--icon-->
       <div><website-Icon></website-Icon></div>
       <p
-        class="text-base sm:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
+        class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
         網站：
       </p>
