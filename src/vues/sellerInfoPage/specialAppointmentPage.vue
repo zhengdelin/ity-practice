@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import classicItem from "@/vues/shows/classicItem.vue";
+import classicItem from "@/vues/classic/classicItem.vue";
 
 export default {
   name: "specialAppointmentPage",

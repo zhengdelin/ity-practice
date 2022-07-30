@@ -7,9 +7,14 @@ const routes = [
     component: () => import("@/views/Home.vue"),
   },
   {
-    path: "/cyt",
-    name: "cyt",
-    component: () => import("@/views/cyt"),
+    path: "/cyt/index",
+    name: "index",
+    component: () => import("@/views/cyt/index.vue"),
+  },
+  {
+    path: "/cyt/question",
+    name: "question",
+    component: () => import("@/views/cyt/questionBeforeLogin.vue"),
   },
   {
     path: "/iris",
