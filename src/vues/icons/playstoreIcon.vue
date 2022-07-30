@@ -1,5 +1,9 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-5 h-5">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 488 512"
+    class="w-4 sm:w-5 h-4 sm:h-5"
+  >
     <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
     <path
       fill="currentColor"

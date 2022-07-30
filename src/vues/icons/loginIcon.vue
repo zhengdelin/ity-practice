@@ -1,11 +1,11 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="h-[30px] w-[30px]"
+    class="w-4 sm:w-6 xl:w-[30px] h-4 sm:h-6 xl:h-[30px]"
     fill="none"
     viewBox="0 0 24 24"
     stroke="#2D2D2D"
-    stroke-width="2"
+    stroke-width="1.5"
   >
     <path
       stroke-linecap="round"

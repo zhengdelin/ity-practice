@@ -8,7 +8,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        地址：
+        地址：{{ location }}
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -17,7 +17,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        營業時間：
+        營業時間：{{ time }}
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -26,7 +26,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        價格區間：
+        價格區間：{{ price }} 元左右
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -35,7 +35,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        公休日：
+        公休日：{{ publicHoliday }}
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -44,7 +44,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        網站：
+        網站：{{ website }}
       </p>
     </div>
   </div>
@@ -65,6 +65,13 @@ export default {
     priceIcon: priceIcon,
     publicHolidayIcon: publicHolidayIcon,
     websiteIcon: websiteIcon,
+  },
+  props: {
+    location: String,
+    time: String,
+    price: Number,
+    publicHoliday: String,
+    website: String,
   },
 };
 </script>

@@ -1,10 +1,8 @@
 <template>
-  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="213.000000pt"
-    height="97.000000pt"
+    class="w-[300px] h-40"
     viewBox="0 0 213.000000 97.000000"
     preserveAspectRatio="xMidYMid meet"
   >

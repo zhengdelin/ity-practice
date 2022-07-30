@@ -1,13 +1,13 @@
 <template>
   <ity-header></ity-header>
   <div
-    class="px-5 sm:px-10 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
+    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
     <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
       <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
       <!--Seller Picture-->
       <div
-        class="w-7/12 sm:w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
+        class="w-7/12 sm:w-8/12 md:w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
       >
         <img
           class="w-full"
@@ -18,22 +18,27 @@
     <div
       class="flex flex-col sm:flex-row space-x-0 sm:space-x-10 2xl:space-x-20 space-y-5 sm:space-y-0"
     >
-      <seller-Info-Card></seller-Info-Card>
-      <contact-card></contact-card>
+      <seller-Info-Card
+        :location="'臺中市梧棲區'"
+        :time="'09:00-22:00'"
+        :price="160"
+        :publicHoliday="'星期二、星期五'"
+        :website="'https://retty.me/'"
+      ></seller-Info-Card>
+      <contact-card :tel="'0971-635-338'"></contact-card>
     </div>
     <!--Tabs-->
     <!--Below sm-->
     <select
       id="tabs"
-      v-model="currentIndex"
-      @change="transfer(currentIndex)"
-      class="border bg-[#B983CE] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#9763AB] focus:border-[#76448A] w-full p-3 sm:hidden"
+      v-model="id"
+      class="border bg-[#9763AB] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#B983CE] focus:border-[#76448A] w-full p-3 sm:hidden"
     >
       <option
-        :class="currentIndex == index"
-        v-for="(item, index) in tabs"
-        :key="index"
-        :id="index"
+        :class="item.id == id"
+        v-for="item in tabs"
+        :key="item.id"
+        :value="item.id"
       >
         {{ item.name }}
       </option>
@@ -45,10 +50,9 @@
     >
       <div
         class="flex flex-1 items-center justify-center cursor-pointer bg-[#f9f9f9] hover:text-[#76448A]"
-        :class="currentIndex === index ? 'classic-focus' : 'classic'"
-        v-for="(item, index) in tabs"
-        :id="index"
-        :key="index"
+        v-for="item in tabs"
+        :class="item.id === id ? 'classic-focus' : 'classic'"
+        :key="item.id"
         @click="transfer(item)"
       >
         {{ item.name }}
@@ -106,7 +110,7 @@ export default {
   },
   data() {
     return {
-      currentIndex: 0,
+      //tab綁定的component name
       id: "postPage",
       tabs: [
         { name: "店家貼文", id: "postPage" },
@@ -119,9 +123,13 @@ export default {
     };
   },
   methods: {
+    /**
+     * 切換菜單tab
+     * @param {{name:String,id:String}} item
+     */
     transfer(item) {
-      console.log("item", this);
       this.id = item.id;
+      console.log("transfer", item, this.id);
     },
     backTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -135,7 +143,9 @@ export default {
   background-color: #f9f9f9;
 }
 .classic-focus {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   color: #76448a;
+  border-bottom: 5px solid;
+  border-bottom-color: #76448a;
 }
 </style>

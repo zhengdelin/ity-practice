@@ -1,30 +1,53 @@
 <template>
   <div class="space-y-5">
     <menu-item
-      :name="'ししゃも'"
-      :desc="'パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが'"
-      :price="300"
-    ></menu-item>
-    <menu-item
-      :name="'すじこ'"
-      :desc="'高層階で、夕方から夜くらいの時間帯の明るさが美しくておすすめです。'"
-      :price="500"
-    ></menu-item>
-    <menu-item
-      :name="'くんたま'"
-      :desc="'新宿小田急サザンタワーのラウンジでアフタヌーンティー。'"
-      :price="200"
+      v-for="(item, index) in menuItemList"
+      :key="index"
+      :menuItem="item"
     ></menu-item>
   </div>
 </template>
 
 <script>
 import menuItem from "@/vues/shows/menuItem.vue";
+import sushiPhoto from "@/vues/photos/sushiPhoto.vue";
+import shrimpPhoto from "@/vues/photos/shrimpPhoto.vue";
+import oysterPhoto from "@/vues/photos/oysterPhoto.vue";
 
 export default {
   name: "menuPage",
   components: {
     menuItem: menuItem,
+    // eslint-disable-next-line vue/no-unused-components
+    sushiPhoto,
+    // eslint-disable-next-line vue/no-unused-components
+    shrimpPhoto,
+    // eslint-disable-next-line vue/no-unused-components
+    oysterPhoto,
+  },
+  data() {
+    return {
+      menuItemList: [
+        {
+          photo: sushiPhoto,
+          name: "寿司",
+          desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+          price: 300,
+        },
+        {
+          photo: shrimpPhoto,
+          name: "エビ",
+          desc: "高層階で、夕方から夜くらいの時間帯の明るさが美しくておすすめです。",
+          price: 500,
+        },
+        {
+          photo: oysterPhoto,
+          name: "かき",
+          desc: "新宿小田急サザンタワーのラウンジでアフタヌーンティー。",
+          price: 200,
+        },
+      ],
+    };
   },
 };
 </script>

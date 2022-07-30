@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-center w-full h-48 sm:h-64 lg:h-80 2xl:h-[400px] pl-10 lg:pl-20 space-x-10 sm:space-x-14 lg:space-x-32 bg-white"
+    class="flex flex-row items-center w-full h-48 sm:h-56 lg:h-80 2xl:h-[400px] pl-6 sm:pl-10 lg:pl-20 pr-4 space-x-10 sm:space-x-14 lg:space-x-32 bg-white"
   >
     <div
       class="flex w-32 md:w-48 lg:w-[250px] h-32 md:h-48 lg:h-[250px] rounded-full overflow-hidden bg-no-repeat bg-cover bg-black"

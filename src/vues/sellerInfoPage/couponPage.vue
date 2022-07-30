@@ -6,7 +6,7 @@
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>
     </div>
-    <div><accordion-Item></accordion-Item></div>
+    <div class="flex justify-center"><accordion-Item></accordion-Item></div>
   </div>
 </template>
 

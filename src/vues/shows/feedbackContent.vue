@@ -5,9 +5,11 @@
     >
       雪のため迂回した道で遭遇。飛び込み入店。古民家をカフェに。ボサノバが流れる店内には、窓からの日差しが差し込むのが絵になる、なかなか落ち着ける店。4種のカレーの中からグリーンカレーとチコリ珈琲を注文。美味し。ただ辛さが欲しい。グリーンカレーなんだもん。スプーンは小降りで、そのくせ具の筍のカットがでかいこと。チコリ珈琲なるもの、初めて飲んだ。ジャズの発祥の地ニューオリンズと聞いては頼まないわけにはいかない。ちょっと甘みを感じる珈琲に似た飲み物と認識した。夜また来たいものである。
     </p>
-    <div class="flex flex-row justify-between items-center space-x-10">
+    <div
+      class="flex flex-row justify-between items-center space-x-4 lg:space-x-10"
+    >
       <div
-        class="w-32 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-32 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
+        class="w-28 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-28 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
       >
         <img
           class="h-full w-full"
@@ -15,7 +17,7 @@
         />
       </div>
       <div
-        class="w-32 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-32 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
+        class="w-28 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-28 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
       >
         <img
           class="h-full w-full"
@@ -23,7 +25,7 @@
         />
       </div>
       <div
-        class="w-32 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-32 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
+        class="w-28 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-28 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
       >
         <img
           class="h-full w-full"
@@ -31,7 +33,7 @@
         />
       </div>
       <div
-        class="w-32 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-32 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
+        class="w-28 sm:w-40 lg:w-60 xl:w-80 2xl:w-[380px] h-28 sm:h-40 lg:h-60 xl:h-80 2xl:h-[380px] overflow-hidden bg-no-repeat bg-cover bg-white"
       >
         <img
           class="h-full w-full"

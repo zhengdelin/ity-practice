@@ -1,9 +1,11 @@
 <template>
   <div
-    class="flex items-center justify-between w-full px-10 h-24 xl:h-[150px] bg-white"
+    class="flex items-center justify-between w-full px-5 sm:px-10 h-24 lg:h-32 xl:h-[150px] bg-white"
   >
-    <div class="cursor-pointer">
-      <ity-header-logo></ity-header-logo>
+    <div class="cursor-pointer" @click="reload()">
+      <ity-header-logo
+        class="w-20 sm:w-30 lg:w-32 xl:w-40 h-10 sm:h-15 lg:h-16 xl:h-20"
+      ></ity-header-logo>
     </div>
     <div class="flex flex-row">
       <headerElement
@@ -12,11 +14,6 @@
         :headerElement="item"
       ></headerElement>
     </div>
-    <!--<div class="flex flex-row">
-      <header-element :name="'登入'"></header-element>
-      <header-element :name="'找優惠'"></header-element>
-      <header-element :name="'系統使用'"></header-element>
-    </div>-->
   </div>
 </template>
 
@@ -42,11 +39,16 @@ export default {
   data() {
     return {
       headerElementList: [
-        { name: "123", icon: loginIcon },
-        { name: "456", icon: searchIcon },
-        { name: "789", icon: questionIcon },
+        { name: "登入", icon: loginIcon },
+        { name: "找優惠", icon: searchIcon },
+        { name: "系統使用", icon: questionIcon },
       ],
     };
+  },
+  methods: {
+    reload() {
+      location.reload();
+    },
   },
 };
 </script>
