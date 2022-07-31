@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col items-center space-y-10">
+  <div class="flex flex-col items-center space-y-0 lg:space-y-8 2xl:space-y-10">
     <!--questionContent-->
     <div
-      class="flex justify-center items-center w-[420px] h-[250px] bg-[#F2F2F2] rounded-xl p-6"
+      class="flex justify-center items-center w-[400px] xl:w-[420px] h-40 xl:h-[250px] bg-[#F2F2F2] rounded-xl p-6"
     >
-      <p class="font-semibold text-3xl leading-[60px]">
+      <p class="font-semibold text-xl md:text-2xl xl:text-3xl leading-[60px]">
         {{ questionItem.content }}
       </p>
     </div>

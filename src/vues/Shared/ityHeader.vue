@@ -46,8 +46,19 @@ export default {
     };
   },
   methods: {
+    /*onButtonClick(item) {
+      if (item.name == "系統使用") {
+        this.redirectToQuestion();
+      }
+    },*/
     reload() {
       location.reload();
+    },
+    redirectToQuestion() {
+      window.location = this.baseUrl() + "/question";
+    },
+    baseUrl() {
+      return window.location.origin;
     },
   },
 };

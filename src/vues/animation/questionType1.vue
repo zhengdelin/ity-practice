@@ -1,5 +1,8 @@
 <template>
-  <Vue3Lottie :animationData="questionOrangeJSON" class="w-[380px] h-[380px]" />
+  <Vue3Lottie
+    :animationData="questionOrangeJSON"
+    class="w-[280px] md:w-[380px] h-[280px] md:h-[380px]"
+  />
 </template>
 
 <script>
