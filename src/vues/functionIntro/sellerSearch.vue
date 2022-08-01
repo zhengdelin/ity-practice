@@ -20,7 +20,7 @@
 <script>
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-import searchArea from "@/vues/functionIntro/sellerSearchArea.vue";
+import searchArea from "@/vues/functionArea/areaType2.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import searchJSON from "@/vues/json/job-hunt-concept.json";
 

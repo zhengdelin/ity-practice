@@ -11,7 +11,7 @@ import "vue3-lottie/dist/style.css";
 import questionOrangeJSON from "@/vues/json/question-boy-orange.json";
 
 export default {
-  name: "sellerAnimation",
+  name: "questionOne",
   components: {
     Vue3Lottie,
   },

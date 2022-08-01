@@ -20,7 +20,7 @@
 <script>
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-import mapArea from "@/vues/functionIntro/appointmentMapArea.vue";
+import mapArea from "@/vues/functionArea/areaType1.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import mapJSON from "@/vues/json/map-browsing.json";
 

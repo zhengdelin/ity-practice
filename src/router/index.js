@@ -12,9 +12,24 @@ const routes = [
     component: () => import("@/views/cyt/index.vue"),
   },
   {
-    path: "/cyt/question",
-    name: "question",
-    component: () => import("@/views/cyt/questionBeforeLogin.vue"),
+    path: "/cyt/system-function-beforelogin",
+    name: "systemFunctionBeforeLogin",
+    component: () => import("@/views/cyt/systemFunctionBeforeLogin.vue"),
+  },
+  {
+    path: "/cyt/consumer-system-function",
+    name: "consumerSystemFunction",
+    component: () => import("@/views/cyt/consumerSystemFunction.vue"),
+  },
+  {
+    path: "/cyt/seller-system-function",
+    name: "sellerSystemFunction",
+    component: () => import("@/views/cyt/sellerSystemFunction.vue"),
+  },
+  {
+    path: "/cyt/organization-system-function",
+    name: "organizationSystemFunction",
+    component: () => import("@/views/cyt/organizationSystemFunction.vue"),
   },
   {
     path: "/iris",

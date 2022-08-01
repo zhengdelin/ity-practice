@@ -20,7 +20,7 @@
 <script>
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-import sellerInfoArea from "@/vues/functionIntro/sellerInfoArea.vue";
+import sellerInfoArea from "@/vues/functionArea/areaType3.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import sellerInfoJSON from "@/vues/json/people-reading-news-on-phone.json";
 

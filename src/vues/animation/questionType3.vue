@@ -1,5 +1,8 @@
 <template>
-  <Vue3Lottie :animationData="questionRedJSON" class="w-[380px] h-[380px]" />
+  <Vue3Lottie
+    :animationData="questionRedJSON"
+    class="w-[280px] md:w-[380px] h-[280px] md:h-[380px]"
+  />
 </template>
 
 <script>
@@ -8,7 +11,7 @@ import "vue3-lottie/dist/style.css";
 import questionRedJSON from "@/vues/json/question-boy-red.json";
 
 export default {
-  name: "sellerAnimation",
+  name: "questionThree",
   components: {
     Vue3Lottie,
   },

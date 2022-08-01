@@ -20,7 +20,7 @@
 <script>
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-import couponArea from "@/vues/functionIntro/sellerCouponArea.vue";
+import couponArea from "@/vues/functionArea/areaType4.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import couponJSON from "@/vues/json/paso-2-club.json";
 
