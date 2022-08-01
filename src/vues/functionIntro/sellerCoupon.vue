@@ -1,14 +1,14 @@
 <template>
-  <div class="space-y-20">
+  <div class="space-y-10 xl:space-y-20 md:w-1/2">
     <div
-      class="relative flex justify-end items-center w-[520px] 2xl:w-[720px] h-[480px] 2xl:h-[660px]"
+      class="relative flex justify-end items-center w-full 2xl:w-[720px] h-[480px] 2xl:h-[660px]"
     >
       <coupon-area
-        class="absolute bottom-0 right-0 w-[480px] 2xl:w-[660p] h-[480px] 2xl:h-[660px] text-white"
+        class="absolute bottom-0 right-0 w-full 2xl:w-[660p] h-[480px] 2xl:h-[660px] text-white"
       ></coupon-area>
       <Vue3Lottie
         :animationData="couponJSON"
-        class="w-[280px] 2xl:w-[380px] h-[280px] 2xl:h-[380px]"
+        class="w-[280px] md:w-48 2xl:w-[380px] h-[280px] md:h-48 2xl:h-[380px]"
       />
     </div>
     <div class="grid justify-items-center lg:justify-items-center">

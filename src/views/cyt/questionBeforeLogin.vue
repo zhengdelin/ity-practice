@@ -11,7 +11,7 @@
     </p>
     <!--呈現三個問題-->
     <div
-      class="flex flex-col items-center md:flex-row space-x-0 md:space-x-[190px]"
+      class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10 xl:space-x-[190px]"
     >
       <question-item
         v-for="(item, index) in questionItemList"
@@ -25,15 +25,15 @@
       那就來使用 ITY / I特約 !!!
     </p>
     <!--功能列表-->
-    <div class="flex flex-col space-y-40 md:space-y-[300px]">
+    <div class="flex flex-col space-y-40 2xl:space-y-[300px]">
       <div
-        class="flex flex-col md:flex-row space-x-0 md:space-x-[200px] space-y-20 md:space-y-0"
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
       >
         <appointment-map></appointment-map>
         <seller-search></seller-search>
       </div>
       <div
-        class="flex flex-col md:flex-row space-x-0 md:space-x-[200px] space-y-20 md:space-y-0"
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
       >
         <seller-info></seller-info>
         <seller-coupon></seller-coupon>
@@ -52,7 +52,7 @@
     </div>
     <!--三種身分端動畫-->
     <div
-      class="flex flex-col md:flex-row items-center space-x-0 md:space-x-10 space-y-10 md:space-y-0"
+      class="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-10 space-y-10 md:space-y-0"
     >
       <identityItem
         v-for="(item, index) in identityItemList"
@@ -65,6 +65,14 @@
       :animationData="howTargetedTrafficWorksJSON"
       class="w-[300px] sm:w-[380px] lg:w-[480px] xl:w-[600px] 2xl:w-[800px] h-[300px] sm:h-[380px] lg:h-[480px] xl:h-[600px] 2xl:h-[800px]"
     />
+    <div class="relative" @click="backTop()">
+      <div
+        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
+      >
+        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
+        <back-To-Top-Icon></back-To-Top-Icon>
+      </div>
+    </div>
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -87,6 +95,7 @@ import identityItem from "@/vues/shows/identityItem.vue";
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
+import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
 
@@ -118,6 +127,7 @@ export default {
     sellerIdentity: sellerIdentity,
     // eslint-disable-next-line vue/no-unused-components
     organizationIdentity: organizationIdentity,
+    backToTopIcon: backToTopIcon,
     ityFooter: ityFooter,
   },
   data() {
@@ -144,7 +154,11 @@ export default {
       howTargetedTrafficWorksJSON,
     };
   },
-  methods: {},
+  methods: {
+    backTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+  },
 };
 </script>
 
