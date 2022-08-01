@@ -10,9 +10,8 @@
       這些問題應該如何解決呢
     </p>
     <!--呈現三個問題-->
-    <div
-      class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10 xl:space-x-[190px]"
-    >
+    <div class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10">
+      <!--1920/2xl:space-x-[190px]-->
       <question-item
         v-for="(item, index) in questionItemList"
         :key="index"

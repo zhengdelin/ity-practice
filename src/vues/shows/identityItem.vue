@@ -4,7 +4,7 @@
   >
     <component
       :is="identityItem.animation"
-      class="w-60 md:w-48 lg:w-64 xl:w-[300px] h-60 md:h-48 lg:h-64 xl:h-[300px]"
+      class="w-60 md:w-40 lg:w-64 xl:w-[300px] h-60 md:h-40 lg:h-64 xl:h-[300px]"
     />
     <p
       class="font-semibold text-xl sm:text-2xl 2xl:text-4xl tracking-wider text-[#2D2D2D]"
