@@ -8,7 +8,7 @@ const routes = [
   },
   {
     path: "/cyt/index",
-    name: "index",
+    name: "cyt-index",
     component: () => import("@/views/cyt/index.vue"),
   },
   {
