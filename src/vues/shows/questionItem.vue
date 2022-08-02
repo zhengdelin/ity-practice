@@ -8,7 +8,7 @@
     >
       <!--1920/2xl:w-[420px]-->
       <p
-        class="font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl leading-[60px]"
+        class="font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:leading-[60px]"
       >
         {{ questionItem.content }}
       </p>

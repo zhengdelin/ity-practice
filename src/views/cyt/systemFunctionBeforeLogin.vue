@@ -3,13 +3,16 @@
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
-    <classic-title :content="'系統介紹'" class="w-full mt-14"></classic-title>
+    <classic-title
+      :content="'未登入前系統介紹'"
+      class="w-full mt-14"
+    ></classic-title>
     <p
       class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#4B4B4B] pt-10 xl:pt-20 pb-[30px] xl:pb-[60px]"
     >
       這些問題應該如何解決呢
     </p>
-    <!--呈現三個問題-->
+    <!--呈現三個問題 + 動畫-->
     <div class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10">
       <!--1920/2xl:space-x-[190px]-->
       <question-item
@@ -68,7 +71,6 @@
       <div
         class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
       >
-        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
         <back-To-Top-Icon></back-To-Top-Icon>
       </div>
     </div>
@@ -79,32 +81,32 @@
 <script>
 /*Header*/
 import ityHeader from "@/vues/shared/ityHeader.vue";
+/*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
+import identityItem from "@/vues/shows/identityItem.vue";
+/*Functions*/
+import appointmentMap from "@/vues/functionIntro/beforeLogin/appointmentMap.vue";
+import sellerSearch from "@/vues/functionIntro/beforeLogin/sellerSearch.vue";
+import sellerInfo from "@/vues/functionIntro/beforeLogin/sellerInfo.vue";
+import sellerCoupon from "@/vues/functionIntro/beforeLogin/sellerCoupon.vue";
 /*Animation*/
 import questionType1 from "@/vues/animation/questionType1.vue";
 import questionType2 from "@/vues/animation/questionType2.vue";
 import questionType3 from "@/vues/animation/questionType3.vue";
-/*Functions*/
-import appointmentMap from "@/vues/functionIntro/appointmentMap.vue";
-import sellerSearch from "@/vues/functionIntro/sellerSearch.vue";
-import sellerInfo from "@/vues/functionIntro/sellerInfo.vue";
-import sellerCoupon from "@/vues/functionIntro/sellerCoupon.vue";
-import identityItem from "@/vues/shows/identityItem.vue";
-/*Animation*/
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
 import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
-
+/*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
 import howTargetedTrafficWorksJSON from "@/vues/json/how-targeted-traffic-works.json";
 
 export default {
-  name: "questionPage",
+  name: "systemFunctionBeforeLoginPage",
   components: {
     Vue3Lottie,
     ityHeader: ityHeader,

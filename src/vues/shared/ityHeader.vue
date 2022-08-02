@@ -12,7 +12,12 @@
         v-for="(item, index) in headerElementList"
         :key="index"
         :headerElement="item"
-      ></headerElement>
+      >
+        <router-link
+          :to="{ name: 'systemFunctionBeforeLogin' }"
+          v-if="headerElementList.name == '系統使用'"
+        ></router-link>
+      </headerElement>
     </div>
   </div>
 </template>
@@ -48,18 +53,21 @@ export default {
   methods: {
     /*onButtonClick(item) {
       if (item.name == "系統使用") {
-        this.redirectToQuestion();
+        this.redirectToSystemFunctionBeforeLogin();
       }
     },*/
+    /*if (headerElement.name == "系統使用") {
+      redirectToSystemFunctionBeforeLogin();
+    },
     reload() {
       location.reload();
     },
-    redirectToQuestion() {
-      window.location = this.baseUrl() + "/question";
+    redirectToSystemFunctionBeforeLogin() {
+      window.location = this.baseUrl() + "/cyt/system-function-beforelogin";
     },
     baseUrl() {
       return window.location.origin;
-    },
+    },*/
   },
 };
 </script>

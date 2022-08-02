@@ -7,9 +7,9 @@ const routes = [
     component: () => import("@/views/Home.vue"),
   },
   {
-    path: "/cyt/index",
-    name: "cyt-index",
-    component: () => import("@/views/cyt/index.vue"),
+    path: "/cyt/seller-info",
+    name: "sellerInfo",
+    component: () => import("@/views/cyt/sellerInfo.vue"),
   },
   {
     path: "/cyt/system-function-beforelogin",

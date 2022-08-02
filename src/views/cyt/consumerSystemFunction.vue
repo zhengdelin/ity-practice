@@ -3,13 +3,16 @@
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
-    <classic-title :content="'系統介紹'" class="w-full mt-14"></classic-title>
+    <classic-title
+      :content="'消費者端系統介紹'"
+      class="w-full mt-14"
+    ></classic-title>
     <p
       class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#4B4B4B] pt-10 xl:pt-20 pb-[30px] xl:pb-[60px]"
     >
       這些問題應該如何解決呢
     </p>
-    <!--呈現三個問題-->
+    <!--呈現三個問題 + 動畫-->
     <div class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10">
       <!--1920/2xl:space-x-[190px]-->
       <question-item
@@ -36,6 +39,18 @@
       >
         <seller-info></seller-info>
         <seller-coupon></seller-coupon>
+      </div>
+      <div
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
+      >
+        <saved-seller></saved-seller>
+        <ordered-food></ordered-food>
+      </div>
+      <div
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
+      >
+        <prosecuted-seller></prosecuted-seller>
+        <feedback-seller></feedback-seller>
       </div>
     </div>
     <div
@@ -79,32 +94,36 @@
 <script>
 /*Header*/
 import ityHeader from "@/vues/shared/ityHeader.vue";
+/*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
+import identityItem from "@/vues/shows/identityItem.vue";
 /*Animation*/
 import questionType1 from "@/vues/animation/questionType1.vue";
 import questionType2 from "@/vues/animation/questionType2.vue";
 import questionType3 from "@/vues/animation/questionType3.vue";
-/*Functions*/
-import appointmentMap from "@/vues/functionIntro/appointmentMap.vue";
-import sellerSearch from "@/vues/functionIntro/sellerSearch.vue";
-import sellerInfo from "@/vues/functionIntro/sellerInfo.vue";
-import sellerCoupon from "@/vues/functionIntro/sellerCoupon.vue";
-import identityItem from "@/vues/shows/identityItem.vue";
-/*Animation*/
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
 import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
+/*Functions*/
+import appointmentMap from "@/vues/functionIntro/beforeLogin/appointmentMap.vue";
+import sellerSearch from "@/vues/functionIntro/beforeLogin/sellerSearch.vue";
+import sellerInfo from "@/vues/functionIntro/beforeLogin/sellerInfo.vue";
+import sellerCoupon from "@/vues/functionIntro/beforeLogin/sellerCoupon.vue";
+import savedSeller from "@/vues/functionIntro/consumer/saveSeller.vue";
+import orderedFood from "@/vues/functionIntro/consumer/orderFood.vue";
+import prosecutedSeller from "@/vues/functionIntro/consumer/prosecuteSeller.vue";
+import feedbackSeller from "@/vues/functionIntro/consumer/feedbackSeller.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
-
+/*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
 import howTargetedTrafficWorksJSON from "@/vues/json/how-targeted-traffic-works.json";
 
 export default {
-  name: "questionPage",
+  name: "consumerSystemFunctionPage",
   components: {
     Vue3Lottie,
     ityHeader: ityHeader,
@@ -120,6 +139,10 @@ export default {
     sellerSearch: sellerSearch,
     sellerInfo: sellerInfo,
     sellerCoupon: sellerCoupon,
+    savedSeller: savedSeller,
+    orderedFood: orderedFood,
+    prosecutedSeller: prosecutedSeller,
+    feedbackSeller: feedbackSeller,
     identityItem: identityItem,
     // eslint-disable-next-line vue/no-unused-components
     consumerIdentity: consumerIdentity,

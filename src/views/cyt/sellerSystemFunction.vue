@@ -3,13 +3,16 @@
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
-    <classic-title :content="'系統介紹'" class="w-full mt-14"></classic-title>
+    <classic-title
+      :content="'賣家端系統介紹'"
+      class="w-full mt-14"
+    ></classic-title>
     <p
       class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#4B4B4B] pt-10 xl:pt-20 pb-[30px] xl:pb-[60px]"
     >
       這些問題應該如何解決呢
     </p>
-    <!--呈現三個問題-->
+    <!--呈現三個問題 + 動畫-->
     <div class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10">
       <!--1920/2xl:space-x-[190px]-->
       <question-item
@@ -36,6 +39,17 @@
       >
         <promoted-ads></promoted-ads>
         <advertising-m-s></advertising-m-s>
+      </div>
+      <div
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
+      >
+        <revise-seller-info></revise-seller-info>
+        <prosecution-evaluation></prosecution-evaluation>
+      </div>
+      <div
+        class="flex flex-col md:flex-row space-x-0 md:space-x-10 2xl:space-x-[200px] space-y-20 md:space-y-0"
+      >
+        <seller-contacting-function></seller-contacting-function>
       </div>
     </div>
     <div
@@ -79,32 +93,35 @@
 <script>
 /*Header*/
 import ityHeader from "@/vues/shared/ityHeader.vue";
+/*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
+import identityItem from "@/vues/shows/identityItem.vue";
 /*Animation*/
 import questionType4 from "@/vues/animation/questionType4.vue";
 import questionType5 from "@/vues/animation/questionType5.vue";
 import questionType6 from "@/vues/animation/questionType6.vue";
-/*Functions*/
-import onlineSign from "@/vues/functionIntro/onlineSign.vue";
-import exclusiveCoupon from "@/vues/functionIntro/exclusiveCoupon.vue";
-import promotedAds from "@/vues/functionIntro/promotedAds.vue";
-import advertisingMS from "@/vues/functionIntro/advertisingMS.vue";
-import identityItem from "@/vues/shows/identityItem.vue";
-/*Animation*/
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
 import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
+/*Functions*/
+import onlineSign from "@/vues/functionIntro/organization/onlineSign.vue";
+import exclusiveCoupon from "@/vues/functionIntro/seller/exclusiveCoupon.vue";
+import promotedAds from "@/vues/functionIntro/seller/promoteAds.vue";
+import advertisingMS from "@/vues/functionIntro/seller/advertisingMS.vue";
+import reviseSellerInfo from "@/vues/functionIntro/seller/reviseSellerInfo.vue";
+import prosecutionEvaluation from "@/vues/functionIntro/seller/prosecuteFeedback.vue";
+import sellerContactingFunction from "@/vues/functionIntro/seller/sellerContactFunction.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
-
+/*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
 import howTargetedTrafficWorksJSON from "@/vues/json/how-targeted-traffic-works.json";
 
 export default {
-  name: "questionPage",
+  name: "sellerSystemFunctionPage",
   components: {
     Vue3Lottie,
     ityHeader: ityHeader,
@@ -120,6 +137,9 @@ export default {
     exclusiveCoupon: exclusiveCoupon,
     promotedAds: promotedAds,
     advertisingMS: advertisingMS,
+    reviseSellerInfo: reviseSellerInfo,
+    prosecutionEvaluation: prosecutionEvaluation,
+    sellerContactingFunction: sellerContactingFunction,
     identityItem: identityItem,
     // eslint-disable-next-line vue/no-unused-components
     consumerIdentity: consumerIdentity,
@@ -138,7 +158,7 @@ export default {
           animation: questionType4,
         },
         {
-          content: "總是被消費者抱怨紙本優惠券不易保存",
+          content: "總是被消費者抱怨紙本優惠券不易保存......",
           animation: questionType5,
         },
         {

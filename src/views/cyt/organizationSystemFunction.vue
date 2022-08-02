@@ -3,13 +3,16 @@
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
-    <classic-title :content="'系統介紹'" class="w-full mt-14"></classic-title>
+    <classic-title
+      :content="'組織端系統介紹'"
+      class="w-full mt-14"
+    ></classic-title>
     <p
       class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-[#4B4B4B] pt-10 xl:pt-20 pb-[30px] xl:pb-[60px]"
     >
       這些問題應該如何解決呢
     </p>
-    <!--呈現三個問題-->
+    <!--呈現三個問題 + 動畫-->
     <div class="flex flex-col items-center md:flex-row space-x-0 md:space-x-10">
       <!--1920/2xl:space-x-[190px]-->
       <question-item
@@ -79,32 +82,32 @@
 <script>
 /*Header*/
 import ityHeader from "@/vues/shared/ityHeader.vue";
+/*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
+import identityItem from "@/vues/shows/identityItem.vue";
 /*Animation*/
 import questionType7 from "@/vues/animation/questionType7.vue";
 import questionType8 from "@/vues/animation/questionType8.vue";
 import questionType9 from "@/vues/animation/questionType9.vue";
-/*Functions*/
-import onlineContract from "@/vues/functionIntro/onlineContract.vue";
-import jointLaunchEvents from "@/vues/functionIntro/jointLaunchEvents.vue";
-import appointmentPost from "@/vues/functionIntro/appointmentPost.vue";
-import contactingFunction from "@/vues/functionIntro/contactingFunction.vue";
-import identityItem from "@/vues/shows/identityItem.vue";
-/*Animation*/
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
+/*Functions*/
+import onlineContract from "@/vues/functionIntro/seller/onlineContract.vue";
+import jointLaunchEvents from "@/vues/functionIntro/organization/jointLaunchEvent.vue";
+import appointmentPost from "@/vues/functionIntro/organization/appointmentPost.vue";
+import contactingFunction from "@/vues/functionIntro/organization/contactFunction.vue";
 import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
-
+/*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
 import howTargetedTrafficWorksJSON from "@/vues/json/how-targeted-traffic-works.json";
 
 export default {
-  name: "questionPage",
+  name: "organizationSystemFunctionPage",
   components: {
     Vue3Lottie,
     ityHeader: ityHeader,
