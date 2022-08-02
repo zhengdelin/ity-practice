@@ -24,45 +24,18 @@
         :price="160"
         :publicHoliday="'星期二、星期五'"
         :website="'https://retty.me/'"
+        class="bg-[#F6DEF6] rounded-xl 2xl:h-[480px]"
       ></seller-Info-Card>
-      <contact-card :tel="'0971-635-338'"></contact-card>
-    </div>
-    <!--Tabs-->
-    <!--Below sm-->
-    <select
-      id="tabs"
-      v-model="id"
-      class="border bg-[#9763AB] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#B983CE] focus:border-[#76448A] w-full p-3 sm:hidden"
-    >
-      <option
-        :class="item.id == id"
-        v-for="item in tabs"
-        :key="item.id"
-        :value="item.id"
-      >
-        {{ item.name }}
-      </option>
-    </select>
-    <!--Over sm-->
-    <!--top-->
-    <div
-      class="hidden w-full sm:h-20 md:h-24 xl:h-28 h-40 text-[#4B4B4B] text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold drop-shadow-lg sm:flex"
-    >
-      <div
-        class="flex flex-1 items-center justify-center cursor-pointer bg-[#f9f9f9] hover:text-[#76448A]"
-        v-for="item in tabs"
-        :class="item.id === id ? 'classic-focus' : 'classic'"
-        :key="item.id"
-        @click="transfer(item)"
-      >
-        {{ item.name }}
+      <div class="flex flex-col items-center">
+        <reservation-card></reservation-card>
+        <div class="flex flex-row sm:flex-col items-center space-between">
+          <revise-seller-info></revise-seller-info>
+          <classic-button
+            :name="'編輯個人資訊'"
+            class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-xl"
+          ></classic-button>
+        </div>
       </div>
-    </div>
-    <!--bottom-->
-    <div>
-      <keep-alive>
-        <component :is="id"></component>
-      </keep-alive>
     </div>
     <div class="relative" @click="backTop()">
       <div
@@ -80,57 +53,28 @@
 import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
-import contactCard from "@/vues/cards/contactCard.vue";
+import reservationCard from "@/vues/cards/reservationCard.vue";
+import reviseSellerInfo from "@/vues/animation/reviseSellerInfo.vue";
+import classicButton from "@/vues/classic/classicButton.vue";
 import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
-//tabs
-import postPage from "@/vues/sellerInfoPage/postPage.vue";
-import menuPage from "@/vues/sellerInfoPage/menuPage.vue";
-import feedbackPage from "@/vues/sellerInfoPage/feedbackPage.vue";
-import couponPage from "@/vues/sellerInfoPage/couponPage.vue";
-import specialAppointmentPage from "@/vues/sellerInfoPage/specialAppointmentPage.vue";
-import mapPage from "@/vues/sellerInfoPage/mapPage.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 
 export default {
-  name: "sellerInfoPage",
+  name: "eachSellerInfo",
   components: {
     ityHeader: ityHeader,
     sellerCard: sellerCard,
     sellerInfoCard: sellerInfoCard,
-    contactCard: contactCard,
+    reservationCard: reservationCard,
+    reviseSellerInfo: reviseSellerInfo,
+    classicButton: classicButton,
     backToTopIcon: backToTopIcon,
-    //tabs
-    postPage: postPage,
-    menuPage: menuPage,
-    feedbackPage: feedbackPage,
-    couponPage: couponPage,
-    specialAppointmentPage: specialAppointmentPage,
-    mapPage: mapPage,
     ityFooter: ityFooter,
   },
   data() {
-    return {
-      //tab綁定的component name
-      id: "postPage",
-      tabs: [
-        { name: "店家貼文", id: "postPage" },
-        { name: "菜單", id: "menuPage" },
-        { name: "評價", id: "feedbackPage" },
-        { name: "優惠", id: "couponPage" },
-        { name: "特約學校", id: "specialAppointmentPage" },
-        { name: "地圖", id: "mapPage" },
-      ],
-    };
+    return {};
   },
   methods: {
-    /**
-     * 切換菜單tab
-     * @param {{name:String,id:String}} item
-     */
-    transfer(item) {
-      this.id = item.id;
-      console.log("transfer", item, this.id);
-    },
     backTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
@@ -138,14 +82,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.classic {
-  background-color: #f9f9f9;
-}
-.classic-focus {
-  background-color: #f6f6f6;
-  color: #76448a;
-  border-bottom: 5px solid;
-  border-bottom-color: #76448a;
-}
-</style>
+<style scoped></style>

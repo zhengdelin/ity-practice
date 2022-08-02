@@ -7,6 +7,11 @@ const routes = [
     component: () => import("@/views/Home.vue"),
   },
   {
+    path: "/cyt/each-seller-page",
+    name: "eachsellerPage",
+    component: () => import("@/views/cyt/sellerPage.vue"),
+  },
+  {
     path: "/cyt/seller-info",
     name: "sellerInfo",
     component: () => import("@/views/cyt/sellerInfo.vue"),

@@ -59,15 +59,16 @@ export default {
     /*if (headerElement.name == "系統使用") {
       redirectToSystemFunctionBeforeLogin();
     },
-    reload() {
-      location.reload();
-    },
+
     redirectToSystemFunctionBeforeLogin() {
       window.location = this.baseUrl() + "/cyt/system-function-beforelogin";
     },
     baseUrl() {
       return window.location.origin;
     },*/
+    reload() {
+      location.reload();
+    },
   },
 };
 </script>
