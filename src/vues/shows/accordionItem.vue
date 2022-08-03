@@ -13,7 +13,7 @@
           aria-expanded="true"
           aria-controls="collapseOne5"
         ></button>
-        賣家優惠券使用規則
+        {{ title }}
       </h2>
       <div
         id="collapseOne5"
@@ -36,3 +36,11 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    title: String,
+  },
+};
+</script>

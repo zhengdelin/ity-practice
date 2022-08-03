@@ -5,7 +5,11 @@
     <div
       class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white text-[#76448A] hover:bg-[#B983CE] hover:text-white"
     >
-      <div><phone-icon class="sm:w-5 sm:h-5 lg:w-7 lg:h-7"></phone-icon></div>
+      <div>
+        <phone-icon
+          class="sm:w-5 sm:h-5 lg:w-7 lg:h-7 stroke-[#76448A] fill-white"
+        ></phone-icon>
+      </div>
       <div>
         <p class="text-xl sm:text-base lg:text-xl xl:text-2xl">{{ tel }}</p>
       </div>

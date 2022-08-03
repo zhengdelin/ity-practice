@@ -16,7 +16,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col sm:flex-row space-x-0 sm:space-x-10 2xl:space-x-20 space-y-5 sm:space-y-0"
+      class="flex flex-col sm:flex-row space-x-0 sm:space-x-5 2xl:space-x-10 space-y-5 sm:space-y-0"
     >
       <seller-Info-Card
         :location="'臺中市梧棲區'"
@@ -24,15 +24,20 @@
         :price="160"
         :publicHoliday="'星期二、星期五'"
         :website="'https://retty.me/'"
-        class="bg-[#F6DEF6] rounded-xl 2xl:h-[480px]"
+        class="bg-[#F6DEF6] rounded-lg sm:rounded-xl 2xl:h-[480px]"
       ></seller-Info-Card>
-      <div class="flex flex-col items-center">
+      <div
+        class="flex flex-col items-center justify-center sm:justify-between w-full sm:w-5/12 2xl:h-[480px]"
+      >
         <reservation-card></reservation-card>
-        <div class="flex flex-row sm:flex-col items-center space-between">
+        <div
+          class="flex flex-row sm:flex-col items-center space-x-20 sm:space-x-0 w-4/5 sm:w-full"
+        >
           <revise-seller-info></revise-seller-info>
           <classic-button
             :name="'編輯個人資訊'"
-            class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-xl"
+            @click="redirectToReviseSellerInfo()"
+            class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
           ></classic-button>
         </div>
       </div>
@@ -75,6 +80,12 @@ export default {
     return {};
   },
   methods: {
+    redirectToReviseSellerInfo() {
+      window.location = this.baseUrl() + "/cyt/revise-seller-info";
+    },
+    baseUrl() {
+      return window.location.origin;
+    },
     backTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },

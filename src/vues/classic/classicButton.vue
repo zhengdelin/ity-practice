@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center bg-[#76448A] cursor-pointer">
-    <p class="text-base lg:text-xl 2xl:text-2xl font-semibold text-white">
+  <div class="flex justify-center items-center cursor-pointer">
+    <p class="text-lg lg:text-xl 2xl:text-2xl font-semibold">
       {{ name }}
     </p>
   </div>

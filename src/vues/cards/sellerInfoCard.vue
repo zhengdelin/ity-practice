@@ -4,7 +4,9 @@
   >
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
-      <div><location-icon></location-icon></div>
+      <div>
+        <location-icon class="stroke-[#4B4B4B] fill-[#4B4B4B]"></location-icon>
+      </div>
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
@@ -13,7 +15,7 @@
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
-      <div><time-icon></time-icon></div>
+      <div><time-icon class="stroke-[#4B4B4B] fill-[#4B4B4B]"></time-icon></div>
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
@@ -22,7 +24,9 @@
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
-      <div><price-icon></price-icon></div>
+      <div>
+        <price-icon class="stroke-[#4B4B4B] fill-[#4B4B4B]"></price-icon>
+      </div>
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
@@ -31,7 +35,11 @@
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
-      <div><public-Holiday-icon></public-Holiday-icon></div>
+      <div>
+        <public-Holiday-icon
+          class="stroke-[#4B4B4B] fill-[#4B4B4B]"
+        ></public-Holiday-icon>
+      </div>
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
@@ -40,7 +48,9 @@
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
-      <div><website-Icon></website-Icon></div>
+      <div>
+        <website-Icon class="stroke-[#4B4B4B] fill-[#4B4B4B]"></website-Icon>
+      </div>
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >

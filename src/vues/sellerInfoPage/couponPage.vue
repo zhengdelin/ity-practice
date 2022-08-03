@@ -6,7 +6,9 @@
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>
     </div>
-    <div class="flex justify-center"><accordion-Item></accordion-Item></div>
+    <div class="flex justify-center">
+      <accordion-Item :title="'賣家優惠券使用規則'"></accordion-Item>
+    </div>
   </div>
 </template>
 

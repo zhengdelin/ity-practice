@@ -17,6 +17,11 @@ const routes = [
     component: () => import("@/views/cyt/sellerInfo.vue"),
   },
   {
+    path: "/cyt/revise-seller-info",
+    name: "reviseSellerInfo",
+    component: () => import("@/views/cyt/reviseSellerInfo.vue"),
+  },
+  {
     path: "/cyt/system-function-beforelogin",
     name: "systemFunctionBeforeLogin",
     component: () => import("@/views/cyt/systemFunctionBeforeLogin.vue"),

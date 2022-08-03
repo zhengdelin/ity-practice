@@ -1,5 +1,8 @@
 <template>
-  <Vue3Lottie :animationData="shopJSON" class="w-48 2xl:w-40 h-48 2xl:h-40" />
+  <Vue3Lottie
+    :animationData="shopJSON"
+    class="w-52 sm:w-44 md:w-48 2xl:w-40 h-52 sm:h-44 ms:h-48 2xl:h-40"
+  />
 </template>
 
 <script>
