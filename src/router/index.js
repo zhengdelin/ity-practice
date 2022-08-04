@@ -11,6 +11,15 @@ const routes = [
     },
   },
   {
+    path: "/cyt/login",
+    name: "loginPage",
+    components: {
+      default: () => import("@/views/cyt/loginPage.vue"),
+      ityHeader,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/each-seller-page",
     name: "eachsellerPage",
     components: {

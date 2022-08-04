@@ -4,7 +4,6 @@
   >
     <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
       <seller-card :seller="'誰說海的味道都是鹹的'"></seller-card>
-      <!--Seller Picture-->
       <div
         class="w-7/12 sm:w-8/12 md:w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] overflow-hidden bg-no-repeat bg-cover"
       >
@@ -14,26 +13,38 @@
         />
       </div>
     </div>
+    <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
+      <classic-file-input
+        :content="'選擇一張店家大頭貼'"
+        class="w-5/12 sm:w-4/12 md:w-1/4 2xl:w-[380px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] bg-white"
+      ></classic-file-input>
+      <classic-file-input
+        :content="'選擇一張封面相片'"
+        class="w-7/12 sm:w-8/12 md:w-3/4 2xl:w-[1220px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] bg-[#F6DEF6] rounded-lg"
+      ></classic-file-input>
+    </div>
     <classic-input
       v-for="(item, index) in classicInputList"
       :key="index"
       :classicInput="item"
     >
     </classic-input>
-    <classic-radio></classic-radio>
-    <accordion-item :title="'開啟點餐服務應注意事項'"></accordion-item>
+    <classic-radio class="py-5 xl:py-10"></classic-radio>
+    <div class="flex justify-center w-full">
+      <accordion-item :title="'開啟點餐服務應注意事項'"></accordion-item>
+    </div>
     <div class="flex justify-center w-full">
       <div class="flex flex-row w-4/5 space-x-10">
         <router-link :to="{ name: 'sellerInfo' }" class="w-full">
           <classic-button
             :name="'返回'"
-            class="w-full h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
+            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
           ></classic-button>
         </router-link>
         <classic-button
           @click="save"
           :name="'儲存資訊'"
-          class="w-full h-[100px] rounded-md bg-[#76448A] text-white"
+          class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md bg-[#76448A] text-white"
         ></classic-button>
       </div>
     </div>
@@ -42,7 +53,8 @@
 
 <script>
 import sellerCard from "@/vues/cards/sellerCard.vue";
-import classicInput from "@/vues/classic/classicInput.vue";
+import classicFileInput from "@/vues/classic/classicFileInput.vue";
+import classicInput from "@/vues/classic/classicInputType1.vue";
 import identificationIcon from "@/vues/icons/identificationIcon.vue";
 import locationIcon from "@/vues/icons/locationIcon.vue";
 import timeIcon from "@/vues/icons/timeIcon.vue";
@@ -59,6 +71,7 @@ export default {
   name: "eachSellerInfo",
   components: {
     sellerCard,
+    classicFileInput,
     classicInput,
     // identificationIcon,
     // locationIcon,

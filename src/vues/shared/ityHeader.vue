@@ -36,7 +36,7 @@ export default {
   },
   setup() {
     const headerElementList = [
-      { name: "登入", icon: loginIcon, routeName: "" },
+      { name: "登入", icon: loginIcon, routeName: "loginPage" },
       { name: "找優惠", icon: searchIcon },
       {
         name: "系統使用",
