@@ -67,13 +67,6 @@
       :animationData="howTargetedTrafficWorksJSON"
       class="w-[300px] sm:w-[380px] lg:w-[480px] xl:w-[600px] 2xl:w-[800px] h-[300px] sm:h-[380px] lg:h-[480px] xl:h-[600px] 2xl:h-[800px]"
     />
-    <div class="relative" @click="backTop()">
-      <div
-        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
-      >
-        <back-To-Top-Icon></back-To-Top-Icon>
-      </div>
-    </div>
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -97,7 +90,6 @@ import questionType3 from "@/vues/animation/questionType3.vue";
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
-import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 /*Footer*/
 import ityFooter from "@/vues/shared/ityFooter.vue";
 /*Lottiefiles*/
@@ -129,7 +121,6 @@ export default {
     sellerIdentity: sellerIdentity,
     // eslint-disable-next-line vue/no-unused-components
     organizationIdentity: organizationIdentity,
-    backToTopIcon: backToTopIcon,
     ityFooter: ityFooter,
   },
   data() {
@@ -156,11 +147,7 @@ export default {
       howTargetedTrafficWorksJSON,
     };
   },
-  methods: {
-    backTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-  },
+  methods: {},
 };
 </script>
 

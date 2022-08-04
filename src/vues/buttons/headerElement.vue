@@ -1,5 +1,6 @@
 <template>
-  <div
+  <router-link
+    :to="{ name: headerElement.routeName }"
     class="flex items-center justify-center space-x-1.5 sm:space-x-3 lg:space-x-6 2xl:space-x-8 w-24 sm:w-32 2xl:w-[220px] h-11 sm:h-14 2xl:h-[100px] bg-white hover:bg-[#F6F6F6] cursor-pointer"
   >
     <p
@@ -11,7 +12,7 @@
       :is="headerElement.icon"
       class="w-5 h-5 2xl:w-[30px] 2xl:h-[30px]"
     />
-  </div>
+  </router-link>
 </template>
 
 <script>

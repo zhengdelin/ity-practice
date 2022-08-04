@@ -34,20 +34,13 @@
           class="flex flex-row sm:flex-col items-center space-x-20 sm:space-x-0 w-4/5 sm:w-full"
         >
           <revise-seller-info></revise-seller-info>
-          <classic-button
-            :name="'編輯個人資訊'"
-            @click="redirectToReviseSellerInfo()"
-            class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
-          ></classic-button>
+          <router-link :to="{ name: 'reviseSellerInfo' }">
+            <classic-button
+              :name="'編輯個人資訊'"
+              class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
+            ></classic-button>
+          </router-link>
         </div>
-      </div>
-    </div>
-    <div class="relative" @click="backTop()">
-      <div
-        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
-      >
-        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
-        <back-To-Top-Icon></back-To-Top-Icon>
       </div>
     </div>
   </div>
@@ -61,7 +54,6 @@ import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import reservationCard from "@/vues/cards/reservationCard.vue";
 import reviseSellerInfo from "@/vues/animation/reviseSellerInfo.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
-import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 
 export default {
@@ -73,23 +65,12 @@ export default {
     reservationCard: reservationCard,
     reviseSellerInfo: reviseSellerInfo,
     classicButton: classicButton,
-    backToTopIcon: backToTopIcon,
     ityFooter: ityFooter,
   },
   data() {
     return {};
   },
-  methods: {
-    redirectToReviseSellerInfo() {
-      window.location = this.baseUrl() + "/cyt/revise-seller-info";
-    },
-    baseUrl() {
-      return window.location.origin;
-    },
-    backTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-  },
+  methods: {},
 };
 </script>
 

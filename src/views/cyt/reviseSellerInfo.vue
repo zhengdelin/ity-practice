@@ -25,23 +25,17 @@
     <accordion-item :title="'開啟點餐服務應注意事項'"></accordion-item>
     <div class="flex justify-center w-full">
       <div class="flex flex-row w-4/5 space-x-10">
+        <router-link :to="{ name: 'sellerInfo' }" class="w-full">
+          <classic-button
+            :name="'返回'"
+            class="w-full h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
+          ></classic-button>
+        </router-link>
         <classic-button
-          :name="'返回'"
-          @click="redirectToSellerInfo()"
-          class="w-full h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
-        ></classic-button>
-        <classic-button
+          @click="save"
           :name="'儲存資訊'"
           class="w-full h-[100px] rounded-md bg-[#76448A] text-white"
         ></classic-button>
-      </div>
-    </div>
-    <div class="relative" @click="backTop()">
-      <div
-        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
-      >
-        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
-        <back-To-Top-Icon></back-To-Top-Icon>
       </div>
     </div>
   </div>
@@ -62,68 +56,95 @@ import phoneIcon from "@/vues/icons/phoneIcon.vue";
 import accordionItem from "@/vues/shows/accordionItem.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
 import classicRadio from "@/vues/classic/classicRadio.vue";
-import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
+import { useRouter } from "vue-router";
 
 export default {
   name: "eachSellerInfo",
   components: {
-    ityHeader: ityHeader,
-    sellerCard: sellerCard,
-    classicInput: classicInput,
-    // eslint-disable-next-line vue/no-unused-components
-    identificationIcon: identificationIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    locationIcon: locationIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    timeIcon: timeIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    priceIcon: priceIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    publicHolidayIcon: publicHolidayIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    websiteIcon: websiteIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    phoneIcon: phoneIcon,
-    accordionItem: accordionItem,
-    classicButton: classicButton,
-    classicRadio: classicRadio,
-    backToTopIcon: backToTopIcon,
-    ityFooter: ityFooter,
+    ityHeader,
+    sellerCard,
+    classicInput,
+    // identificationIcon,
+    // locationIcon,
+    // timeIcon,
+    // priceIcon,
+    // publicHolidayIcon,
+    // websiteIcon,
+    // phoneIcon,
+    accordionItem,
+    classicButton,
+    classicRadio,
+    ityFooter,
   },
-  data() {
-    return {
-      classicInputList: [
-        {
-          title: "店家名稱",
-          icon: identificationIcon,
-        }, //content: "誰說海的味道都是鹹的",
-        {
-          title: "地址",
-          icon: locationIcon,
-        }, //content: "R東西線 ／ 新福島駅 徒歩4分",
-        { title: "營業時間", icon: timeIcon }, // content: "09:00 - 20:00"
-        { title: "價格區間", icon: priceIcon }, //content: "100 - 200"
-        {
-          title: "公休日",
-          icon: publicHolidayIcon,
-        }, //content: "公休日 : 星期二、星期五"
-        { title: "網站", icon: websiteIcon }, //content: "https://retty.me/"
-        { title: "電話", icon: phoneIcon }, //content: "0971-635-338"
-      ],
-    };
-  },
-  methods: {
-    redirectToSellerInfo() {
-      window.location = this.baseUrl() + "/cyt/seller-info";
-    },
-    baseUrl() {
-      return window.location.origin;
-    },
-    backTop() {
+  setup() {
+    const router = useRouter();
+    const classicInputList = [
+      {
+        title: "店家名稱",
+        icon: identificationIcon,
+      }, //content: "誰說海的味道都是鹹的",
+      {
+        title: "地址",
+        icon: locationIcon,
+      }, //content: "R東西線 ／ 新福島駅 徒歩4分",
+      { title: "營業時間", icon: timeIcon }, // content: "09:00 - 20:00"
+      { title: "價格區間", icon: priceIcon }, //content: "100 - 200"
+      {
+        title: "公休日",
+        icon: publicHolidayIcon,
+      }, //content: "公休日 : 星期二、星期五"
+      { title: "網站", icon: websiteIcon }, //content: "https://retty.me/"
+      { title: "電話", icon: phoneIcon }, //content: "0971-635-338"
+    ];
+
+    const backTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    },
+    };
+
+    const save = () => {
+      router.push({ name: "sellerInfo" });
+      // this.$router.push({ name: "sellerInfo" });
+    };
+
+    return { classicInputList, backTop, save };
   },
+  // data() {
+  //   return {
+  //     classicInputList: [
+  //       {
+  //         title: "店家名稱",
+  //         icon: identificationIcon,
+  //       }, //content: "誰說海的味道都是鹹的",
+  //       {
+  //         title: "地址",
+  //         icon: locationIcon,
+  //       }, //content: "R東西線 ／ 新福島駅 徒歩4分",
+  //       { title: "營業時間", icon: timeIcon }, // content: "09:00 - 20:00"
+  //       { title: "價格區間", icon: priceIcon }, //content: "100 - 200"
+  //       {
+  //         title: "公休日",
+  //         icon: publicHolidayIcon,
+  //       }, //content: "公休日 : 星期二、星期五"
+  //       { title: "網站", icon: websiteIcon }, //content: "https://retty.me/"
+  //       { title: "電話", icon: phoneIcon }, //content: "0971-635-338"
+  //     ],
+  //   };
+  // },
+  // methods: {
+  //   /*redirectToSellerInfo() {
+  //     window.location = this.baseUrl() + "/cyt/seller-info";
+  //   },
+  //   baseUrl() {
+  //     return window.location.origin;
+  //   },*/
+  //   backTop() {
+  //     window.scrollTo({ top: 0, behavior: "smooth" });
+  //   },
+  //   save() {
+  //     this.$router.push({ name: "sellerInfo" });
+  //   },
+  // },
 };
 </script>
 

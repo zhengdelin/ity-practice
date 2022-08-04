@@ -65,14 +65,6 @@
         <component :is="id"></component>
       </keep-alive>
     </div>
-    <div class="relative" @click="backTop()">
-      <div
-        class="fixed flex justify-center items-center right-5 bottom-10 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[100px] h-14 sm:h-16 lg:h-20 2xl:h-[100px] bg-[#B2415C] cursor-pointer"
-      >
-        <!--p-2 sm:p-4 bottom-4 sm:bottom-6 right-4 sm:right-6 h-12 w-12 sm:h-20 sm:w-20-->
-        <back-To-Top-Icon></back-To-Top-Icon>
-      </div>
-    </div>
   </div>
   <ity-footer></ity-footer>
 </template>
@@ -82,7 +74,6 @@ import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import contactCard from "@/vues/cards/contactCard.vue";
-import backToTopIcon from "@/vues/icons/backToTopIcon.vue";
 //tabs
 import postPage from "@/vues/sellerInfoPage/postPage.vue";
 import menuPage from "@/vues/sellerInfoPage/menuPage.vue";
@@ -99,7 +90,6 @@ export default {
     sellerCard: sellerCard,
     sellerInfoCard: sellerInfoCard,
     contactCard: contactCard,
-    backToTopIcon: backToTopIcon,
     //tabs
     postPage: postPage,
     menuPage: menuPage,
@@ -131,9 +121,6 @@ export default {
     transfer(item) {
       this.id = item.id;
       console.log("transfer", item, this.id);
-    },
-    backTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
 };

@@ -1,5 +1,6 @@
 <template>
   <router-view></router-view>
+  <router-view name="backTop"></router-view>
 </template>
 
 <style>

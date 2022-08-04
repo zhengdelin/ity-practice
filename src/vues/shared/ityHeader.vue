@@ -13,10 +13,6 @@
         :key="index"
         :headerElement="item"
       >
-        <router-link
-          :to="{ name: 'systemFunctionBeforeLogin' }"
-          v-if="headerElementList.name == '系統使用'"
-        ></router-link>
       </headerElement>
     </div>
   </div>
@@ -44,9 +40,13 @@ export default {
   data() {
     return {
       headerElementList: [
-        { name: "登入", icon: loginIcon },
+        { name: "登入", icon: loginIcon, routeName: "" },
         { name: "找優惠", icon: searchIcon },
-        { name: "系統使用", icon: questionIcon },
+        {
+          name: "系統使用",
+          icon: questionIcon,
+          routeName: "systemFunctionBeforeLogin",
+        },
       ],
     };
   },
