@@ -36,7 +36,7 @@ import starIcon from "@/vues/icons/starIcon.vue";
 export default {
   name: "ratingPage",
   components: {
-    starIcon: starIcon,
+    starIcon,
   },
 };
 </script>

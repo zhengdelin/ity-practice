@@ -8,7 +8,7 @@ import feedbackCard from "@/vues/cards/feedbackCard.vue";
 export default {
   name: "feedbackPage",
   components: {
-    feedbackCard: feedbackCard,
+    feedbackCard,
   },
 };
 </script>

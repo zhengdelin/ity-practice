@@ -27,8 +27,8 @@ import sellerInfoJSON from "@/vues/json/people-reading-news-on-phone.json";
 export default {
   components: {
     Vue3Lottie,
-    sellerInfoArea: sellerInfoArea,
-    classicSmallItem: classicSmallItem,
+    sellerInfoArea,
+    classicSmallItem,
   },
   data() {
     return {

@@ -27,8 +27,8 @@ import mapJSON from "@/vues/json/map-browsing.json";
 export default {
   components: {
     Vue3Lottie,
-    mapArea: mapArea,
-    classicSmallItem: classicSmallItem,
+    mapArea,
+    classicSmallItem,
   },
   data() {
     return {

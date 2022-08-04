@@ -27,8 +27,8 @@ import searchJSON from "@/vues/json/job-hunt-concept.json";
 export default {
   components: {
     Vue3Lottie,
-    searchArea: searchArea,
-    classicSmallItem: classicSmallItem,
+    searchArea,
+    classicSmallItem,
   },
   data() {
     return {

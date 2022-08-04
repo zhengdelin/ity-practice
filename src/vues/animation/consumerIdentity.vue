@@ -20,6 +20,5 @@ export default {
       onlineShoppingBlackFridayFridayJSON,
     };
   },
-  methods: {},
 };
 </script>

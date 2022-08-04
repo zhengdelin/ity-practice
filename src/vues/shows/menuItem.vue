@@ -35,17 +35,6 @@
 
 <script>
 export default {
-  /*props: {
-    name: {
-      type: String,
-    },
-    desc: {
-      type: String,
-    },
-    price: {
-      type: Number,
-    },
-  },*/
   props: {
     menuItem: { type: Object, default: () => ({}) },
   },

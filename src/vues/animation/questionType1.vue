@@ -20,6 +20,5 @@ export default {
       questionOrangeJSON,
     };
   },
-  methods: {},
 };
 </script>

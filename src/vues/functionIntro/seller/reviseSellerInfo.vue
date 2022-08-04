@@ -27,8 +27,8 @@ import modifiedJSON from "@/vues/json/modified-dashboard.json";
 export default {
   components: {
     Vue3Lottie,
-    modifiedArea: modifiedArea,
-    classicSmallItem: classicSmallItem,
+    modifiedArea,
+    classicSmallItem,
   },
   data() {
     return {

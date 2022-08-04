@@ -1,5 +1,5 @@
+<!--此頁面尚未修改成VUE3.js版本-->
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -66,11 +66,9 @@
       </keep-alive>
     </div>
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import contactCard from "@/vues/cards/contactCard.vue";
@@ -81,23 +79,20 @@ import feedbackPage from "@/vues/sellerInfoPage/feedbackPage.vue";
 import couponPage from "@/vues/sellerInfoPage/couponPage.vue";
 import specialAppointmentPage from "@/vues/sellerInfoPage/specialAppointmentPage.vue";
 import mapPage from "@/vues/sellerInfoPage/mapPage.vue";
-import ityFooter from "@/vues/shared/ityFooter.vue";
 
 export default {
   name: "eachSellerPage",
   components: {
-    ityHeader: ityHeader,
-    sellerCard: sellerCard,
-    sellerInfoCard: sellerInfoCard,
-    contactCard: contactCard,
+    sellerCard,
+    sellerInfoCard,
+    contactCard,
     //tabs
-    postPage: postPage,
-    menuPage: menuPage,
-    feedbackPage: feedbackPage,
-    couponPage: couponPage,
-    specialAppointmentPage: specialAppointmentPage,
-    mapPage: mapPage,
-    ityFooter: ityFooter,
+    postPage,
+    menuPage,
+    feedbackPage,
+    couponPage,
+    specialAppointmentPage,
+    mapPage,
   },
   data() {
     return {

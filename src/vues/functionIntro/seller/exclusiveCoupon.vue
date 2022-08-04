@@ -27,8 +27,8 @@ import couponFlyJSON from "@/vues/json/coupon-fly.json";
 export default {
   components: {
     Vue3Lottie,
-    couponFlyArea: couponFlyArea,
-    classicSmallItem: classicSmallItem,
+    couponFlyArea,
+    classicSmallItem,
   },
   data() {
     return {

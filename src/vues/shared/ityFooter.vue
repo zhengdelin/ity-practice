@@ -46,11 +46,11 @@ import ityFooterLogo from "@/vues/icons/ityFooterLogo.vue";
 export default {
   name: "sharedFooter",
   components: {
-    facebookIcon: facebookIcon,
-    instagramIcon: instagramIcon,
-    twitterIcon: twitterIcon,
-    playstoreIcon: playstoreIcon,
-    ityFooterLogo: ityFooterLogo,
+    facebookIcon,
+    instagramIcon,
+    twitterIcon,
+    playstoreIcon,
+    ityFooterLogo,
   },
 };
 </script>

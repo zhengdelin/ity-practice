@@ -8,7 +8,7 @@ import sellerPost from "@/vues/shows/sellerPost.vue";
 export default {
   name: "postPage",
   components: {
-    sellerPost: sellerPost,
+    sellerPost,
   },
 };
 </script>

@@ -27,8 +27,8 @@ import eventsJSON from "@/vues/json/group-of-people-communicating.json";
 export default {
   components: {
     Vue3Lottie,
-    eventsArea: eventsArea,
-    classicSmallItem: classicSmallItem,
+    eventsArea,
+    classicSmallItem,
   },
   data() {
     return {

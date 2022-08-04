@@ -27,8 +27,8 @@ import savedJSON from "@/vues/json/like-animation-thumbs-up.json";
 export default {
   components: {
     Vue3Lottie,
-    savedArea: savedArea,
-    classicSmallItem: classicSmallItem,
+    savedArea,
+    classicSmallItem,
   },
   data() {
     return {

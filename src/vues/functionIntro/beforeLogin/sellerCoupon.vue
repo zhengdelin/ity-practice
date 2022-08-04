@@ -27,8 +27,8 @@ import couponJSON from "@/vues/json/paso-2-club.json";
 export default {
   components: {
     Vue3Lottie,
-    couponArea: couponArea,
-    classicSmallItem: classicSmallItem,
+    couponArea,
+    classicSmallItem,
   },
   data() {
     return {

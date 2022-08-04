@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+import ityHeader from "@/vues/shared/ityHeader.vue";
+import ityFooter from "@/vues/shared/ityFooter.vue";
 import backTop from "@/vues/shared/backTopItem.vue";
 const routes = [
   {
@@ -13,20 +15,28 @@ const routes = [
     name: "eachsellerPage",
     components: {
       default: () => import("@/views/cyt/sellerPage.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {
     path: "/cyt/seller-info",
     name: "sellerInfo",
-    component: () => import("@/views/cyt/sellerInfo.vue"),
+    components: {
+      default: () => import("@/views/cyt/sellerInfo.vue"),
+      ityHeader,
+      ityFooter,
+    },
   },
   {
     path: "/cyt/revise-seller-info",
     name: "reviseSellerInfo",
     components: {
       default: () => import("@/views/cyt/reviseSellerInfo.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {
@@ -34,7 +44,9 @@ const routes = [
     name: "systemFunctionBeforeLogin",
     components: {
       default: () => import("@/views/cyt/systemFunctionBeforeLogin.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {
@@ -42,7 +54,9 @@ const routes = [
     name: "consumerSystemFunction",
     components: {
       default: () => import("@/views/cyt/consumerSystemFunction.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {
@@ -50,7 +64,9 @@ const routes = [
     name: "sellerSystemFunction",
     components: {
       default: () => import("@/views/cyt/sellerSystemFunction.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {
@@ -58,7 +74,9 @@ const routes = [
     name: "organizationSystemFunction",
     components: {
       default: () => import("@/views/cyt/organizationSystemFunction.vue"),
+      ityHeader,
       backTop,
+      ityFooter,
     },
   },
   {

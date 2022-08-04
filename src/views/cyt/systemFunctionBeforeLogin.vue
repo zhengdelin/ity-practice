@@ -1,5 +1,4 @@
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -68,12 +67,9 @@
       class="w-[300px] sm:w-[380px] lg:w-[480px] xl:w-[600px] 2xl:w-[800px] h-[300px] sm:h-[380px] lg:h-[480px] xl:h-[600px] 2xl:h-[800px]"
     />
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-/*Header*/
-import ityHeader from "@/vues/shared/ityHeader.vue";
 /*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
@@ -90,8 +86,6 @@ import questionType3 from "@/vues/animation/questionType3.vue";
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
 import organizationIdentity from "@/vues/animation/organizationIdentity.vue";
-/*Footer*/
-import ityFooter from "@/vues/shared/ityFooter.vue";
 /*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
@@ -101,53 +95,47 @@ export default {
   name: "systemFunctionBeforeLoginPage",
   components: {
     Vue3Lottie,
-    ityHeader: ityHeader,
-    classicTitle: classicTitle,
-    questionItem: questionItem,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType1: questionType1,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType2: questionType2,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType3: questionType3,
-    appointmentMap: appointmentMap,
-    sellerSearch: sellerSearch,
-    sellerInfo: sellerInfo,
-    sellerCoupon: sellerCoupon,
-    identityItem: identityItem,
-    // eslint-disable-next-line vue/no-unused-components
-    consumerIdentity: consumerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    sellerIdentity: sellerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    organizationIdentity: organizationIdentity,
-    ityFooter: ityFooter,
+    classicTitle,
+    questionItem,
+    // questionType1: questionType1,
+    // questionType2: questionType2,
+    // questionType3: questionType3,
+    appointmentMap,
+    sellerSearch,
+    sellerInfo,
+    sellerCoupon,
+    identityItem,
+    // consumerIdentity: consumerIdentity,
+    // sellerIdentity: sellerIdentity,
+    // organizationIdentity: organizationIdentity,
+  },
+  setup() {
+    const questionItemList = [
+      {
+        content: "午餐時間時常猶豫不決、不知道要吃什麼 ?",
+        animation: questionType1,
+      },
+      {
+        content: "出門遊玩卻不知道當地特色美食...... ",
+        animation: questionType2,
+      },
+      {
+        content: "餐點分量、價錢與內心預期有所落差......",
+        animation: questionType3,
+      },
+    ];
+    const identityItemList = [
+      { animation: consumerIdentity, content: "消費者端" },
+      { animation: sellerIdentity, content: "店家端" },
+      { animation: organizationIdentity, content: "組織端" },
+    ];
+    return { questionItemList, identityItemList };
   },
   data() {
     return {
-      questionItemList: [
-        {
-          content: "午餐時間時常猶豫不決、不知道要吃什麼 ?",
-          animation: questionType1,
-        },
-        {
-          content: "出門遊玩卻不知道當地特色美食...... ",
-          animation: questionType2,
-        },
-        {
-          content: "餐點分量、價錢與內心預期有所落差......",
-          animation: questionType3,
-        },
-      ],
-      identityItemList: [
-        { animation: consumerIdentity, content: "消費者端" },
-        { animation: sellerIdentity, content: "店家端" },
-        { animation: organizationIdentity, content: "組織端" },
-      ],
       howTargetedTrafficWorksJSON,
     };
   },
-  methods: {},
 };
 </script>
 

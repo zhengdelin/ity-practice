@@ -27,8 +27,8 @@ import warningJSON from "@/vues/json/warning-animation.json";
 export default {
   components: {
     Vue3Lottie,
-    warningArea: warningArea,
-    classicSmallItem: classicSmallItem,
+    warningArea,
+    classicSmallItem,
   },
   data() {
     return {

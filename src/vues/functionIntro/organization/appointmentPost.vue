@@ -27,8 +27,8 @@ import appointmentPostJSON from "@/vues/json/success-graduation.json";
 export default {
   components: {
     Vue3Lottie,
-    appointmentPostArea: appointmentPostArea,
-    classicSmallItem: classicSmallItem,
+    appointmentPostArea,
+    classicSmallItem,
   },
   data() {
     return {

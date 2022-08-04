@@ -27,8 +27,8 @@ import reviewJSON from "@/vues/json/review-animation.json";
 export default {
   components: {
     Vue3Lottie,
-    reviewArea: reviewArea,
-    classicSmallItem: classicSmallItem,
+    reviewArea,
+    classicSmallItem,
   },
   data() {
     return {

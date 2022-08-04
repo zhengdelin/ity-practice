@@ -20,6 +20,5 @@ export default {
       questionDeliveryJSON,
     };
   },
-  methods: {},
 };
 </script>

@@ -27,8 +27,8 @@ import advertisingJSON from "@/vues/json/social-media-marketing.json";
 export default {
   components: {
     Vue3Lottie,
-    advertisingArea: advertisingArea,
-    classicSmallItem: classicSmallItem,
+    advertisingArea,
+    classicSmallItem,
   },
   data() {
     return {

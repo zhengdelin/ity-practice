@@ -20,6 +20,5 @@ export default {
       questionRainJSON,
     };
   },
-  methods: {},
 };
 </script>

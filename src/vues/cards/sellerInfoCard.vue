@@ -70,11 +70,11 @@ import websiteIcon from "@/vues/icons/websiteIcon.vue";
 export default {
   name: "sellerInfo",
   components: {
-    locationIcon: locationIcon,
-    timeIcon: timeIcon,
-    priceIcon: priceIcon,
-    publicHolidayIcon: publicHolidayIcon,
-    websiteIcon: websiteIcon,
+    locationIcon,
+    timeIcon,
+    priceIcon,
+    publicHolidayIcon,
+    websiteIcon,
   },
   props: {
     location: String,

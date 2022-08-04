@@ -1,5 +1,4 @@
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -68,12 +67,9 @@
       class="w-[300px] sm:w-[380px] lg:w-[480px] xl:w-[600px] 2xl:w-[800px] h-[300px] sm:h-[380px] lg:h-[480px] xl:h-[600px] 2xl:h-[800px]"
     />
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-/*Header*/
-import ityHeader from "@/vues/shared/ityHeader.vue";
 /*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
@@ -90,8 +86,6 @@ import onlineContract from "@/vues/functionIntro/seller/onlineContract.vue";
 import jointLaunchEvents from "@/vues/functionIntro/organization/jointLaunchEvent.vue";
 import appointmentPost from "@/vues/functionIntro/organization/appointmentPost.vue";
 import contactingFunction from "@/vues/functionIntro/organization/contactFunction.vue";
-/*Footer*/
-import ityFooter from "@/vues/shared/ityFooter.vue";
 /*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
@@ -101,53 +95,47 @@ export default {
   name: "organizationSystemFunctionPage",
   components: {
     Vue3Lottie,
-    ityHeader: ityHeader,
-    classicTitle: classicTitle,
-    questionItem: questionItem,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType7: questionType7,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType8: questionType8,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType9: questionType9,
-    onlineContract: onlineContract,
-    jointLaunchEvents: jointLaunchEvents,
-    appointmentPost: appointmentPost,
-    contactingFunction: contactingFunction,
-    identityItem: identityItem,
-    // eslint-disable-next-line vue/no-unused-components
-    consumerIdentity: consumerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    sellerIdentity: sellerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    organizationIdentity: organizationIdentity,
-    ityFooter: ityFooter,
+    classicTitle,
+    questionItem,
+    // questionType7,
+    // questionType8,
+    // questionType9,
+    onlineContract,
+    jointLaunchEvents,
+    appointmentPost,
+    contactingFunction,
+    identityItem,
+    // consumerIdentity,
+    // sellerIdentity,
+    // organizationIdentity,
+  },
+  setup() {
+    const questionItemList = [
+      {
+        content: "忍受風吹雨淋拿紙本文件與商店簽訂特約",
+        animation: questionType7,
+      },
+      {
+        content: "總是無法整合各校學生會組織 ?",
+        animation: questionType8,
+      },
+      {
+        content: "紙本張貼各系所優惠活動總是效果不彰 ?",
+        animation: questionType9,
+      },
+    ];
+    const identityItemList = [
+      { animation: consumerIdentity, content: "消費者端" },
+      { animation: sellerIdentity, content: "店家端" },
+      { animation: organizationIdentity, content: "組織端" },
+    ];
+    return { questionItemList, identityItemList };
   },
   data() {
     return {
-      questionItemList: [
-        {
-          content: "忍受風吹雨淋拿紙本文件與商店簽訂特約",
-          animation: questionType7,
-        },
-        {
-          content: "總是無法整合各校學生會組織 ?",
-          animation: questionType8,
-        },
-        {
-          content: "紙本張貼各系所優惠活動總是效果不彰 ?",
-          animation: questionType9,
-        },
-      ],
-      identityItemList: [
-        { animation: consumerIdentity, content: "消費者端" },
-        { animation: sellerIdentity, content: "店家端" },
-        { animation: organizationIdentity, content: "組織端" },
-      ],
       howTargetedTrafficWorksJSON,
     };
   },
-  methods: {},
 };
 </script>
 

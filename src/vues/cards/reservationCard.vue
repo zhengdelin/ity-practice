@@ -19,7 +19,7 @@ import checkIcon from "@/vues/icons/checkIcon.vue";
 export default {
   name: "sellerInfo",
   components: {
-    checkIcon: checkIcon,
+    checkIcon,
   },
 };
 </script>

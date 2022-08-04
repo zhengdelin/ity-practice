@@ -20,6 +20,5 @@ export default {
       questionBlueJSON,
     };
   },
-  methods: {},
 };
 </script>

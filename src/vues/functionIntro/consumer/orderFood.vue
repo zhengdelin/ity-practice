@@ -27,8 +27,8 @@ import orderFoodJSON from "@/vues/json/order-food.json";
 export default {
   components: {
     Vue3Lottie,
-    reservationArea: reservationArea,
-    classicSmallItem: classicSmallItem,
+    reservationArea,
+    classicSmallItem,
   },
   data() {
     return {

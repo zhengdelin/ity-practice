@@ -29,8 +29,8 @@ import mangementSystemJSON from "@/vues/json/blog-post.json";
 export default {
   components: {
     Vue3Lottie,
-    managementSystemArea: managementSystemArea,
-    classicSmallItem: classicSmallItem,
+    managementSystemArea,
+    classicSmallItem,
   },
   data() {
     return {

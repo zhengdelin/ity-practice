@@ -20,9 +20,9 @@ import accordionItem from "@/vues/shows/accordionItem.vue";
 export default {
   name: "couponPage",
   components: {
-    couponType3: couponType3,
-    couponType4: couponType4,
-    accordionItem: accordionItem,
+    couponType3,
+    couponType4,
+    accordionItem,
   },
 };
 </script>

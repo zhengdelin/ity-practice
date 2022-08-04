@@ -20,6 +20,5 @@ export default {
       questionRedJSON,
     };
   },
-  methods: {},
 };
 </script>

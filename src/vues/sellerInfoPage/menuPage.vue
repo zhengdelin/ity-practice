@@ -17,37 +17,33 @@ import oysterPhoto from "@/vues/photos/oysterPhoto.vue";
 export default {
   name: "menuPage",
   components: {
-    menuItem: menuItem,
-    // eslint-disable-next-line vue/no-unused-components
-    sushiPhoto,
-    // eslint-disable-next-line vue/no-unused-components
-    shrimpPhoto,
-    // eslint-disable-next-line vue/no-unused-components
-    oysterPhoto,
+    menuItem,
+    // sushiPhoto,
+    // shrimpPhoto,
+    // oysterPhoto,
   },
-  data() {
-    return {
-      menuItemList: [
-        {
-          photo: sushiPhoto,
-          name: "寿司",
-          desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
-          price: 300,
-        },
-        {
-          photo: shrimpPhoto,
-          name: "エビ",
-          desc: "高層階で、夕方から夜くらいの時間帯の明るさが美しくておすすめです。",
-          price: 500,
-        },
-        {
-          photo: oysterPhoto,
-          name: "かき",
-          desc: "新宿小田急サザンタワーのラウンジでアフタヌーンティー。",
-          price: 200,
-        },
-      ],
-    };
+  setup() {
+    const menuItemList = [
+      {
+        photo: sushiPhoto,
+        name: "寿司",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 300,
+      },
+      {
+        photo: shrimpPhoto,
+        name: "エビ",
+        desc: "高層階で、夕方から夜くらいの時間帯の明るさが美しくておすすめです。",
+        price: 500,
+      },
+      {
+        photo: oysterPhoto,
+        name: "かき",
+        desc: "新宿小田急サザンタワーのラウンジでアフタヌーンティー。",
+        price: 200,
+      },
+    ];
+    return { menuItemList };
   },
 };
 </script>

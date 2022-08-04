@@ -28,47 +28,26 @@ import questionIcon from "@/vues/icons/questionIcon.vue";
 export default {
   name: "sharedHeader",
   components: {
-    ityHeaderLogo: ityHeaderLogo,
-    headerElement: headerElement,
-    // eslint-disable-next-line vue/no-unused-components
-    loginIcon: loginIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    searchIcon: searchIcon,
-    // eslint-disable-next-line vue/no-unused-components
-    questionIcon: questionIcon,
+    ityHeaderLogo,
+    headerElement,
+    // loginIcon: loginIcon,
+    // searchIcon: searchIcon,
+    // questionIcon: questionIcon,
   },
-  data() {
-    return {
-      headerElementList: [
-        { name: "登入", icon: loginIcon, routeName: "" },
-        { name: "找優惠", icon: searchIcon },
-        {
-          name: "系統使用",
-          icon: questionIcon,
-          routeName: "systemFunctionBeforeLogin",
-        },
-      ],
-    };
-  },
-  methods: {
-    /*onButtonClick(item) {
-      if (item.name == "系統使用") {
-        this.redirectToSystemFunctionBeforeLogin();
-      }
-    },*/
-    /*if (headerElement.name == "系統使用") {
-      redirectToSystemFunctionBeforeLogin();
-    },
-
-    redirectToSystemFunctionBeforeLogin() {
-      window.location = this.baseUrl() + "/cyt/system-function-beforelogin";
-    },
-    baseUrl() {
-      return window.location.origin;
-    },*/
-    reload() {
+  setup() {
+    const headerElementList = [
+      { name: "登入", icon: loginIcon, routeName: "" },
+      { name: "找優惠", icon: searchIcon },
+      {
+        name: "系統使用",
+        icon: questionIcon,
+        routeName: "systemFunctionBeforeLogin",
+      },
+    ];
+    const reload = () => {
       location.reload();
-    },
+    };
+    return { headerElementList, reload };
   },
 };
 </script>

@@ -23,7 +23,7 @@ import phoneIcon from "@/vues/icons/phoneIcon.vue";
 export default {
   name: "sellerInfo",
   components: {
-    phoneIcon: phoneIcon,
+    phoneIcon,
   },
   props: {
     tel: String,

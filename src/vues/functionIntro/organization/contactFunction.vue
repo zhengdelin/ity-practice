@@ -27,8 +27,8 @@ import communicationJSON from "@/vues/json/communication.json";
 export default {
   components: {
     Vue3Lottie,
-    contactingArea: contactingArea,
-    classicSmallItem: classicSmallItem,
+    contactingArea,
+    classicSmallItem,
   },
   data() {
     return {

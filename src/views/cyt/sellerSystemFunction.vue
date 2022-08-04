@@ -1,5 +1,4 @@
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -79,12 +78,9 @@
       class="w-[300px] sm:w-[380px] lg:w-[480px] xl:w-[600px] 2xl:w-[800px] h-[300px] sm:h-[380px] lg:h-[480px] xl:h-[600px] 2xl:h-[800px]"
     />
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-/*Header*/
-import ityHeader from "@/vues/shared/ityHeader.vue";
 /*Item*/
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import questionItem from "@/vues/shows/questionItem.vue";
@@ -104,8 +100,6 @@ import advertisingMS from "@/vues/functionIntro/seller/advertisingMS.vue";
 import reviseSellerInfo from "@/vues/functionIntro/seller/reviseSellerInfo.vue";
 import prosecutionEvaluation from "@/vues/functionIntro/seller/prosecuteFeedback.vue";
 import sellerContactingFunction from "@/vues/functionIntro/seller/sellerContactFunction.vue";
-/*Footer*/
-import ityFooter from "@/vues/shared/ityFooter.vue";
 /*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
@@ -115,56 +109,50 @@ export default {
   name: "sellerSystemFunctionPage",
   components: {
     Vue3Lottie,
-    ityHeader: ityHeader,
-    classicTitle: classicTitle,
-    questionItem: questionItem,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType4: questionType4,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType5: questionType5,
-    // eslint-disable-next-line vue/no-unused-components
-    questionType6: questionType6,
-    onlineSign: onlineSign,
-    exclusiveCoupon: exclusiveCoupon,
-    promotedAds: promotedAds,
-    advertisingMS: advertisingMS,
-    reviseSellerInfo: reviseSellerInfo,
-    prosecutionEvaluation: prosecutionEvaluation,
-    sellerContactingFunction: sellerContactingFunction,
-    identityItem: identityItem,
-    // eslint-disable-next-line vue/no-unused-components
-    consumerIdentity: consumerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    sellerIdentity: sellerIdentity,
-    // eslint-disable-next-line vue/no-unused-components
-    organizationIdentity: organizationIdentity,
-    ityFooter: ityFooter,
+    classicTitle,
+    questionItem,
+    // questionType4: questionType4,
+    // questionType5: questionType5,
+    // questionType6: questionType6,
+    onlineSign,
+    exclusiveCoupon,
+    promotedAds,
+    advertisingMS,
+    reviseSellerInfo,
+    prosecutionEvaluation,
+    sellerContactingFunction,
+    identityItem,
+    // consumerIdentity: consumerIdentity,
+    // sellerIdentity: sellerIdentity,
+    // organizationIdentity: organizationIdentity,
+  },
+  setup() {
+    const questionItemList = [
+      {
+        content: "利潤分配總是與外送平台業者意見分歧 ?",
+        animation: questionType4,
+      },
+      {
+        content: "總是被消費者抱怨紙本優惠券不易保存......",
+        animation: questionType5,
+      },
+      {
+        content: "使用社群軟體推廣成效總是不如預期......",
+        animation: questionType6,
+      },
+    ];
+    const identityItemList = [
+      { animation: consumerIdentity, content: "消費者端" },
+      { animation: sellerIdentity, content: "店家端" },
+      { animation: organizationIdentity, content: "組織端" },
+    ];
+    return { questionItemList, identityItemList };
   },
   data() {
     return {
-      questionItemList: [
-        {
-          content: "利潤分配總是與外送平台業者意見分歧 ?",
-          animation: questionType4,
-        },
-        {
-          content: "總是被消費者抱怨紙本優惠券不易保存......",
-          animation: questionType5,
-        },
-        {
-          content: "使用社群軟體推廣成效總是不如預期......",
-          animation: questionType6,
-        },
-      ],
-      identityItemList: [
-        { animation: consumerIdentity, content: "消費者端" },
-        { animation: sellerIdentity, content: "店家端" },
-        { animation: organizationIdentity, content: "組織端" },
-      ],
       howTargetedTrafficWorksJSON,
     };
   },
-  methods: {},
 };
 </script>
 

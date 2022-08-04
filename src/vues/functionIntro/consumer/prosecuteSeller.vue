@@ -27,8 +27,8 @@ import prosecutedSellerJSON from "@/vues/json/under-maintenance.json";
 export default {
   components: {
     Vue3Lottie,
-    prosecutedSellerArea: prosecutedSellerArea,
-    classicSmallItem: classicSmallItem,
+    prosecutedSellerArea,
+    classicSmallItem,
   },
   data() {
     return {

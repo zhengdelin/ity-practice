@@ -20,6 +20,5 @@ export default {
       questionAnalysisJSON,
     };
   },
-  methods: {},
 };
 </script>

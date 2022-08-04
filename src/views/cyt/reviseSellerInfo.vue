@@ -1,5 +1,4 @@
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -39,11 +38,9 @@
       </div>
     </div>
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import classicInput from "@/vues/classic/classicInput.vue";
 import identificationIcon from "@/vues/icons/identificationIcon.vue";
@@ -56,13 +53,11 @@ import phoneIcon from "@/vues/icons/phoneIcon.vue";
 import accordionItem from "@/vues/shows/accordionItem.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
 import classicRadio from "@/vues/classic/classicRadio.vue";
-import ityFooter from "@/vues/shared/ityFooter.vue";
 import { useRouter } from "vue-router";
 
 export default {
   name: "eachSellerInfo",
   components: {
-    ityHeader,
     sellerCard,
     classicInput,
     // identificationIcon,
@@ -75,7 +70,6 @@ export default {
     accordionItem,
     classicButton,
     classicRadio,
-    ityFooter,
   },
   setup() {
     const router = useRouter();
@@ -83,19 +77,19 @@ export default {
       {
         title: "店家名稱",
         icon: identificationIcon,
-      }, //content: "誰說海的味道都是鹹的",
+      },
       {
         title: "地址",
         icon: locationIcon,
-      }, //content: "R東西線 ／ 新福島駅 徒歩4分",
-      { title: "營業時間", icon: timeIcon }, // content: "09:00 - 20:00"
-      { title: "價格區間", icon: priceIcon }, //content: "100 - 200"
+      },
+      { title: "營業時間", icon: timeIcon },
+      { title: "價格區間", icon: priceIcon },
       {
         title: "公休日",
         icon: publicHolidayIcon,
-      }, //content: "公休日 : 星期二、星期五"
-      { title: "網站", icon: websiteIcon }, //content: "https://retty.me/"
-      { title: "電話", icon: phoneIcon }, //content: "0971-635-338"
+      },
+      { title: "網站", icon: websiteIcon },
+      { title: "電話", icon: phoneIcon },
     ];
 
     const backTop = () => {
@@ -109,42 +103,6 @@ export default {
 
     return { classicInputList, backTop, save };
   },
-  // data() {
-  //   return {
-  //     classicInputList: [
-  //       {
-  //         title: "店家名稱",
-  //         icon: identificationIcon,
-  //       }, //content: "誰說海的味道都是鹹的",
-  //       {
-  //         title: "地址",
-  //         icon: locationIcon,
-  //       }, //content: "R東西線 ／ 新福島駅 徒歩4分",
-  //       { title: "營業時間", icon: timeIcon }, // content: "09:00 - 20:00"
-  //       { title: "價格區間", icon: priceIcon }, //content: "100 - 200"
-  //       {
-  //         title: "公休日",
-  //         icon: publicHolidayIcon,
-  //       }, //content: "公休日 : 星期二、星期五"
-  //       { title: "網站", icon: websiteIcon }, //content: "https://retty.me/"
-  //       { title: "電話", icon: phoneIcon }, //content: "0971-635-338"
-  //     ],
-  //   };
-  // },
-  // methods: {
-  //   /*redirectToSellerInfo() {
-  //     window.location = this.baseUrl() + "/cyt/seller-info";
-  //   },
-  //   baseUrl() {
-  //     return window.location.origin;
-  //   },*/
-  //   backTop() {
-  //     window.scrollTo({ top: 0, behavior: "smooth" });
-  //   },
-  //   save() {
-  //     this.$router.push({ name: "sellerInfo" });
-  //   },
-  // },
 };
 </script>
 

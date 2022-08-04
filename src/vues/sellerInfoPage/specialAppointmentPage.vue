@@ -14,7 +14,7 @@ import classicItem from "@/vues/classic/classicItem.vue";
 export default {
   name: "specialAppointmentPage",
   components: {
-    classicItem: classicItem,
+    classicItem,
   },
 };
 </script>

@@ -20,6 +20,5 @@ export default {
       questionSocialMediaJSON,
     };
   },
-  methods: {},
 };
 </script>

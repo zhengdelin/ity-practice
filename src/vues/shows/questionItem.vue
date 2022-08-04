@@ -28,10 +28,6 @@ export default {
     questionItem: { type: Object, default: () => ({}) },
   },
   components: {},
-  data() {
-    return {};
-  },
-  methods: {},
 };
 </script>
 

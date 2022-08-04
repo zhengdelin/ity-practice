@@ -1,5 +1,4 @@
 <template>
-  <ity-header></ity-header>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
   >
@@ -44,33 +43,24 @@
       </div>
     </div>
   </div>
-  <ity-footer></ity-footer>
 </template>
 
 <script>
-import ityHeader from "@/vues/shared/ityHeader.vue";
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import reservationCard from "@/vues/cards/reservationCard.vue";
 import reviseSellerInfo from "@/vues/animation/reviseSellerInfo.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
-import ityFooter from "@/vues/shared/ityFooter.vue";
 
 export default {
   name: "eachSellerInfo",
   components: {
-    ityHeader: ityHeader,
-    sellerCard: sellerCard,
-    sellerInfoCard: sellerInfoCard,
-    reservationCard: reservationCard,
-    reviseSellerInfo: reviseSellerInfo,
-    classicButton: classicButton,
-    ityFooter: ityFooter,
+    sellerCard,
+    sellerInfoCard,
+    reservationCard,
+    reviseSellerInfo,
+    classicButton,
   },
-  data() {
-    return {};
-  },
-  methods: {},
 };
 </script>
 

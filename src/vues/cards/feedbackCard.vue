@@ -18,9 +18,9 @@ import feedbackContent from "@/vues/shows/feedbackContent.vue";
 export default {
   name: "feedbackCard",
   components: {
-    criticInfoCard: criticInfoCard,
-    ratingItem: ratingItem,
-    feedbackContent: feedbackContent,
+    criticInfoCard,
+    ratingItem,
+    feedbackContent,
   },
 };
 </script>

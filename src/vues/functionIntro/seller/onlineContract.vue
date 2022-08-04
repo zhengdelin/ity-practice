@@ -27,8 +27,8 @@ import contractJSON from "@/vues/json/sign-contract-contract-approved.json";
 export default {
   components: {
     Vue3Lottie,
-    contractArea: contractArea,
-    classicSmallItem: classicSmallItem,
+    contractArea,
+    classicSmallItem,
   },
   data() {
     return {
