@@ -1,3 +1,4 @@
+<!--Use:reviseSellerInfo, sellerInfo, sellerPage-->
 <template>
   <div
     class="flex flex-col items-center w-5/12 sm:w-4/12 md:w-1/4 2xl:w-[380px] h-40 sm:h-56 xl:h-64 2xl:h-[400px] space-y-2 sm:space-y-4 xl:space-y-6 2xl:space-y-10 bg-[#4B4B4B]"

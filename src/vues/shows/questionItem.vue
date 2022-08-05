@@ -1,3 +1,4 @@
+<!--Use:systemFunctionBeforeLogin, consumerSystemFunction, sellerSystemFunction, organizationSystemFunction-->
 <template>
   <div
     class="flex flex-col items-center space-y-0 lg:space-y-8 2xl:space-y-10 md:w-1/3"

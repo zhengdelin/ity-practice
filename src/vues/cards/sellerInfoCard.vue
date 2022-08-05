@@ -1,3 +1,4 @@
+<!--Use:SellerInfo, sellerPage-->
 <template>
   <div
     class="flex flex-col justify-center w-full sm:w-7/12 2xl:w-[940px] h-64 sm:h-[400px] space-y-8 sm:space-y-12 2xl:space-y-10 p-10 text-[#4B4B4B]"

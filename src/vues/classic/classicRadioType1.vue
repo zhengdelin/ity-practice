@@ -1,3 +1,4 @@
+<!--Use:reviseSellerInfo-->
 <template>
   <h3 class="text-xl lg:text-2xl 2xl:text-3xl font-bold text-gray-900">
     是否開啟點餐服務

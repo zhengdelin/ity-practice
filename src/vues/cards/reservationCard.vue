@@ -1,3 +1,4 @@
+<!--Use:SellerInfo-->
 <template>
   <div
     class="flex items-center justify-center px-4 py-8 xl:p-0 2xl:px-12 w-full h-20 sm:h-32 2xl:h-40 bg-[#F2F2F2] rounded-lg sm:rounded-xl"

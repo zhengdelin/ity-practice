@@ -1,3 +1,4 @@
+<!--Use:sellerInfoPage/couponPage, reviseSellerInfo-->
 <template>
   <div class="accordion w-4/5 lg:w-full" id="accordionExample5">
     <div class="accordion-item bg-white border border-[#76448A] rounded-lg">

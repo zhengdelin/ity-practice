@@ -64,7 +64,7 @@ import websiteIcon from "@/vues/icons/websiteIcon.vue";
 import phoneIcon from "@/vues/icons/phoneIcon.vue";
 import accordionItem from "@/vues/shows/accordionItem.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
-import classicRadio from "@/vues/classic/classicRadio.vue";
+import classicRadio from "@/vues/classic/classicRadioType1.vue";
 import { useRouter } from "vue-router";
 
 export default {

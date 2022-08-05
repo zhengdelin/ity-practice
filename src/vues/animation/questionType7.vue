@@ -1,3 +1,4 @@
+<!--Use:organizationSystemFunction-->
 <template>
   <Vue3Lottie
     :animationData="questionRainJSON"

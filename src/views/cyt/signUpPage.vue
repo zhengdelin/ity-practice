@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] mb-20 2xl:mb-40 space-y-[60px]"
+    class="flex flex-col justify-center items-center px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] mb-20 2xl:mb-40 space-y-10 2xl:space-y-24"
   >
     <div
-      class="flex flex-col justify-center items-center sm:flex-row space-y-10 sm:space-y-0 space-x-0 sm:space-x-10"
+      class="flex flex-col justify-center items-center sm:flex-row space-y-10 sm:space-y-0 space-x-0 sm:space-x-10 w-full"
     >
       <div
-        class="flex items-center w-full sm:w-2/5 h-80 sm:h-[600px] lg:h-[720px] xl:h-[768px] 2xl:w-[800px]"
+        class="flex items-center w-full sm:w-2/5 2xl:w-[800px] h-80 sm:h-[600px] lg:h-[720px] xl:h-[768px]"
       >
         <Vue3Lottie
           :animationData="signupJSON"
@@ -23,7 +23,8 @@
           :classicInputType2="item"
         >
         </classic-input-type-2>
-        <div class="flex justify-between items-center py-2 w-5/6 sm:w-full">
+        <classic-radio></classic-radio>
+        <!--<div class="flex justify-between items-center py-2 w-5/6 sm:w-full">
           <div
             class="flex justify-center items-center form-group form-check space-x-4 lg:space-x-6 2xl:space-x-8"
           >
@@ -39,7 +40,7 @@
               >記得我
             </label>
           </div>
-        </div>
+        </div>-->
         <div class="w-3/4 sm:w-full lg:w-5/6 2xl:w-full">
           <router-link :to="{ name: '' }" class="flex justify-center w-full">
             <classic-button
@@ -85,6 +86,7 @@
 <script>
 import classicInputType2 from "@/vues/classic/classicInputType2.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
+import classicRadio from "@/vues/classic/classicRadioType2.vue";
 import identityItem from "@/vues/shows/identityItem.vue";
 import consumerIdentity from "@/vues/animation/consumerIdentity.vue";
 import sellerIdentity from "@/vues/animation/sellerIdentity.vue";
@@ -100,6 +102,7 @@ export default {
     Vue3Lottie,
     classicInputType2,
     classicButton,
+    classicRadio,
     identityItem,
     // consumerIdentity,
     // sellerIdentity,

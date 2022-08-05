@@ -25,6 +25,7 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/signUpPage.vue"),
       ityHeader,
+      backTop,
       ityFooter,
     },
   },

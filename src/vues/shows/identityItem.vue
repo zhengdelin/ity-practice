@@ -1,3 +1,4 @@
+<!--Use:systemFunctionBeforeLogin, consumerSystemFunction, sellerSystemFunction, organizationSystemFunction, signUpPage-->
 <template>
   <div
     class="flex flex-col justify-center items-center p-4 xl:p-6 w-2/3 sm:7/12 md:w-full 2xl:w-[520px] h-48 md:h-60 lg:h-72 xl:h-96 2xl:h-[520px] bg-[#F6F6F6] rounded-xl space-y-5 2xl:space-y-10"

@@ -1,3 +1,4 @@
+<!--Use:sellerSystemFunction-->
 <template>
   <Vue3Lottie
     :animationData="questionDeliveryJSON"

@@ -1,3 +1,4 @@
+<!--Use:systemFunctionBeforeLogin, consumerSystemFunction-->
 <template>
   <Vue3Lottie
     :animationData="questionOrangeJSON"

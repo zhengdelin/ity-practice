@@ -1,3 +1,4 @@
+<!--Use:sellerInfoPage/menuPage-->
 <template>
   <div
     class="flex flex-row items-center border-b-4 border-[#BB8FCE] w-full h-56 md:h-80 lg:h-96 2xl:h-[380px] space-x-5 p-10 bg-white drop-shadow-md"

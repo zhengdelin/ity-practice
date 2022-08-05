@@ -1,3 +1,4 @@
+<!--Use:sellerInfoPage/postPage-->
 <template>
   <div
     class="border border-solid p-6 xl:p-10 border-[#76448A] space-y-10 w-full h-fit bg-white"
