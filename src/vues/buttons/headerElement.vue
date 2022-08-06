@@ -1,4 +1,4 @@
-<!--Use:ityHeader-->
+<!--Use:ityHeaderBeforeLogin-->
 <template>
   <router-link
     :to="{ name: headerElement.routeName }"

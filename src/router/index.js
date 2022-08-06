@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import ityHeader from "@/vues/shared/ityHeader.vue";
+import ityHeaderBeforeLogin from "@/vues/shared/ityHeaderBeforeLogin.vue";
+import itySellerHeader from "@/vues/shared/itySellerHeader.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 import backTop from "@/vues/shared/backTopItem.vue";
 const routes = [
@@ -15,7 +16,7 @@ const routes = [
     name: "loginPage",
     components: {
       default: () => import("@/views/cyt/loginPage.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       ityFooter,
     },
   },
@@ -24,7 +25,7 @@ const routes = [
     name: "signUpPage",
     components: {
       default: () => import("@/views/cyt/signUpPage.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
@@ -34,7 +35,7 @@ const routes = [
     name: "eachsellerPage",
     components: {
       default: () => import("@/views/cyt/sellerPage.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
@@ -44,7 +45,7 @@ const routes = [
     name: "sellerInfo",
     components: {
       default: () => import("@/views/cyt/sellerInfo.vue"),
-      ityHeader,
+      itySellerHeader,
       ityFooter,
     },
   },
@@ -53,7 +54,17 @@ const routes = [
     name: "reviseSellerInfo",
     components: {
       default: () => import("@/views/cyt/reviseSellerInfo.vue"),
-      ityHeader,
+      itySellerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-contract-intro",
+    name: "sellerContractIntro",
+    components: {
+      default: () => import("@/views/cyt/sellerContractIntro.vue"),
+      //itySellerHeader,
       backTop,
       ityFooter,
     },
@@ -63,7 +74,7 @@ const routes = [
     name: "systemFunctionBeforeLogin",
     components: {
       default: () => import("@/views/cyt/systemFunctionBeforeLogin.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
@@ -73,7 +84,7 @@ const routes = [
     name: "consumerSystemFunction",
     components: {
       default: () => import("@/views/cyt/consumerSystemFunction.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
@@ -83,7 +94,7 @@ const routes = [
     name: "sellerSystemFunction",
     components: {
       default: () => import("@/views/cyt/sellerSystemFunction.vue"),
-      ityHeader,
+      itySellerHeader,
       backTop,
       ityFooter,
     },
@@ -93,7 +104,7 @@ const routes = [
     name: "organizationSystemFunction",
     components: {
       default: () => import("@/views/cyt/organizationSystemFunction.vue"),
-      ityHeader,
+      ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
