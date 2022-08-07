@@ -64,8 +64,17 @@ const routes = [
     name: "sellerContractIntro",
     components: {
       default: () => import("@/views/cyt/sellerContractIntro.vue"),
-      //itySellerHeader,
+      itySellerHeader,
       backTop,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-received-contract",
+    name: "sellerReceivedContract",
+    components: {
+      default: () => import("@/views/cyt/sellerReceivedContract.vue"),
+      //itySellerHeader,
       ityFooter,
     },
   },

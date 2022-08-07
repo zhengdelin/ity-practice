@@ -1,5 +1,8 @@
 <template>
-  <Vue3Lottie :animationData="contractCardJSON" class="w-[250px] h-[250px]" />
+  <Vue3Lottie
+    :animationData="contractCardJSON"
+    class="w-40 h-40"
+  /><!--預設長寬-->
 </template>
 
 <script>

@@ -33,7 +33,7 @@
           class="flex flex-row sm:flex-col items-center space-x-20 sm:space-x-0 w-4/5 sm:w-full"
         >
           <revise-seller-info></revise-seller-info>
-          <router-link :to="{ name: 'reviseSellerInfo' }">
+          <router-link :to="{ name: 'reviseSellerInfo' }" class="w-full">
             <classic-button
               :name="'編輯個人資訊'"
               class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
