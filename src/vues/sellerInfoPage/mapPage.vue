@@ -1,3 +1,4 @@
+<!--Note:BeforeLogin-->
 <template>
   <div
     class="2xl:w-full h-96 md:h-[480px] lg:h-[600px] xl:h-[800px] 2xl:h-[1000px] bg-black"

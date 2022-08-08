@@ -4,7 +4,11 @@
     class="flex flex-row items-center border-b-4 border-[#BB8FCE] w-full h-56 md:h-80 lg:h-96 2xl:h-[380px] space-x-5 p-10 bg-white drop-shadow-md"
   >
     <!--photo-->
-    <component :is="menuItem.photo" class="w-full bg-black" />
+    <div
+      class="flex w-1/3 lg:w-4/12 2xl:w-full h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 2xl:h-[300px] overflow-hidden bg-no-repeat bg-cover bg-center"
+    >
+      <component :is="menuItem.photo" class="w-full h-full" />
+    </div>
     <!--name + desc + price-->
     <div
       class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 space-x-0 lg:space-x-5 w-2/3 lg:w-8/12 2xl:w-full"

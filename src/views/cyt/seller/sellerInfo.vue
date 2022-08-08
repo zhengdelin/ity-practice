@@ -32,8 +32,11 @@
         <div
           class="flex flex-row sm:flex-col items-center space-x-20 sm:space-x-0 w-4/5 sm:w-full"
         >
-          <revise-seller-info></revise-seller-info>
-          <router-link :to="{ name: 'reviseSellerInfo' }" class="w-full">
+          <revise-seller-animation></revise-seller-animation>
+          <router-link
+            :to="{ name: 'reviseSellerInfo' }"
+            class="flex justify-center w-full"
+          >
             <classic-button
               :name="'編輯個人資訊'"
               class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
@@ -49,7 +52,7 @@
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
 import reservationCard from "@/vues/cards/reservationCard.vue";
-import reviseSellerInfo from "@/vues/animation/reviseSellerInfo.vue";
+import reviseSellerAnimation from "@/vues/animation/reviseSellerInfo.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
 
 export default {
@@ -58,7 +61,7 @@ export default {
     sellerCard,
     sellerInfoCard,
     reservationCard,
-    reviseSellerInfo,
+    reviseSellerAnimation,
     classicButton,
   },
 };

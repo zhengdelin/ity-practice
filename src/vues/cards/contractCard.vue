@@ -1,3 +1,4 @@
+<!--Use:sellerContractIntro-->
 <template>
   <div
     class="flex flex-col sm:flex-row w-4/5 sm:w-full h-[520px] lg:h-[480px] xl:h-[400px] 2xl:h-[500px] space-x-0 sm:space-x-10 space-y-4 sm:space-y-0"

@@ -1,3 +1,4 @@
+<!--Note:BeforeLogin-->
 <template>
   <div><feedback-card></feedback-card></div>
 </template>

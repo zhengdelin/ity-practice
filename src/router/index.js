@@ -11,11 +11,12 @@ const routes = [
       default: () => import("@/views/Home.vue"),
     },
   },
+  //beforeLogin
   {
     path: "/cyt/login",
     name: "loginPage",
     components: {
-      default: () => import("@/views/cyt/loginPage.vue"),
+      default: () => import("@/views/cyt/beforeLogin/loginPage.vue"),
       ityHeaderBeforeLogin,
       ityFooter,
     },
@@ -24,7 +25,7 @@ const routes = [
     path: "/cyt/signup",
     name: "signUpPage",
     components: {
-      default: () => import("@/views/cyt/signUpPage.vue"),
+      default: () => import("@/views/cyt/beforeLogin/signUpPage.vue"),
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,
@@ -34,26 +35,39 @@ const routes = [
     path: "/cyt/each-seller-page",
     name: "eachsellerPage",
     components: {
-      default: () => import("@/views/cyt/sellerPage.vue"),
+      default: () => import("@/views/cyt/beforeLogin/sellerPage.vue"),
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,
     },
   },
   {
-    path: "/cyt/seller-info",
-    name: "sellerInfo",
+    path: "/cyt/system-function-beforelogin",
+    name: "systemFunctionBeforeLogin",
     components: {
-      default: () => import("@/views/cyt/sellerInfo.vue"),
-      itySellerHeader,
+      default: () => import("@/views/cyt/beforeLogin/systemFunctionBeforeLogin.vue"),
+      ityHeaderBeforeLogin,
+      backTop,
       ityFooter,
     },
   },
+  //consumerIdentity
   {
-    path: "/cyt/revise-seller-info",
-    name: "reviseSellerInfo",
+    path: "/cyt/consumer-system-function",
+    name: "consumerSystemFunction",
     components: {
-      default: () => import("@/views/cyt/reviseSellerInfo.vue"),
+      default: () => import("@/views/cyt/comsumer/consumerSystemFunction.vue"),
+      ityHeaderBeforeLogin,
+      backTop,
+      ityFooter,
+    },
+  },
+  //sellerIdentity
+  {
+    path: "/cyt/seller-system-function",
+    name: "sellerSystemFunction",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerSystemFunction.vue"),
       itySellerHeader,
       backTop,
       ityFooter,
@@ -63,7 +77,7 @@ const routes = [
     path: "/cyt/seller-contract-intro",
     name: "sellerContractIntro",
     components: {
-      default: () => import("@/views/cyt/sellerContractIntro.vue"),
+      default: () => import("@/views/cyt/seller/sellerContractIntro.vue"),
       itySellerHeader,
       backTop,
       ityFooter,
@@ -73,46 +87,46 @@ const routes = [
     path: "/cyt/seller-received-contract",
     name: "sellerReceivedContract",
     components: {
-      default: () => import("@/views/cyt/sellerReceivedContract.vue"),
-      //itySellerHeader,
+      default: () => import("@/views/cyt/seller/sellerReceivedContract.vue"),
+      itySellerHeader,
       ityFooter,
     },
   },
   {
-    path: "/cyt/system-function-beforelogin",
-    name: "systemFunctionBeforeLogin",
+    path: "/cyt/seller-signed-contract",
+    name: "sellerSignedContract",
     components: {
-      default: () => import("@/views/cyt/systemFunctionBeforeLogin.vue"),
-      ityHeaderBeforeLogin,
-      backTop,
-      ityFooter,
-    },
-  },
-  {
-    path: "/cyt/consumer-system-function",
-    name: "consumerSystemFunction",
-    components: {
-      default: () => import("@/views/cyt/consumerSystemFunction.vue"),
-      ityHeaderBeforeLogin,
-      backTop,
-      ityFooter,
-    },
-  },
-  {
-    path: "/cyt/seller-system-function",
-    name: "sellerSystemFunction",
-    components: {
-      default: () => import("@/views/cyt/sellerSystemFunction.vue"),
+      default: () => import("@/views/cyt/seller/sellerSignedContract.vue"),
       itySellerHeader,
       backTop,
       ityFooter,
     },
   },
   {
+    path: "/cyt/seller-info",
+    name: "sellerInfo",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerInfo.vue"),
+      itySellerHeader,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/revise-seller-info",
+    name: "reviseSellerInfo",
+    components: {
+      default: () => import("@/views/cyt/seller/reviseSellerInfo.vue"),
+      itySellerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  //organizationIdentity
+  {
     path: "/cyt/organization-system-function",
     name: "organizationSystemFunction",
     components: {
-      default: () => import("@/views/cyt/organizationSystemFunction.vue"),
+      default: () => import("@/views/cyt/organization/organizationSystemFunction.vue"),
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,

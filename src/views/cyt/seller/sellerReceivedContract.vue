@@ -1,12 +1,9 @@
 <template>
   <seller-banners></seller-banners>
   <div
-    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
+    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
   >
-    <classic-title
-      :content="'我收到的特約邀請'"
-      class="w-full mt-14"
-    ></classic-title>
+    <classic-title :content="'我收到的特約邀請'" class="w-full"></classic-title>
     <div
       class="flex flex-col md:flex-row items-center space-x-0 md:space-x-5 2xl:space-x-10 space-y-5 md:space-y-0"
     >

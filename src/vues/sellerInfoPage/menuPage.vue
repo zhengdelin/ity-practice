@@ -1,3 +1,4 @@
+<!--Note:BeforeLogin-->
 <template>
   <div class="space-y-5">
     <menu-item

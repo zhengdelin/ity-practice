@@ -1,4 +1,7 @@
-<!--Use:systemFunctionBeforeLogin, consumerSystemFunction, sellerSystemFunction, organizationSystemFunction-->
+<!--Use:systemFunctionBeforeLogin-->
+<!--Use:consumerSystemFunction-->
+<!--Use:sellerSystemFunction, sellerReceivedContract, sellerSignedContract-->
+<!--Use:organizationSystemFunction-->
 <template>
   <div
     class="flex justify-start items-center pl-6 lg:pl-8 2xl:pl-10 w-full h-14 sm:h-16 xl:h-20 2xl:h-[100px] bg-[#76448A]"

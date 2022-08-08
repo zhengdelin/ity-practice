@@ -45,7 +45,6 @@
       </option>
     </select>
     <!--Over sm-->
-    <!--top-->
     <div
       class="hidden w-full sm:h-20 md:h-24 xl:h-28 h-40 text-[#4B4B4B] text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold drop-shadow-lg sm:flex"
     >
@@ -59,7 +58,6 @@
         {{ item.name }}
       </div>
     </div>
-    <!--bottom-->
     <div>
       <keep-alive>
         <component :is="id"></component>

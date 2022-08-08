@@ -1,3 +1,4 @@
+<!--Note:BeforeLogin-->
 <template>
   <div><seller-post></seller-post></div>
 </template>

@@ -1,3 +1,4 @@
+<!--Note:BeforeLogin-->
 <template>
   <div
     class="flex flex-row lg:flex-col space-x-5 lg:space-x-0 space-y-0 lg:space-y-6 2xl:space-y-8"

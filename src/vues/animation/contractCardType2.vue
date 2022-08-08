@@ -1,3 +1,4 @@
+<!--Use:sellerContractIntro-->
 <template>
   <Vue3Lottie
     :animationData="contractCardJSON"

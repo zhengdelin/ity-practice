@@ -1,3 +1,4 @@
+<!--Use:sellerInfo-->
 <template>
   <Vue3Lottie
     :animationData="shopJSON"

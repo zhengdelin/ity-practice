@@ -1,3 +1,4 @@
+<!--Use:sellerReceivedContract-->
 <template>
   <img
     class="w-full h-full rounded-full"

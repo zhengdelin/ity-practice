@@ -1,4 +1,4 @@
-<!--Use:ityHeaderBeforeLogin-->
+<!--Use:shared/ityHeaderBeforeLogin, shared/itySellerHeader-->
 <template>
   <router-link
     :to="{ name: headerElement.routeName }"
