@@ -2,10 +2,12 @@
   <div
     class="flex items-center justify-between w-full px-5 sm:px-10 h-24 lg:h-32 xl:h-[150px] bg-white"
   >
-    <div class="cursor-pointer" @click="reload()">
-      <ity-header-logo
-        class="w-20 sm:w-30 lg:w-32 xl:w-40 h-10 sm:h-15 lg:h-16 xl:h-20"
-      ></ity-header-logo>
+    <div class="cursor-pointer">
+      <router-link :to="{ name: 'sellerHome' }" class="w-full">
+        <ity-header-logo
+          class="w-20 sm:w-30 lg:w-32 xl:w-40 h-10 sm:h-15 lg:h-16 xl:h-20"
+        ></ity-header-logo>
+      </router-link>
     </div>
     <div class="flex flex-row">
       <headerElement
@@ -73,10 +75,10 @@ export default {
         routeName: "",
       },
     ];
-    const reload = () => {
-      location.reload();
-    };
-    return { headerElementList, reload };
+    // const reload = () => {
+    //   location.reload();
+    // };
+    return { headerElementList }; //, reload
   },
 };
 </script>

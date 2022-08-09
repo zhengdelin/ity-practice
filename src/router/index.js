@@ -45,7 +45,8 @@ const routes = [
     path: "/cyt/system-function-beforelogin",
     name: "systemFunctionBeforeLogin",
     components: {
-      default: () => import("@/views/cyt/beforeLogin/systemFunctionBeforeLogin.vue"),
+      default: () =>
+        import("@/views/cyt/beforeLogin/systemFunctionBeforeLogin.vue"),
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,
@@ -63,6 +64,16 @@ const routes = [
     },
   },
   //sellerIdentity
+  {
+    path: "/cyt/seller-home",
+    name: "sellerHome",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerHome.vue"),
+      itySellerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
   {
     path: "/cyt/seller-system-function",
     name: "sellerSystemFunction",
@@ -103,6 +114,27 @@ const routes = [
     },
   },
   {
+    path: "/cyt/seller-signed-online-contract",
+    name: "sellerSignedOnlineContract",
+    components: {
+      default: () =>
+        import("@/views/cyt/seller/sellerSignedOnlineContract.vue"),
+      itySellerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-contract-status",
+    name: "sellerContractStatus",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerContractStatus.vue"),
+      itySellerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/seller-info",
     name: "sellerInfo",
     components: {
@@ -126,7 +158,8 @@ const routes = [
     path: "/cyt/organization-system-function",
     name: "organizationSystemFunction",
     components: {
-      default: () => import("@/views/cyt/organization/organizationSystemFunction.vue"),
+      default: () =>
+        import("@/views/cyt/organization/organizationSystemFunction.vue"),
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,
