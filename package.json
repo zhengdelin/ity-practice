@@ -11,6 +11,7 @@
     "core-js": "^3.8.3",
     "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.13",
+    "vue-resize-observer": "^2.0.15",
     "vue-router": "^4.0.3",
     "vue3-lottie": "^2.2.5"
   },

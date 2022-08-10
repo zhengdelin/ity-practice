@@ -1,4 +1,4 @@
-<!--Use:sellerSignedContract-->
+<!--Use:sellerSignedContract, sellerSignedOnlineContract-->
 <template>
   <div
     class="text-left text-base sm:text-xl space-y-6 leading-7 sm:leading-9 md:leading-10"

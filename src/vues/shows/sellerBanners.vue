@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<!--Use:sellerReceivedContract, sellerSignedContract-->
+<!--Use:sellerReceivedContract, sellerSignedContract, sellerSignedOnlineContract-->
 <template>
   <div class="bg-[#B983CE]">
     <div

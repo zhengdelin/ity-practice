@@ -1,6 +1,8 @@
 <template>
   <router-view name="ityHeaderBeforeLogin"></router-view>
+  <router-view name="ityConsumerHeader"></router-view>
   <router-view name="itySellerHeader"></router-view>
+  <router-view name="ityOrganizationHeader"></router-view>
   <router-view></router-view>
   <router-view name="ityFooter"></router-view>
   <router-view name="backTop"></router-view>

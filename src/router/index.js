@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ityHeaderBeforeLogin from "@/vues/shared/ityHeaderBeforeLogin.vue";
+//import ityConsumerHeader from "@/vues/shared/ityConsumerHeader.vue";
 import itySellerHeader from "@/vues/shared/itySellerHeader.vue";
+//import ityOrganizationHeader from "@/vues/shared/ityOrganizationHeader.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 import backTop from "@/vues/shared/backTopItem.vue";
 const routes = [
