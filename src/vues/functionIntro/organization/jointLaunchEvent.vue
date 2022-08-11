@@ -31,10 +31,8 @@ export default {
     eventsArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      eventsJSON,
-    };
+  setup() {
+    return { eventsJSON };
   },
 };
 </script>

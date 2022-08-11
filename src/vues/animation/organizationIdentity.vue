@@ -12,10 +12,8 @@ export default {
   components: {
     Vue3Lottie,
   },
-  data() {
-    return {
-      teamBlueJSON,
-    };
+  setup() {
+    return { teamBlueJSON };
   },
 };
 </script>

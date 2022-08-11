@@ -31,10 +31,8 @@ export default {
     savedArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      savedJSON,
-    };
+  setup() {
+    return { savedJSON };
   },
 };
 </script>

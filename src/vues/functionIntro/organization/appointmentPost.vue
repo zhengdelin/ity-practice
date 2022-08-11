@@ -31,10 +31,8 @@ export default {
     appointmentPostArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      appointmentPostJSON,
-    };
+  setup() {
+    return { appointmentPostJSON };
   },
 };
 </script>

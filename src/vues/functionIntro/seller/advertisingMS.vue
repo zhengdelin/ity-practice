@@ -33,10 +33,8 @@ export default {
     managementSystemArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      mangementSystemJSON,
-    };
+  setup() {
+    return { mangementSystemJSON };
   },
 };
 </script>

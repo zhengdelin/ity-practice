@@ -129,12 +129,7 @@ export default {
       { animation: sellerIdentity, content: "店家端" },
       { animation: organizationIdentity, content: "組織端" },
     ];
-    return { questionItemList, identityItemList };
-  },
-  data() {
-    return {
-      howTargetedTrafficWorksJSON,
-    };
+    return { questionItemList, identityItemList, howTargetedTrafficWorksJSON };
   },
 };
 </script>

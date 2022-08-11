@@ -31,10 +31,8 @@ export default {
     sellerInfoArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      sellerInfoJSON,
-    };
+  setup() {
+    return { sellerInfoJSON };
   },
 };
 </script>

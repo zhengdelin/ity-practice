@@ -31,10 +31,8 @@ export default {
     advertisingArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      advertisingJSON,
-    };
+  setup() {
+    return { advertisingJSON };
   },
 };
 </script>

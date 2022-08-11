@@ -31,10 +31,8 @@ export default {
     searchArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      searchJSON,
-    };
+  setup() {
+    return { searchJSON };
   },
 };
 </script>

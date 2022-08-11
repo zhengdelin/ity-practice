@@ -31,10 +31,8 @@ export default {
     couponFlyArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      couponFlyJSON,
-    };
+  setup() {
+    return { couponFlyJSON };
   },
 };
 </script>

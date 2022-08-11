@@ -31,10 +31,8 @@ export default {
     prosecutedSellerArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      prosecutedSellerJSON,
-    };
+  setup() {
+    return { prosecutedSellerJSON };
   },
 };
 </script>

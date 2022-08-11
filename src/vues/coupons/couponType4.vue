@@ -72,10 +72,8 @@ export default {
   components: {
     Vue3Lottie,
   },
-  data() {
-    return {
-      saleJSON,
-    };
+  setup() {
+    return { saleJSON };
   },
 };
 </script>

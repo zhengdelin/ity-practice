@@ -31,10 +31,8 @@ export default {
     reviewArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      reviewJSON,
-    };
+  setup() {
+    return { reviewJSON };
   },
 };
 </script>

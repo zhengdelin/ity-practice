@@ -31,10 +31,8 @@ export default {
     modifiedArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      modifiedJSON,
-    };
+  setup() {
+    return { modifiedJSON };
   },
 };
 </script>

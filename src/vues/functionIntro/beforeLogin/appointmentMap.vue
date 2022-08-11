@@ -31,10 +31,8 @@ export default {
     mapArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      mapJSON,
-    };
+  setup() {
+    return { mapJSON };
   },
 };
 </script>

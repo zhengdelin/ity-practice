@@ -12,10 +12,11 @@ export default {
   components: {
     Vue3Lottie,
   },
-  data() {
-    return {
-      marketingJSON,
-    };
+  setup() {
+    return { marketingJSON };
+  },
+  setup() {
+    return {  };
   },
 };
 </script>

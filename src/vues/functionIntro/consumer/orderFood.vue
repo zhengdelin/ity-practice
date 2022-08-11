@@ -31,10 +31,8 @@ export default {
     reservationArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      orderFoodJSON,
-    };
+  setup() {
+    return { orderFoodJSON };
   },
 };
 </script>

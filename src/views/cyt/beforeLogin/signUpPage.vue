@@ -118,12 +118,7 @@ export default {
       { animation: sellerIdentity, content: "店家端" },
       { animation: organizationIdentity, content: "組織端" },
     ];
-    return { classicInputType2List, identityItemList };
-  },
-  data() {
-    return {
-      signupJSON,
-    };
+    return { classicInputType2List, identityItemList, signupJSON };
   },
 };
 </script>

@@ -31,10 +31,8 @@ export default {
     couponArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      couponJSON,
-    };
+  setup() {
+    return { couponJSON };
   },
 };
 </script>

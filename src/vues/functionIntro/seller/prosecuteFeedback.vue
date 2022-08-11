@@ -31,10 +31,8 @@ export default {
     warningArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      warningJSON,
-    };
+  setup() {
+    return { warningJSON };
   },
 };
 </script>

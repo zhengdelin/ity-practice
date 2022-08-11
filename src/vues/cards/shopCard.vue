@@ -1,6 +1,6 @@
 <!--Use:sellerHome-->
 <template>
-  <div class="flex flex-col w-1/4 2xl:w-[380px] h-[600px] rounded-xl">
+  <div class="flex flex-col 2xl:w-[380px] h-[600px] rounded-xl">
     <div
       class="2xl:w-[380px] h-1/2 bg-slate-700 rounded-t-xl overflow-hidden bg-no-repeat bg-cover bg-center"
     >
@@ -76,3 +76,9 @@ export default {
   setup() {},
 };
 </script>
+
+<style scoped>
+:deep(img){
+  object-fit:cover;
+}
+</style>

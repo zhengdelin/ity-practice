@@ -15,10 +15,8 @@ export default {
   components: {
     Vue3Lottie,
   },
-  data() {
-    return {
-      onlineShoppingBlackFridayFridayJSON,
-    };
+  setup() {
+    return { onlineShoppingBlackFridayFridayJSON };
   },
 };
 </script>

@@ -14,8 +14,7 @@
         :content="'ITY 官方推薦店家'"
         class="w-full bg-[#DDA4F1]"
       ></classic-title>
-      <!--v-resize:debounce.3="onResize"-->
-      <div class="flex flex-row 2xl:space-x-10" v-resize="onResize">
+      <div class="grid grid-cols-3 lg:grid-cols-4 gap-8">
         <shop-card
           v-for="(item, index) in shopCardList"
           :key="index"
@@ -62,73 +61,15 @@ import burritoPhoto from "@/vues/photos/burritoPhoto.vue";
 import doughnutPhoto from "@/vues/photos/doughnutPhoto.vue";
 import fruitPhoto from "@/vues/photos/fruitPhoto.vue";
 import pizzaPhoto from "@/vues/photos/pizzaPhoto.vue";
-import VueResizeObserver from "vue-resize-observer";
-// import resizeDirective from 'v-resize-observer';
-
+import {computed} from "vue"
 export default {
   name: "sellerHomePage",
   components: {
     classicTitle,
     shopCard,
   },
-  directives: { resize: VueResizeObserver },
-  // directives: {
-  //   resize: resizeDirective.directive,
-  // },
-  data() {
-    return {
-      itemWidth: "1/4",
-    };
-    // return {
-    //   itemWidth: "1/3",
-    // };
-  },
-  methods: {
-    onResize() {
-      var baseItems = 4;
-      var proportion =
-        this.$el.clientWidth / this.$parent.$el.clientWidth + 0.02; //0.02誤差值
-      var items = Math.floor(proportion * baseItems);
-      if (items == 4) {
-        if (window.innerWidth >= 1024) {
-          if (this.itemWidth != "1/4") this.itemWidth = "1/4";
-        } else if (window.innerWidth < 1024 && window.innerWidth >= 640) {
-          if (this.itemWidth != "1/3") this.itemWidth = "1/3";
-        } else if (window.innerWidth < 640 && window.innerWidth >= 350) {
-          if (this.itemWidth != "1/2") this.itemWidth = "1/2";
-        } else if (window.innerWidth < 350) {
-          this.itemWidth = "1";
-        }
-      } else if (items == 3) {
-        this.itemWidth = "1/3";
-      } else if (items == 2) {
-        this.itemWidth = "1/2";
-      }
-    },
-    // onResize() {
-    //   var baseItems = 4;
-    //   var proportion =
-    //     this.$el.clientWidth / this.$parent.$el.clientWidth + 0.02; //0.02誤差值
-    //   var items = Math.floor(proportion * baseItems);
-    //   if (items == 4) {
-    //     if (window.innerWidth >= 1024) {
-    //       if (this.itemWidth != "1/4") this.itemWidth = "1/4";
-    //     } else if (window.innerWidth < 1024 && window.innerWidth >= 640) {
-    //       if (this.itemWidth != "1/3") this.itemWidth = "1/3";
-    //     } else if (window.innerWidth < 640 && window.innerWidth >= 350) {
-    //       if (this.itemWidth != "1/2") this.itemWidth = "1/2";
-    //     } else if (window.innerWidth < 350) {
-    //       this.itemWidth = "1";
-    //     }
-    //   } else if (items == 3) {
-    //     this.itemWidth = "1/3";
-    //   } else if (items == 2) {
-    //     this.itemWidth = "1/2";
-    //   }
-    // },
-  },
   setup() {
-    const shopCardList = [
+    const _shopCardList = [
       {
         sellerPhoto: curryPhoto,
         sellerName: "蘇坤蔚牛排 Sukhumvit STEAK",
@@ -178,6 +119,19 @@ export default {
         sellerName: "既然要胖了那就多吃點",
       },
     ];
+
+    const shopCardList = computed(()=>{
+      const list = [];
+      while(list.length < 8){
+        const index = Math.floor(Math.random() * _shopCardList.length);
+        const item = _shopCardList[index];
+        if(!list.includes(item)){
+          list.push(item)
+        }
+      }
+
+      return list;
+    })
     return { shopCardList };
   },
 };

@@ -31,10 +31,8 @@ export default {
     sellerContactingArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      communicationJSON,
-    };
+  setup() {
+    return { communicationJSON };
   },
 };
 </script>

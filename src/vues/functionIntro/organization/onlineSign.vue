@@ -31,10 +31,8 @@ export default {
     contractArea,
     classicSmallItem,
   },
-  data() {
-    return {
-      signJSON,
-    };
+  setup() {
+    return { signJSON };
   },
 };
 </script>

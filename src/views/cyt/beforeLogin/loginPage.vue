@@ -90,12 +90,7 @@ export default {
       { title: "帳號  Email Address" },
       { title: "密碼  Password" },
     ];
-    return { classicInputType2List };
-  },
-  data() {
-    return {
-      loginJSON,
-    };
+    return { classicInputType2List, loginJSON };
   },
 };
 </script>

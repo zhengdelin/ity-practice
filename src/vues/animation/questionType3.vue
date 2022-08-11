@@ -16,10 +16,8 @@ export default {
   components: {
     Vue3Lottie,
   },
-  data() {
-    return {
-      questionRedJSON,
-    };
+  setup() {
+    return { questionRedJSON };
   },
 };
 </script>
