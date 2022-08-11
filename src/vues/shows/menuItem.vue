@@ -45,3 +45,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+:deep(img) {
+  object-fit: cover;
+}
+</style>

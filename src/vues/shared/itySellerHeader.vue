@@ -75,10 +75,7 @@ export default {
         routeName: "",
       },
     ];
-    // const reload = () => {
-    //   location.reload();
-    // };
-    return { headerElementList }; //, reload
+    return { headerElementList };
   },
 };
 </script>

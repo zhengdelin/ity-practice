@@ -1,7 +1,7 @@
 <!--Use:sellerReceivedContract-->
 <template>
   <div
-    class="flex flex-col w-5/6 md:w-1/2 h-60 sm:h-64 lg:h-72 xl:h-80 2xl:h-[400px] bg-gradient-to-r from-[#a8edea] to-[#fed6e3] p-6 lg:p-10 space-y-2 lg:space-y-5"
+    class="flex flex-col w-5/6 md:w-full h-60 sm:h-64 lg:h-72 xl:h-80 2xl:h-[400px] bg-gradient-to-r from-[#a8edea] to-[#fed6e3] p-6 lg:p-10 space-y-2 lg:space-y-5"
   >
     <div
       class="h-1/12 sm:h-1/6 text-[#6F6F6F] text-left text-xl lg:text-2xl xl:text-3xl font-semibold"

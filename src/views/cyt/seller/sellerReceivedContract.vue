@@ -5,7 +5,7 @@
   >
     <classic-title :content="'我收到的特約邀請'" class="w-full"></classic-title>
     <div
-      class="flex flex-col md:flex-row items-center space-x-0 md:space-x-5 2xl:space-x-10 space-y-5 md:space-y-0"
+      class="grid justify-items-center grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 2xl:gap-x-10 gap-y-5 sm:gap-y-6 2xl:gap-y-10"
     >
       <notification-card
         v-for="(item, index) in notificationCardList"
@@ -22,6 +22,7 @@ import classicTitle from "@/vues/classic/classicTitle.vue";
 import notificationCard from "@/vues/cards/pushNotificationCard.vue";
 import nutcPhoto from "@/vues/photos/nutcPhoto.vue";
 import ntuPhoto from "@/vues/photos/ntuPhoto.vue";
+import nccuPhoto from "@/vues/photos/nccuPhoto.vue";
 
 export default {
   name: "receivedContract",
@@ -31,6 +32,7 @@ export default {
     notificationCard,
     // nutcPhoto,
     // ntuPhoto,
+    // nccuPhoto,
   },
   setup() {
     const notificationCardList = [
@@ -41,6 +43,10 @@ export default {
       {
         avater: ntuPhoto,
         organizationName: "國立臺灣大學",
+      },
+      {
+        avater: nccuPhoto,
+        organizationName: "國立政治大學",
       },
     ];
     return { notificationCardList };

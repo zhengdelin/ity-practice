@@ -15,6 +15,16 @@ const routes = [
   },
   //beforeLogin
   {
+    path: "/cyt/home-before-login",
+    name: "beforeLoginHome",
+    components: {
+      default: () => import("@/views/cyt/beforeLogin/beforeLoginHome.vue"),
+      ityHeaderBeforeLogin,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/login",
     name: "loginPage",
     components: {

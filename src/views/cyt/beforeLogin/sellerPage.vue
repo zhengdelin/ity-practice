@@ -77,7 +77,7 @@ import feedbackPage from "@/vues/sellerInfoPage/feedbackPage.vue";
 import couponPage from "@/vues/sellerInfoPage/couponPage.vue";
 import specialAppointmentPage from "@/vues/sellerInfoPage/specialAppointmentPage.vue";
 import mapPage from "@/vues/sellerInfoPage/mapPage.vue";
-import {ref} from "vue"
+import { ref } from "vue";
 export default {
   name: "eachSellerPage",
   components: {
@@ -91,62 +91,60 @@ export default {
     couponPage,
     specialAppointmentPage,
     mapPage,
-  }
-}
+  },
+};
 </script>
 <script setup>
+/**
+ * tab綁定的component name
+ */
+const tabs = [
+  { name: "店家貼文", id: "postPage" },
+  { name: "菜單", id: "menuPage" },
+  { name: "評價", id: "feedbackPage" },
+  { name: "優惠", id: "couponPage" },
+  { name: "特約學校", id: "specialAppointmentPage" },
+  { name: "地圖", id: "mapPage" },
+];
 
-    /**
-     * tab綁定的component name
-     */
-    const tabs = [
-      { name: "店家貼文", id: "postPage" },
-      { name: "菜單", id: "menuPage" },
-      { name: "評價", id: "feedbackPage" },
-      { name: "優惠", id: "couponPage" },
-      { name: "特約學校", id: "specialAppointmentPage" },
-      { name: "地圖", id: "mapPage" },
-    ];
+const id = ref("postPage");
 
-    const id = ref("postPage");
+/**
+ *
+ */
+/**
+ * @param {{name:String,id:String}} item
+ */
+const transfer = (item) => {
+  id.value = item.id;
+  console.log("transfer", item, id.value);
+};
 
-   /**
-    * 
-    */
-    /**
-     * @param {{name:String,id:String}} item
-     */
-    const transfer= (item) => {
-      id.value = item.id;
-      console.log("transfer", item, id.value);
-    };
-  
-  // Vue2.0
-  // data() {
-  //   return {
-  //     //tab綁定的component name
-  //     id: "postPage",
-  //     tabs: [
-  //       { name: "店家貼文", id: "postPage" },
-  //       { name: "菜單", id: "menuPage" },
-  //       { name: "評價", id: "feedbackPage" },
-  //       { name: "優惠", id: "couponPage" },
-  //       { name: "特約學校", id: "specialAppointmentPage" },
-  //       { name: "地圖", id: "mapPage" },
-  //     ],
-  //   };
-  // },
-  // methods: {
-  //   /**
-  //    * 切換菜單tab
-  //    * @param {{name:String,id:String}} item
-  //    */
-  //   transfer(item) {
-  //     this.id = item.id;
-  //     console.log("transfer", item, this.id);
-  //   },
-  // },
-
+// Vue2.0
+// data() {
+//   return {
+//     //tab綁定的component name
+//     id: "postPage",
+//     tabs: [
+//       { name: "店家貼文", id: "postPage" },
+//       { name: "菜單", id: "menuPage" },
+//       { name: "評價", id: "feedbackPage" },
+//       { name: "優惠", id: "couponPage" },
+//       { name: "特約學校", id: "specialAppointmentPage" },
+//       { name: "地圖", id: "mapPage" },
+//     ],
+//   };
+// },
+// methods: {
+//   /**
+//    * 切換菜單tab
+//    * @param {{name:String,id:String}} item
+//    */
+//   transfer(item) {
+//     this.id = item.id;
+//     console.log("transfer", item, this.id);
+//   },
+// },
 </script>
 
 <style scoped>

@@ -2,8 +2,11 @@
 <template>
   <div class="space-y-[60px]">
     <div
-      class="flex flex-col items-center lg:flex-row space-x-0 lg:space-x-10 space-y-5 lg:space-y-0 2xl:justify-between"
+      class="grid justify-items-center grid-cols-1 sm:grid-cols-2 gap-x-0 sm:gap-x-4 2xl:gap-x-10 gap-y-5 2xl:gap-y-8"
     >
+      <!--flex flex-col items-center lg:flex-row space-x-0 lg:space-x-10 space-y-5 lg:space-y-0 2xl:justify-between-->
+      <coupon-Type3></coupon-Type3>
+      <coupon-Type4></coupon-Type4>
       <coupon-Type3></coupon-Type3>
       <coupon-Type4></coupon-Type4>
     </div>

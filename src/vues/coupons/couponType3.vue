@@ -1,7 +1,7 @@
 <!--Use:sellerInfoPage/couponPage-->
 <template>
   <div
-    class="w-4/5 md:w-2/3 2xl:w-[800px] h-60 lg:h-80 2xl:h-[350px] bg-[#B983CE] cursor-pointer"
+    class="w-5/6 sm:w-full h-60 lg:h-80 2xl:h-[350px] bg-[#B983CE] cursor-pointer"
   >
     <div class="flex flex-row items-center h-full">
       <div class="flex flex-col w-4/6">

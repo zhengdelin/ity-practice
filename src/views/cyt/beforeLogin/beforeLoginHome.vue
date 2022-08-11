@@ -3,6 +3,7 @@
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-10 sm:space-y-[60px] lg:space-y-20 2xl:space-y-40 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
   >
+    <alerts-item class="w-1/2"></alerts-item>
     <div>
       <classic-title
         :content="'依類別選擇'"
@@ -75,6 +76,7 @@
 <script>
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import shopCard from "@/vues/cards/shopCard.vue";
+import alertsItem from "@/vues/shows/alertsItem.vue";
 import curryPhoto from "@/vues/photos/curryPhoto.vue";
 import bbqPhoto from "@/vues/photos/bbqPhoto.vue";
 import porkPhoto from "@/vues/photos/porkPhoto.vue";
@@ -88,11 +90,13 @@ import doughnutPhoto from "@/vues/photos/doughnutPhoto.vue";
 import fruitPhoto from "@/vues/photos/fruitPhoto.vue";
 import pizzaPhoto from "@/vues/photos/pizzaPhoto.vue";
 import { computed } from "vue";
+
 export default {
-  name: "sellerHomePage",
+  name: "beforeLoginHomePage",
   components: {
     classicTitle,
     shopCard,
+    alertsItem,
   },
   setup() {
     const _shopCardList = [
