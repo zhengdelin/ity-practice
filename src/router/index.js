@@ -81,7 +81,7 @@ const routes = [
     name: "sellerHome",
     components: {
       default: () => import("@/views/cyt/seller/sellerHome.vue"),
-      //itySellerHeader,
+      itySellerHeader,
       backTop,
       ityFooter,
     },
