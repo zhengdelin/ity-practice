@@ -1,5 +1,9 @@
-<!--https://www.npmjs.com/package/vue-resize-observer-->
 <template>
+  <div
+    class="flex items-center justify-center px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] w-full h-[600px] bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1620882133512-5149956b1261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80')]"
+  >
+    <classic-filter class="rounded-xl"></classic-filter>
+  </div>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-10 sm:space-y-[60px] lg:space-y-20 2xl:space-y-40 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
   >
@@ -74,6 +78,7 @@
 
 <script>
 import classicTitle from "@/vues/classic/classicTitle.vue";
+import classicFilter from "@/vues/classic/classicFilter.vue";
 import shopCard from "@/vues/cards/shopCard.vue";
 import curryPhoto from "@/vues/photos/curryPhoto.vue";
 import bbqPhoto from "@/vues/photos/bbqPhoto.vue";
@@ -88,10 +93,12 @@ import doughnutPhoto from "@/vues/photos/doughnutPhoto.vue";
 import fruitPhoto from "@/vues/photos/fruitPhoto.vue";
 import pizzaPhoto from "@/vues/photos/pizzaPhoto.vue";
 import { computed } from "vue";
+
 export default {
   name: "sellerHomePage",
   components: {
     classicTitle,
+    classicFilter,
     shopCard,
   },
   setup() {
@@ -161,3 +168,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+:deep(img) {
+  object-fit: cover;
+}
+</style>

@@ -46,7 +46,7 @@
               class="flex justify-center items-center w-16 md:w-14 xl:w-16 2xl:w-20 h-16 md:h-14 lg:h-[60px] xl:h-16 2xl:h-20 hover:bg-[#F6F6F6]"
             >
               <love-icon
-                class="w-[30px] md:w-8 lg:w-7 xl:w-9 2xl:w-10 h-[30px] md:h-8 lg:h-7 xl:h-9 2xl:h-10"
+                class="w-[30px] md:w-8 lg:w-7 xl:w-9 2xl:w-10 h-[30px] md:h-8 lg:h-7 xl:h-9 2xl:h-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-300"
               ></love-icon>
             </div>
           </router-link>
@@ -56,7 +56,7 @@
               class="flex justify-center items-center w-16 md:w-14 xl:w-16 2xl:w-20 h-16 md:h-14 lg:h-[60px] xl:h-16 2xl:h-20 hover:bg-[#F6F6F6]"
             >
               <menu-icon
-                class="w-[30px] md:w-8 lg:w-7 xl:w-9 2xl:w-10 h-[30px] md:h-8 lg:h-7 xl:h-9 2xl:h-10"
+                class="w-[30px] md:w-8 lg:w-7 xl:w-9 2xl:w-10 h-[30px] md:h-8 lg:h-7 xl:h-9 2xl:h-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-300"
               ></menu-icon>
             </div>
           </router-link>

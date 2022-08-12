@@ -15,8 +15,5 @@ export default {
   setup() {
     return { marketingJSON };
   },
-  setup() {
-    return {  };
-  },
 };
 </script>
