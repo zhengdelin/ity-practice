@@ -18,7 +18,7 @@
           ></location-icon>
           <input
             type="text"
-            class="w-full px-3 py-3 sm:py-4 lg:py-6 text-base lg:text-lg font-normal text-[#4B4B4B] bg-white border border-solid border-[#F2F2F2] rounded transition ease-in-out m-0 focus:text-[#909090] focus:bg-white focus:border-[#76448A] focus:outline-none"
+            class="w-full px-3 py-3 sm:py-4 lg:py-6 text-base lg:text-lg font-normal text-[#4B4B4B] bg-white border border-solid border-[#F2F2F2] rounded transition ease-in-out m-0 focus:text-[#4B4B4B] focus:bg-white focus:border-[#76448A] focus:outline-none"
             placeholder="EX : 台中"
           />
         </div>
@@ -35,7 +35,7 @@
           ></type-icon>
           <input
             type="text"
-            class="w-full px-3 py-3 sm:py-4 lg:py-6 text-base lg:text-lg font-normal text-[#4B4B4B] bg-white border border-solid border-[#F2F2F2] rounded transition ease-in-out m-0 focus:text-[#909090] focus:bg-white focus:border-[#76448A] focus:outline-none"
+            class="w-full px-3 py-3 sm:py-4 lg:py-6 text-base lg:text-lg font-normal text-[#4B4B4B] bg-white border border-solid border-[#F2F2F2] rounded transition ease-in-out m-0 focus:text-[#4B4B4B] focus:bg-white focus:border-[#76448A] focus:outline-none"
             placeholder="EX : 火鍋"
           />
         </div>

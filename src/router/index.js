@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ityHeaderBeforeLogin from "@/vues/shared/ityHeaderBeforeLogin.vue";
-//import ityConsumerHeader from "@/vues/shared/ityConsumerHeader.vue";
+import ityConsumerHeader from "@/vues/shared/ityConsumerHeader.vue";
 import itySellerHeader from "@/vues/shared/itySellerHeader.vue";
-//import ityOrganizationHeader from "@/vues/shared/ityOrganizationHeader.vue";
+import ityOrganizationHeader from "@/vues/shared/ityOrganizationHeader.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
+import chatItem from "@/vues/shared/chatItem.vue";
 import backTop from "@/vues/shared/backTopItem.vue";
 const routes = [
   {
@@ -70,7 +71,7 @@ const routes = [
     name: "consumerSystemFunction",
     components: {
       default: () => import("@/views/cyt/comsumer/consumerSystemFunction.vue"),
-      ityHeaderBeforeLogin,
+      ityConsumerHeader,
       backTop,
       ityFooter,
     },
@@ -82,7 +83,7 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/seller/sellerHome.vue"),
       itySellerHeader,
-      backTop,
+      chatItem,
       ityFooter,
     },
   },
@@ -167,12 +168,22 @@ const routes = [
   },
   //organizationIdentity
   {
+    path: "/cyt/organization-home",
+    name: "organizationHome",
+    components: {
+      default: () => import("@/views/cyt/organization/organizationHome.vue"),
+      ityOrganizationHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/organization-system-function",
     name: "organizationSystemFunction",
     components: {
       default: () =>
         import("@/views/cyt/organization/organizationSystemFunction.vue"),
-      ityHeaderBeforeLogin,
+      ityOrganizationHeader,
       backTop,
       ityFooter,
     },

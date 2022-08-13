@@ -3,7 +3,7 @@
     class="flex items-center justify-between w-full px-5 sm:px-10 h-24 lg:h-32 xl:h-[150px] bg-white"
   >
     <div class="cursor-pointer">
-      <router-link :to="{ name: '' }" class="w-full">
+      <router-link :to="{ name: 'organizationHome' }" class="w-full">
         <ity-header-logo
           class="w-20 sm:w-30 lg:w-32 xl:w-40 h-10 sm:h-15 lg:h-16 xl:h-20"
         ></ity-header-logo>

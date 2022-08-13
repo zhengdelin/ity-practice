@@ -2,6 +2,6 @@
 <template>
   <img
     class="w-full h-full rounded-full"
-    src="https://commerce.nccu.edu.tw/uploads/asset/data/5f0684e91d41c878d9000214/DSC00819.jpg"
+    src="https://upload.wikimedia.org/wikipedia/commons/0/0f/2017_NSYSU_maingate.jpg"
   />
 </template>

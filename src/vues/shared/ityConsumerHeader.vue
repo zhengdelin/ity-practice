@@ -18,6 +18,14 @@
       </headerElement>
     </div>
   </div>
+  <div>
+    <alert-item
+      :alert="'是否確認要登出'"
+      :showable="alertShowable"
+      @onCancelClick="onCancelClick"
+      @onConfirmClick="onConfirmClick"
+    ></alert-item>
+  </div>
 </template>
 
 <script>
@@ -30,12 +38,14 @@ import heartIcon from "@/vues/icons/heartIcon.vue";
 import orderIcon from "@/vues/icons/orderIcon.vue";
 import profileIcon from "@/vues/icons/profileIcon.vue";
 import logoutIcon from "@/vues/icons/logoutIcon.vue";
+import alertItem from "@/vues/shows/alertItem.vue";
 
 export default {
   name: "sharedHeader",
   components: {
     ityHeaderLogo,
     headerElement,
+    alertItem,
     // questionIcon,
     // searchIcon,
     // ticketIcon,
@@ -49,7 +59,7 @@ export default {
       {
         name: "系統使用",
         icon: questionIcon,
-        routeName: "organizationSystemFunction",
+        routeName: "",
       },
       {
         name: "找優惠",
@@ -82,7 +92,22 @@ export default {
         routeName: "",
       },
     ];
-    return { headerElementList };
+    const onCancelClick = () => {
+      this.alertShowable = false;
+    };
+    const onConfirmClick = () => {
+      this.alertShowable = true;
+      // routeName: "",
+    };
+    if (headerElementList.name == "登出") {
+      this.alertShowable = true;
+    }
+    return {
+      headerElementList,
+      onCancelClick,
+      onConfirmClick,
+      alertShowable: false,
+    };
   },
 };
 </script>

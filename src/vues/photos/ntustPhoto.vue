@@ -2,6 +2,6 @@
 <template>
   <img
     class="w-full h-full rounded-full"
-    src="https://commerce.nccu.edu.tw/uploads/asset/data/5f0684e91d41c878d9000214/DSC00819.jpg"
+    src="https://techexpo.moe.edu.tw/search/images/upload/schools/1/b/2021090705404701_1.jpg"
   />
 </template>
