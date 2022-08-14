@@ -17,9 +17,27 @@
         class="w-full bg-[#DDA4F1]"
       ></classic-title>
     </div>
+    <!-- 先暫時放這 -->
     <div class="space-y-10 md:space-y-[60px]">
       <classic-title
-        :content="'ITY 官方推薦特約學校'"
+        :content="'暫放 / (賣家端)進階搜尋'"
+        class="w-full bg-[#DDA4F1]"
+      ></classic-title>
+      <div
+        class="relative flex items-center justify-center w-full h-[540px] md:h-[500px] 2xl:h-[540px] bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')]"
+        style="background-position: 50%"
+      >
+        <classic-advanced-filter
+          class="rounded-xl z-20"
+        ></classic-advanced-filter>
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50 z-10"
+        ></div>
+      </div>
+    </div>
+    <div class="space-y-10 md:space-y-[60px]">
+      <classic-title
+        :content="'推薦特約學校'"
         class="w-full bg-[#DDA4F1]"
       ></classic-title>
       <div
@@ -38,6 +56,7 @@
 <script>
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import classicSellerFilter from "@/vues/classic/classicSellerFilter.vue";
+import classicAdvancedFilter from "@/vues/classic/classicAdvancedFilter.vue";
 import organizationCard from "@/vues/cards/organizationCard.vue";
 import nutcPhoto from "@/vues/photos/nutcPhoto.vue";
 import ntuPhoto from "@/vues/photos/ntuPhoto.vue";
@@ -58,6 +77,7 @@ export default {
   components: {
     classicTitle,
     classicSellerFilter,
+    classicAdvancedFilter,
     organizationCard,
     // nutcPhoto,
     // ntuPhoto,

@@ -20,7 +20,7 @@
     <!-- 先暫時放這 -->
     <div class="space-y-10 md:space-y-[60px]">
       <classic-title
-        :content="'暫放 / (登入前)進階搜尋'"
+        :content="'暫放 / (消費者端)進階搜尋'"
         class="w-full bg-[#DDA4F1]"
       ></classic-title>
       <div
@@ -65,36 +65,6 @@
         ></shop-card>
       </div>
     </div>
-    <div class="space-y-10 md:space-y-[60px]">
-      <classic-title
-        :content="'{organizationName2} 推薦店家'"
-        class="w-full bg-[#DDA4F1]"
-      ></classic-title>
-      <div
-        class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white gap-x-2 sm:gap-x-4 md:gap-x-5 2xl:gap-x-10 gap-y-5 sm:gap-y-6 md:gap-y-8 2xl:gap-y-10"
-      >
-        <shop-card
-          v-for="(item, index) in shopCardList"
-          :key="index"
-          :shopCard="item"
-        ></shop-card>
-      </div>
-    </div>
-    <div class="space-y-10 md:space-y-[60px]">
-      <classic-title
-        :content="'{organizationName3} 推薦店家'"
-        class="w-full bg-[#DDA4F1]"
-      ></classic-title>
-      <div
-        class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white gap-x-2 sm:gap-x-4 md:gap-x-5 2xl:gap-x-10 gap-y-5 sm:gap-y-6 md:gap-y-8 2xl:gap-y-10"
-      >
-        <shop-card
-          v-for="(item, index) in shopCardList"
-          :key="index"
-          :shopCard="item"
-        ></shop-card>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -118,7 +88,7 @@ import pizzaPhoto from "@/vues/photos/pizzaPhoto.vue";
 import { computed } from "vue";
 
 export default {
-  name: "beforeLoginPage",
+  name: "consumerHomePage",
   components: {
     classicTitle,
     classicConsumerFilter,

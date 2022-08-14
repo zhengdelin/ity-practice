@@ -28,7 +28,7 @@ import searchIcon from "@/vues/icons/searchIcon.vue";
 import questionIcon from "@/vues/icons/questionIcon.vue";
 
 export default {
-  name: "sharedHeader",
+  name: "beforeLoginHeader",
   components: {
     ityHeaderLogo,
     headerElement,
@@ -38,18 +38,24 @@ export default {
   },
   setup() {
     const headerElementList = [
-      { name: "登入", icon: loginIcon, routeName: "loginPage" },
-      { name: "找優惠", icon: searchIcon },
+      { name: "登入", icon: loginIcon, routeName: "loginPage", type: "router" },
+      {
+        name: "找優惠",
+        icon: searchIcon,
+        routeName: "",
+        type: "router",
+      },
       {
         name: "系統使用",
         icon: questionIcon,
         routeName: "systemFunctionBeforeLogin",
+        type: "router",
       },
     ];
-    const reload = () => {
-      location.reload();
-    };
-    return { headerElementList, reload };
+    // const reload = () => {
+    //   location.reload();
+    // };
+    return { headerElementList };
   },
 };
 </script>

@@ -3,7 +3,7 @@
     class="flex items-center justify-between w-full px-5 sm:px-10 h-24 lg:h-32 xl:h-[150px] bg-white"
   >
     <div class="cursor-pointer">
-      <router-link :to="{ name: '' }" class="w-full">
+      <router-link :to="{ name: 'consumerHome' }" class="w-full">
         <ity-header-logo
           class="w-20 sm:w-30 lg:w-32 xl:w-40 h-10 sm:h-15 lg:h-16 xl:h-20"
         ></ity-header-logo>
@@ -20,7 +20,7 @@
   </div>
   <div>
     <alert-item
-      :alert="'是否確認要登出'"
+      :alert="'⚠ (消費者端)是否確認要登出'"
       :showable="alertShowable"
       @onCancelClick="onCancelClick"
       @onConfirmClick="onConfirmClick"
@@ -43,7 +43,7 @@ import { ref } from "@vue/reactivity";
 import { useRouter } from "vue-router";
 
 export default {
-  name: "sharedHeader",
+  name: "consumerHeader",
   components: {
     ityHeaderLogo,
     headerElement,
@@ -64,7 +64,7 @@ export default {
     };
     const onConfirmClick = () => {
       alertShowable.value = true;
-      router.push({ name: "sellerHome" });
+      router.push({ name: "beforeLoginHome" });
       // 暫時連到sellerHome
     };
     const headerElementList = [

@@ -18,6 +18,14 @@
       </headerElement>
     </div>
   </div>
+  <div>
+    <alert-item
+      :alert="'⚠ (賣家端)是否確認要登出'"
+      :showable="alertShowable"
+      @onCancelClick="onCancelClick"
+      @onConfirmClick="onConfirmClick"
+    ></alert-item>
+  </div>
 </template>
 
 <script>
@@ -29,12 +37,16 @@ import advertiseIcon from "@/vues/icons/advertiseIcon.vue";
 import ticketIcon from "@/vues/icons/ticketIcon.vue";
 import profileIcon from "@/vues/icons/profileIcon.vue";
 import logoutIcon from "@/vues/icons/logoutIcon.vue";
+import alertItem from "@/vues/shows/alertItem.vue";
+import { ref } from "@vue/reactivity";
+import { useRouter } from "vue-router";
 
 export default {
-  name: "sharedHeader",
+  name: "sellerHeader",
   components: {
     ityHeaderLogo,
     headerElement,
+    alertItem,
     // questionIcon,
     // contractIcon,
     // advertiseIcon,
@@ -43,39 +55,60 @@ export default {
     // logoutIcon,
   },
   setup() {
+    const alertShowable = ref(false);
+    const router = useRouter();
+    const onCancelClick = () => {
+      alertShowable.value = false;
+    };
+    const onConfirmClick = () => {
+      alertShowable.value = true;
+      router.push({ name: "beforeLoginHome" });
+      // 暫時連到sellerHome
+    };
     const headerElementList = [
       {
         name: "系統使用",
         icon: questionIcon,
         routeName: "sellerSystemFunction",
+        type: "router",
       },
       {
         name: "簽署合約",
         icon: contractIcon,
         routeName: "sellerContractIntro",
+        type: "router",
       },
       {
         name: "發布廣告",
         icon: advertiseIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "優惠券",
         icon: ticketIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "個人資料",
         icon: profileIcon,
         routeName: "sellerInfo",
+        type: "router",
       },
       {
         name: "登出",
         icon: logoutIcon,
-        routeName: "",
+        type: "button",
+        onclick: onConfirmClick,
       },
     ];
-    return { headerElementList };
+    return {
+      headerElementList,
+      onCancelClick,
+      onConfirmClick,
+      alertShowable,
+    };
   },
 };
 </script>

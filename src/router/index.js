@@ -67,10 +67,21 @@ const routes = [
   },
   //consumerIdentity
   {
+    path: "/cyt/consumer-home",
+    name: "consumerHome",
+    components: {
+      default: () => import("@/views/cyt/consumer/consumerHome.vue"),
+      ityConsumerHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/consumer-system-function",
     name: "consumerSystemFunction",
     components: {
-      default: () => import("@/views/cyt/comsumer/consumerSystemFunction.vue"),
+      default: () => import("@/views/cyt/consumer/consumerSystemFunction.vue"),
       ityConsumerHeader,
       backTop,
       ityFooter,
@@ -83,6 +94,7 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/seller/sellerHome.vue"),
       itySellerHeader,
+      backTop,
       chatItem,
       ityFooter,
     },
@@ -174,6 +186,7 @@ const routes = [
       default: () => import("@/views/cyt/organization/organizationHome.vue"),
       ityOrganizationHeader,
       backTop,
+      chatItem,
       ityFooter,
     },
   },
