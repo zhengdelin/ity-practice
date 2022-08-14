@@ -39,6 +39,8 @@ import orderIcon from "@/vues/icons/orderIcon.vue";
 import profileIcon from "@/vues/icons/profileIcon.vue";
 import logoutIcon from "@/vues/icons/logoutIcon.vue";
 import alertItem from "@/vues/shows/alertItem.vue";
+import { ref } from "@vue/reactivity";
+import { useRouter } from "vue-router";
 
 export default {
   name: "sharedHeader",
@@ -55,58 +57,66 @@ export default {
     // logoutIcon,
   },
   setup() {
+    const alertShowable = ref(false);
+    const router = useRouter();
+    const onCancelClick = () => {
+      alertShowable.value = false;
+    };
+    const onConfirmClick = () => {
+      alertShowable.value = true;
+      router.push({ name: "sellerHome" });
+      // 暫時連到sellerHome
+    };
     const headerElementList = [
       {
         name: "系統使用",
         icon: questionIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "找優惠",
         icon: searchIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "我的優惠券 ",
         icon: ticketIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "收藏",
         icon: heartIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "預約訂餐",
         icon: orderIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "個人資料",
         icon: profileIcon,
         routeName: "",
+        type: "router",
       },
       {
         name: "登出",
         icon: logoutIcon,
-        routeName: "",
+        type: "button",
+        onclick: onConfirmClick,
       },
     ];
-    const onCancelClick = () => {
-      this.alertShowable = false;
-    };
-    const onConfirmClick = () => {
-      this.alertShowable = true;
-      // routeName: "",
-    };
-    if (headerElementList.name == "登出") {
-      this.alertShowable = true;
-    }
+
     return {
       headerElementList,
       onCancelClick,
       onConfirmClick,
-      alertShowable: false,
+      alertShowable,
     };
   },
 };

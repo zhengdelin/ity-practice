@@ -55,12 +55,13 @@ export default {
       default: false,
     },
   },
-  setup() {
+  emits: ["onCancelClick", "onConfirmClick"],
+  setup(_, { emit }) {
     const onCancelClick = () => {
-      this.$emit("onCancelClick");
+      emit("onCancelClick");
     };
     const onConfirmClick = () => {
-      this.$emit("onConfirmClick");
+      emit("onConfirmClick");
     };
     return { onCancelClick, onConfirmClick };
   },
