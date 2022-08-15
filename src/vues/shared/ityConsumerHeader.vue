@@ -71,31 +71,31 @@ export default {
       {
         name: "系統使用",
         icon: questionIcon,
-        routeName: "",
+        routeName: "consumerSystemFunction",
         type: "router",
       },
       {
         name: "找優惠",
         icon: searchIcon,
-        routeName: "",
+        routeName: "consumerFindOffer",
         type: "router",
       },
       {
-        name: "我的優惠券 ",
+        name: "我的優惠券",
         icon: ticketIcon,
-        routeName: "",
+        routeName: "myCoupon",
         type: "router",
       },
       {
         name: "收藏",
         icon: heartIcon,
-        routeName: "",
+        routeName: "likedSeller",
         type: "router",
       },
       {
         name: "預約訂餐",
         icon: orderIcon,
-        routeName: "",
+        routeName: "reservationPage",
         type: "router",
       },
       {

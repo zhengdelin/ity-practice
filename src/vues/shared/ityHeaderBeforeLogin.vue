@@ -42,7 +42,7 @@ export default {
       {
         name: "找優惠",
         icon: searchIcon,
-        routeName: "",
+        routeName: "findOfferBeforeLogin",
         type: "router",
       },
       {
