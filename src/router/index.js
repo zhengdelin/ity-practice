@@ -135,6 +135,17 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/consumer/reservationPage.vue"),
       ityConsumerHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/consumer-info",
+    name: "consumerInfo",
+    components: {
+      default: () => import("@/views/cyt/consumer/consumerInfo.vue"),
+      ityConsumerHeader,
       chatItem,
       ityFooter,
     },

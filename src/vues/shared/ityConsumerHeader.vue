@@ -101,7 +101,7 @@ export default {
       {
         name: "個人資料",
         icon: profileIcon,
-        routeName: "",
+        routeName: "consumerInfo",
         type: "router",
       },
       {

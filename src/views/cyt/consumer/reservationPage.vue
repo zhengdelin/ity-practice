@@ -13,17 +13,19 @@
   >
     <!--orderAdvertise-->
     <div
-      class="flex flex-col justify-center items-center w-full h-[600px] bg-[#F9F9F9]"
+      class="flex flex-col justify-center items-center w-full h-[400px] lg:h-[480px] xl:h-[540px] 2xl:h-[600px] bg-[#F9F9F9] space-y-6 sm:space-y-10 lg:space-y-4"
     >
       <div>
         <!--動畫-->
         <Vue3Lottie
-          :animationData="howTargetedTrafficWorksJSON"
-          class="2xl:w-[400px] 2xl:h-[400px]"
+          :animationData="orderDeliveredJSON"
+          class="w-60 lg:w-80 2xl:w-[400px] h-60 lg:h-80 2xl:h-[400px]"
         />
       </div>
-      <div class="text-4xl">
-        飢腸轆轆了嗎 ? 快使用ITY預訂餐點，節省名店大排長龍的等待時間
+      <div
+        class="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium 2xl:font-semibold p-4"
+      >
+        飢腸轆轆了嗎 ? 快使用 ITY 預訂餐點，節省名店大排長龍的等待時間
       </div>
     </div>
     <div>
@@ -85,7 +87,7 @@ import { computed } from "vue";
 /*Lottiefiles*/
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-import howTargetedTrafficWorksJSON from "@/vues/json/how-targeted-traffic-works.json";
+import orderDeliveredJSON from "@/vues/json/order-delivered.json";
 
 export default {
   name: "consumerHomePage",
@@ -158,7 +160,7 @@ export default {
       }
       return list;
     });
-    return { shopCardList, howTargetedTrafficWorksJSON };
+    return { shopCardList, orderDeliveredJSON };
   },
 };
 </script>
