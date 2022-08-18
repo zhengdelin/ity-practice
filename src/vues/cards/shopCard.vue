@@ -4,12 +4,32 @@
     class="flex flex-col w-60 sm:w-64 md:w-full h-96 md:h-[400px] xl:h-[480px] 2xl:h-[600px] rounded-xl drop-shadow-md lg:drop-shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
   >
     <div
-      class="w-60 sm:w-64 md:w-full h-1/2 rounded-t-xl overflow-hidden bg-no-repeat bg-cover bg-center"
+      class="relative w-60 sm:w-64 md:w-full h-1/2 rounded-t-xl overflow-hidden bg-no-repeat bg-cover bg-center"
     >
       <component
         :is="shopCard.sellerPhoto"
         class="w-full h-full rounded-t-xl"
       />
+      <div
+        class="absolute top-6 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-[#B983CE] opacity-80 hover:bg-gradient-to-r hover:from-[#84fab0] hover:to-[#8fd3f4]"
+      >
+        <p
+          class="font-medium xl:font-semibold tracking-wider text-base xl:text-xl text-white"
+        >
+          {{ shopCard.organizationName }} 特約
+        </p>
+      </div>
+      <div
+        class="absolute top-[72px] md:top-20 2xl:top-24 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-white opacity-80 hover:bg-gradient-to-r hover:from-[#fad0c4] hover:to-[#ffd1ff] space-x-2 px-1 xl:px-2"
+      >
+        <tag-icon class="hover:fill-[#2D2D2D]"></tag-icon>
+        <p
+          class="font-medium xl:font-semibold tracking-wider text-base xl:text-xl text-[#4B4B4B] hover:text-[#2D2D2D]"
+        >
+          On sale
+        </p>
+      </div>
+      <!-- background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); -->
     </div>
     <div
       class="border border-[#ECECEC] w-60 sm:w-64 md:w-full h-1/2 bg-white rounded-b-xl"
@@ -70,6 +90,7 @@
 import classicButton from "@/vues/classic/classicButton.vue";
 import badgeItemType1 from "@/vues/shows/badgeItemType1.vue";
 import badgeItemType2 from "@/vues/shows/badgeItemType2.vue";
+import tagIcon from "@/vues/icons/tagIcon.vue";
 import loveIcon from "@/vues/icons/loveIcon.vue";
 import menuIcon from "@/vues/icons/clipboardListIcon.vue";
 
@@ -81,6 +102,7 @@ export default {
     classicButton,
     badgeItemType1,
     badgeItemType2,
+    tagIcon,
     loveIcon,
     menuIcon,
   },

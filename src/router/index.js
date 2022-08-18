@@ -146,6 +146,7 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/consumer/consumerInfo.vue"),
       ityConsumerHeader,
+      backTop,
       chatItem,
       ityFooter,
     },

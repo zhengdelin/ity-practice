@@ -129,50 +129,62 @@ export default {
     const _shopCardList = [
       {
         sellerPhoto: curryPhoto,
+        organizationName: "NUTC",
         sellerName: "蘇坤蔚牛排 Sukhumvit STEAK",
       },
       {
         sellerPhoto: bbqPhoto,
+        organizationName: "NUTC",
         sellerName: "焰與醃",
       },
       {
         sellerPhoto: porkPhoto,
+        organizationName: "NUTC",
         sellerName: "低溫豬肋",
       },
       {
         sellerPhoto: scallopPhoto,
+        organizationName: "NTU",
         sellerName: "深海大扇貝",
       },
       {
         sellerPhoto: oysterPhoto,
+        organizationName: "NTU",
         sellerName: "吃生蠔會並ㄅㄧㄤˋ叫",
       },
       {
         sellerPhoto: noodlesPhoto,
+        organizationName: "NTU",
         sellerName: "感受雜燴裡的旋律",
       },
       {
         sellerPhoto: hotpotPhoto,
+        organizationName: "NCCU",
         sellerName: "道地韓國養生海鮮大醬湯",
       },
       {
         sellerPhoto: sushiPhoto,
+        organizationName: "NCCU",
         sellerName: "誰說海的味道都是鹹的",
       },
       {
         sellerPhoto: burritoPhoto,
+        organizationName: "NCCU",
         sellerName: "各種奇怪食材才是捲餅",
       },
       {
         sellerPhoto: doughnutPhoto,
+        organizationName: "NTPU",
         sellerName: "世界第二好吃的甜甜圈",
       },
       {
         sellerPhoto: fruitPhoto,
+        organizationName: "NTPU",
         sellerName: "如果說台灣是水果王國",
       },
       {
         sellerPhoto: pizzaPhoto,
+        organizationName: "NTPU",
         sellerName: "既然要胖了那就多吃點",
       },
     ];
