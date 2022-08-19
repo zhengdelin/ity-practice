@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<!--Use:sellerReceivedContract, sellerSignedContract, sellerSignedOnlineContract-->
+<!--Use:sellerHome, sellerReceivedContract, sellerSignedContract, sellerSignedOnlineContract-->
 <template>
-  <div class="bg-[#B983CE]">
+  <div class="bg-[#B983CE]" v-if="showable">
     <div
       class="mx-auto px-3 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-3 xl:py-4 2xl:py-5"
     >
@@ -33,7 +33,11 @@
             </div>
           </router-link>
         </div>
-        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
+        <!--取消鍵-->
+        <div
+          @click="onCancelClick()"
+          class="order-2 flex-shrink-0 sm:order-3 sm:ml-3"
+        >
           <button
             type="button"
             class="-mr-1 flex p-2 rounded-md bg-[#DDA4F1] hover:bg-[#76448A] focus:outline-none focus:ring-2 focus:bg-[#9763AB] focus:ring-white sm:-mr-2"
@@ -52,10 +56,22 @@ import advertiseIcon from "@/vues/icons/advertiseIcon.vue";
 import colsedIcon from "@/vues/icons/colsedIcon.vue";
 
 export default {
+  props: {
+    showable: {
+      type: Boolean,
+      default: true,
+    },
+  },
   components: {
     advertiseIcon,
     colsedIcon,
   },
-  setup() {},
+  emits: ["onCancelClick"],
+  setup(_, { emit }) {
+    const onCancelClick = () => {
+      emit("onCancelClick");
+    };
+    return { onCancelClick };
+  },
 };
 </script>

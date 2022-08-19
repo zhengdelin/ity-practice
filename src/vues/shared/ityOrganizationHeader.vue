@@ -62,7 +62,6 @@ export default {
     const onConfirmClick = () => {
       alertShowable.value = true;
       router.push({ name: "beforeLoginHome" });
-      // 暫時連到sellerHome
     };
     const headerElementList = [
       {

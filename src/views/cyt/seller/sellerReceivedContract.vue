@@ -1,5 +1,8 @@
 <template>
-  <seller-banners></seller-banners>
+  <seller-banners
+    :showable="bannerShowable"
+    @onCancelClick="onCancelClick"
+  ></seller-banners>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
   >
@@ -23,6 +26,7 @@ import notificationCard from "@/vues/cards/pushNotificationCard.vue";
 import nutcPhoto from "@/vues/photos/nutcPhoto.vue";
 import ntuPhoto from "@/vues/photos/ntuPhoto.vue";
 import nccuPhoto from "@/vues/photos/nccuPhoto.vue";
+import { ref } from "@vue/reactivity";
 
 export default {
   name: "receivedContract",
@@ -35,6 +39,10 @@ export default {
     // nccuPhoto,
   },
   setup() {
+    const bannerShowable = ref(true);
+    const onCancelClick = () => {
+      bannerShowable.value = false;
+    };
     const notificationCardList = [
       {
         avater: nutcPhoto,
@@ -49,7 +57,7 @@ export default {
         organizationName: "國立政治大學",
       },
     ];
-    return { notificationCardList };
+    return { bannerShowable, onCancelClick, notificationCardList };
   },
 };
 </script>

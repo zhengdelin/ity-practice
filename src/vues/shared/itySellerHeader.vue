@@ -63,7 +63,6 @@ export default {
     const onConfirmClick = () => {
       alertShowable.value = true;
       router.push({ name: "beforeLoginHome" });
-      // 暫時連到sellerHome
     };
     const headerElementList = [
       {
@@ -81,7 +80,7 @@ export default {
       {
         name: "發布廣告",
         icon: advertiseIcon,
-        routeName: "",
+        routeName: "sellerAdvertise",
         type: "router",
       },
       {

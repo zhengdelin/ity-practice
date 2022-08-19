@@ -105,16 +105,12 @@ export default {
       { title: "電話", icon: phoneIcon },
     ];
 
-    const backTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
     const save = () => {
       router.push({ name: "sellerInfo" });
       // this.$router.push({ name: "sellerInfo" });
     };
 
-    return { classicInputList, backTop, save };
+    return { classicInputList, save };
   },
 };
 </script>

@@ -11,7 +11,7 @@
         class="w-full h-full rounded-t-xl"
       />
       <div
-        class="absolute top-6 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-[#B983CE] opacity-80 hover:bg-gradient-to-r hover:from-[#84fab0] hover:to-[#8fd3f4]"
+        class="cursor-default absolute top-6 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-[#B983CE] opacity-80 hover:bg-gradient-to-r hover:from-[#84fab0] hover:to-[#8fd3f4]"
       >
         <p
           class="font-medium xl:font-semibold tracking-wider text-base xl:text-xl text-white"
@@ -20,11 +20,11 @@
         </p>
       </div>
       <div
-        class="absolute top-[72px] md:top-20 2xl:top-24 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-white opacity-80 hover:bg-gradient-to-r hover:from-[#fad0c4] hover:to-[#ffd1ff] space-x-2 px-1 xl:px-2"
+        class="cursor-default absolute top-[72px] md:top-20 2xl:top-24 right-0 flex items-center justify-center w-1/2 h-8 md:h-10 lg:h-12 rounded-l-md lg:rounded-l-lg bg-white opacity-80 hover:bg-[#ECECEC] space-x-2 px-1 xl:px-2"
       >
-        <tag-icon class="hover:fill-[#2D2D2D]"></tag-icon>
+        <tag-icon></tag-icon>
         <p
-          class="font-medium xl:font-semibold tracking-wider text-base xl:text-xl text-[#4B4B4B] hover:text-[#2D2D2D]"
+          class="font-medium xl:font-semibold tracking-wider text-base xl:text-xl text-[#4B4B4B]"
         >
           On sale
         </p>

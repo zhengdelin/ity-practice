@@ -1,4 +1,8 @@
 <template>
+  <seller-banners
+    :showable="bannerShowable"
+    @onCancelClick="onCancelClick"
+  ></seller-banners>
   <div
     class="relative flex items-center justify-center px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] w-full h-[400px] md:h-[480px] lg:h-[600px] bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1620882133512-5149956b1261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80')]"
     style="background-position: 50%"
@@ -54,6 +58,7 @@
 </template>
 
 <script>
+import sellerBanners from "@/vues/shows/sellerBanners.vue";
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import classicSellerFilter from "@/vues/classic/classicSellerFilter.vue";
 import classicAdvancedFilter from "@/vues/classic/classicAdvancedFilter.vue";
@@ -71,10 +76,12 @@ import ntubPhoto from "@/vues/photos/ntubPhoto.vue";
 import tmuPhoto from "@/vues/photos/tmuPhoto.vue";
 import ntuePhoto from "@/vues/photos/ntuePhoto.vue";
 import { computed } from "vue";
+import { ref } from "vue";
 
 export default {
   name: "sellerHomePage",
   components: {
+    sellerBanners,
     classicTitle,
     classicSellerFilter,
     classicAdvancedFilter,
@@ -93,6 +100,10 @@ export default {
     // ntuePhoto,
   },
   setup() {
+    const bannerShowable = ref(true);
+    const onCancelClick = () => {
+      bannerShowable.value = false;
+    };
     const _organizationCardList = [
       {
         organizationPhoto: nutcPhoto,
@@ -154,7 +165,7 @@ export default {
       }
       return list;
     });
-    return { organizationCardList };
+    return { bannerShowable, onCancelClick, organizationCardList };
   },
 };
 </script>

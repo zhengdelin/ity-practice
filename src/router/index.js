@@ -174,6 +174,7 @@ const routes = [
       ityFooter,
     },
   },
+  // Contract Function
   {
     path: "/cyt/seller-contract-intro",
     name: "sellerContractIntro",
@@ -223,6 +224,17 @@ const routes = [
     name: "sellerContractStatus",
     components: {
       default: () => import("@/views/cyt/seller/sellerContractStatus.vue"),
+      itySellerHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-advertise",
+    name: "sellerAdvertise",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerAdvertise.vue"),
       itySellerHeader,
       backTop,
       chatItem,
