@@ -235,7 +235,7 @@ const routes = [
     name: "sellerAdvertise",
     components: {
       default: () => import("@/views/cyt/seller/sellerAdvertise.vue"),
-      itySellerHeader,
+      //itySellerHeader,
       backTop,
       chatItem,
       ityFooter,

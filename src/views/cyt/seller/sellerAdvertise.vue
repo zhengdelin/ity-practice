@@ -3,11 +3,13 @@
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] py-[100px] space-y-20 bg-[#F2F2F2]"
   >
     <!--功能列上排-->
-    <div class="flex flex-row space-x-10">
+    <div
+      class="flex flex-col lg:flex-row space-x-0 lg:space-x-10 space-y-10 lg:space-y-0"
+    >
       <!--廣告後臺數據分析功能區塊-->
       <router-link
         :to="{ name: '' }"
-        class="relative w-2/3 overflow-hidden"
+        class="relative w-full lg:w-2/3 overflow-hidden"
         style="background-position: 50%"
       >
         <div class="w-full h-[600px] bg-white p-10 space-y-10">
@@ -15,13 +17,13 @@
           <div>
             <Vue3Lottie
               :animationData="analyticsJSON"
-              class="w-[400px] h-[400px]"
+              class="w-40 2xl:w-[400px] h-40 2xl:h-[400px]"
             />
           </div>
           <div class="text-4xl font-semibold">廣告後臺數據分析</div>
         </div>
         <div
-          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold text-black hover:bg-white opacity-0 hover:opacity-80 transform transition-all hover:translate-x-10"
+          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold 2xl:font-bold text-white hover:bg-black opacity-0 hover:opacity-20 transform transition-all hover:translate-x-10"
         >
           Advertising backend data analysis
         </div>
@@ -29,18 +31,20 @@
 
       <!--ITY Logo區塊-->
       <div
-        class="flex justify-center items-center w-1/3 h-[600px] bg-[#9763AB]"
+        class="flex justify-center items-center w-full lg:w-1/3 h-[600px] bg-[#9763AB]"
       >
         <div><ity-footer-logo></ity-footer-logo></div>
       </div>
     </div>
 
     <!--功能列下排-->
-    <div class="flex flex-row space-x-10">
+    <div
+      class="flex flex-col lg:flex-row space-x-0 lg:space-x-10 space-y-10 lg:space-y-0"
+    >
       <!--購買點數功能區塊-->
       <router-link
         :to="{ name: '' }"
-        class="relative w-1/2 overflow-hidden"
+        class="relative w-full lg:w-1/2 overflow-hidden"
         style="background-position: 50%"
       >
         <div class="w-full h-[600px] bg-[#9763AB] p-10 space-y-10">
@@ -48,13 +52,13 @@
           <div>
             <Vue3Lottie
               :animationData="premiumJSON"
-              class="w-[400px] h-[400px]"
+              class="w-40 2xl:w-[400px] h-40 2xl:h-[400px]"
             />
           </div>
           <div class="text-4xl font-semibold text-white">購買點數</div>
         </div>
         <div
-          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold text-black hover:bg-white opacity-0 hover:opacity-60 transform transition-all hover:translate-x-10"
+          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold 2xl:font-bold text-black hover:bg-white opacity-0 hover:opacity-60 transform transition-all hover:translate-x-10"
         >
           Buy Points
         </div>
@@ -62,7 +66,7 @@
       <!--新增廣告貼文功能區塊-->
       <router-link
         :to="{ name: '' }"
-        class="relative w-1/2 overflow-hidden"
+        class="relative w-full lg:w-1/2 overflow-hidden"
         style="background-position: 50%"
       >
         <div class="w-full h-[600px] bg-white p-10 space-y-10">
@@ -70,13 +74,13 @@
           <div>
             <Vue3Lottie
               :animationData="advertisePostJSON"
-              class="w-[400px] h-[400px]"
+              class="w-40 2xl:w-[400px] h-40 2xl:h-[400px]"
             />
           </div>
           <div class="text-4xl font-semibold">新增廣告貼文</div>
         </div>
         <div
-          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold text-black hover:bg-white opacity-0 hover:opacity-80 transform transition-all hover:translate-x-10"
+          class="absolute bottom-0 flex items-center pl-10 w-full h-1/4 text-2xl font-semibold 2xl:font-bold text-white hover:bg-black opacity-0 hover:opacity-20 transform transition-all hover:translate-x-10"
         >
           Add a new advertisement post
         </div>
