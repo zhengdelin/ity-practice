@@ -1,3 +1,4 @@
+<!--Use:sellerAdvertise, shared/ityFooter-->
 <template>
   <svg
     version="1.0"

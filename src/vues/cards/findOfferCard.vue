@@ -1,3 +1,4 @@
+<!--Use:findOfferBeforeLogin-->
 <template>
   <div
     @click="forword"

@@ -1,3 +1,4 @@
+<!--Use:consumerInfo-->
 <template>
   <div
     class="flex flex-col items-start justify-between w-full h-fit bg-white rounded-xl shadow-xl px-20 2xl:px-[100px] py-10 2xl:py-[60px] space-y-10"

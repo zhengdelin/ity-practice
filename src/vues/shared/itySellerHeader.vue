@@ -86,7 +86,7 @@ export default {
       {
         name: "優惠券",
         icon: ticketIcon,
-        routeName: "",
+        routeName: "sellerMakeCoupon",
         type: "router",
       },
       {

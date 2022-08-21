@@ -102,7 +102,7 @@ const routes = [
     path: "/cyt/consumer-find-offer",
     name: "consumerFindOffer",
     components: {
-      default: () => import("@/views/cyt/consumer/consumerfindOffer.vue"),
+      default: () => import("@/views/cyt/consumer/consumerFindOffer.vue"),
       ityConsumerHeader,
       backTop,
       chatItem,
@@ -242,11 +242,43 @@ const routes = [
     },
   },
   {
+    path: "/cyt/seller-data-analysis",
+    name: "sellerDataAnalysis",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerDataAnalysis.vue"),
+      itySellerHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-buy-points-intro",
+    name: "sellerBuyPointsIntro",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerBuyPointsIntro.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/seller-add-post",
     name: "sellerAddPost",
     components: {
       default: () => import("@/views/cyt/seller/sellerAddPost.vue"),
       itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-make-coupon",
+    name: "sellerMakeCoupon",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerMakeCoupon.vue"),
+      itySellerHeader,
+      backTop,
       chatItem,
       ityFooter,
     },

@@ -1,4 +1,4 @@
-<!--Use:shared/ityHeaderBeforeLogin, shared/itySellerHeader-->
+<!--Use:shared/ityHeaderBeforeLogin, ityConsumerHeader, itySellerHeader, ityOrganizationHeader-->
 <template>
   <template v-if="headerElement.type === 'router'">
     <router-link

@@ -1,3 +1,4 @@
+<!--Use:organizationHome-->
 <template>
   <div
     class="flex flex-col justify-center items-center w-full h-80 md:h-96 lg:h-[480px] bg-white space-y-10 lg:space-y-[60px]"

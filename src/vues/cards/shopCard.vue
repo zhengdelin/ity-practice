@@ -1,4 +1,4 @@
-<!--Use:sellerHome-->
+<!--Use:beforeLoginHome, consumerHome, reservationPage, sellerHome, organizationHome-->
 <template>
   <div
     class="flex flex-col w-60 sm:w-64 md:w-full h-96 md:h-[400px] xl:h-[480px] 2xl:h-[600px] rounded-xl drop-shadow-md lg:drop-shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"

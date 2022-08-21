@@ -1,4 +1,4 @@
-<!--Use:feedbackCard-->
+<!--Use:cards/feedbackCard-->
 <template>
   <div
     class="flex flex-row items-center w-full h-48 sm:h-56 lg:h-80 2xl:h-[400px] pl-6 sm:pl-10 lg:pl-20 pr-4 space-x-10 sm:space-x-14 lg:space-x-32 bg-white"

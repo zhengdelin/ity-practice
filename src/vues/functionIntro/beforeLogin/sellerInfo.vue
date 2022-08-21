@@ -1,4 +1,4 @@
-<!--Use:systemFunctionBeforeLogin-->
+<!--Use:systemFunctionBeforeLogin, consumerSystemFunction-->
 <template>
   <div class="space-y-10 xl:space-y-20 md:w-1/2">
     <div

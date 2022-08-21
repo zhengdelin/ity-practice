@@ -1,3 +1,4 @@
+<!--Use:classic/classicAdvancedFilter-->
 <template>
   <div
     class="flex flex-col xl:justify-center w-[400px] md:w-full xl:w-[480px] 2xl:w-[660px] h-full md:h-80 bg-[#F2F2F2] rounded-xl p-5 lg:p-8 space-y-4"

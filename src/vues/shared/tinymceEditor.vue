@@ -1,3 +1,4 @@
+<!--Use:sellerAddPost-->
 <template>
   <div class="bg-white no-tailwind-base">
     <transition name="fade">

@@ -1,3 +1,4 @@
+<!--Use:beforeLoginHome, consumerHome, reservationPage-->
 <template>
   <div
     class="flex flex-col justify-center items-center w-full h-[480px] bg-white space-y-10 lg:space-y-[60px]"

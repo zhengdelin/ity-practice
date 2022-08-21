@@ -1,4 +1,4 @@
-<!--Use:signUpPage-->
+<!--Use:signUpPage, cards/consumerAccountInfoCard-->
 <template>
   <div class="w-5/6 sm:w-full h-full 2xl:h-48 space-y-4 2xl:space-y-8">
     <div class="text-left text-xl 2xl:text-3xl font-bold text-[#4B4B4B]">

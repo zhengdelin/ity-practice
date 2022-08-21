@@ -8,7 +8,7 @@
     >
       <!--廣告後臺數據分析功能區塊-->
       <router-link
-        :to="{ name: '' }"
+        :to="{ name: 'sellerDataAnalysis' }"
         class="relative flex flex-col justify-center items-center w-full md:w-2/3 h-72 sm:h-80 md:h-[360px] lg:h-[400px] xl:h-[480px] 2xl:h-[600px] overflow-hidden bg-white p-10 space-y-6 sm:space-y-4 md:space-y-10"
         style="background-position: 50%"
       >
@@ -47,7 +47,7 @@
     >
       <!--購買點數功能區塊-->
       <router-link
-        :to="{ name: '' }"
+        :to="{ name: 'sellerBuyPointsIntro' }"
         class="relative flex flex-col justify-center items-center w-full md:w-1/2 h-72 sm:h-80 md:h-[360px] lg:h-[400px] xl:h-[480px] 2xl:h-[600px] overflow-hidden bg-[#9763AB] p-10 space-y-6 sm:space-y-4 md:space-y-10"
         style="background-position: 50%"
       >

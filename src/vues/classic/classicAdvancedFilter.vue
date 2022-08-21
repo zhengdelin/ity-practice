@@ -1,3 +1,4 @@
+<!--Use:beforeLoginHome, consumerHome, sellerHome-->
 <template>
   <div
     class="flex flex-col justify-center items-center space-y-5 lg:space-y-6 2xl:space-y-10"

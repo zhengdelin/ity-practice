@@ -1,4 +1,4 @@
-<!--Use:sellerPage-->
+<!--Use:sellerPage, sellerContractIntro-->
 <template>
   <div
     class="flex items-center justify-center px-4 py-8 sm:p-0 2xl:px-12 w-full sm:w-5/12 h-24 sm:h-32 2xl:h-[180px] bg-[#ECECEC]"

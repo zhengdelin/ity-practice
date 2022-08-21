@@ -1,3 +1,4 @@
+<!--Use:sellerHome-->
 <template>
   <div
     class="flex flex-col items-center justify-center w-full h-72 md:h-64 lg:h-72 xl:h-80 2xl:h-[500px] bg-gradient-to-r from-[#fbc2eb] to-[#a6c1ee] p-6 md:p-5 2xl:p-10 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"

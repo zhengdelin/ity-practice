@@ -1,3 +1,4 @@
+<!--Use:cards/ratingFilterCard-->
 <template>
   <ul class="grid gap-6 w-full grid-cols-2">
     <li>

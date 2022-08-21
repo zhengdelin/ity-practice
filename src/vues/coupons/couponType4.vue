@@ -1,4 +1,4 @@
-<!--Use:sellerInfoPage/couponPage-->
+<!--Use:myCoupon, sellerInfoPage/couponPage, cards/findOfferCard-->
 <template>
   <div
     class="w-5/6 sm:w-full h-60 lg:h-80 2xl:h-[350px] bg-[#B2415C] cursor-pointer"

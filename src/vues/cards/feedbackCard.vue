@@ -1,3 +1,4 @@
+<!--sellerInfoPage/feedbackPage-->
 <template>
   <div class="w-full h-fit shadow-xl">
     <critic-info-card

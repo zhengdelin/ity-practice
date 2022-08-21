@@ -1,3 +1,4 @@
+<!--Use:shared/ityHeaderBeforeLogin, ityConsumerHeader, itySellerHeader, ityOrganizationHeader-->
 <template>
   <svg
     version="1.0"
