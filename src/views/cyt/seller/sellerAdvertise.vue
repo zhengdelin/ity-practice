@@ -35,7 +35,7 @@
       >
         <div>
           <ity-footer-logo
-            class="w-32 sm:w-44 xl:w-60 2xl:w-72 h-32 sm:h-44 xl:h-60 2xl:h-2xl"
+            class="w-32 sm:w-44 xl:w-60 2xl:w-72 h-32 sm:h-44 xl:h-60 2xl:h-[400px]"
           ></ity-footer-logo>
         </div>
       </div>

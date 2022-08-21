@@ -247,7 +247,6 @@ const routes = [
     components: {
       default: () => import("@/views/cyt/seller/sellerAddPost.vue"),
       itySellerHeader,
-      backTop,
       chatItem,
       ityFooter,
     },
