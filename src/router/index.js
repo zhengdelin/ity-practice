@@ -284,6 +284,16 @@ const routes = [
     },
   },
   {
+    path: "/cyt/seller-choose-template",
+    name: "sellerChooseTemplate",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerChooseTemplate.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/seller-info",
     name: "sellerInfo",
     components: {
