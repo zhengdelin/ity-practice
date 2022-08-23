@@ -294,6 +294,26 @@ const routes = [
     },
   },
   {
+    path: "/cyt/seller-input-discount",
+    name: "sellerInputDiscount",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerInputDiscount.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-post-coupon",
+    name: "sellerPostCoupon",
+    components: {
+      default: () => import("@/views/cyt/seller/sellerPostCoupon.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/seller-info",
     name: "sellerInfo",
     components: {
