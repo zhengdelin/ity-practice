@@ -41,7 +41,7 @@
         <p
           class="text-base lg:text-lg font-medium lg:font-semibold text-[#4B4B4B]"
         >
-          溫馨小提醒 : 組織端特約邀請已送出 ! 煩請您盡快回覆
+          ⚠ 溫馨小提醒 : 組織端特約邀請已送出 ! 煩請您盡快回覆
         </p>
         <div
           class="flex flex-row space-x-5 md:space-x-7 lg:space-x-5 2xl:space-x-6"

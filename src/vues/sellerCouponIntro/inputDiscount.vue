@@ -3,7 +3,9 @@
   <div class="space-y-10 xl:space-y-20 md:w-1/2">
     <div class="flex flex-row items-center justify-between">
       <classic-small-item :title="'STEP 2'"></classic-small-item>
-      <div class="w-20 xl:w-[120px] h-20 xl:h-[120px] bg-black"></div>
+      <div class="w-20 xl:w-[120px] h-20 xl:h-[120px]">
+        <Vue3Lottie :animationData="numberTwoJSON" class="" />
+      </div>
     </div>
     <div class="space-y-5 sm:space-y-10 xl:space-y-12 2xl:space-y-[60px]">
       <div
@@ -32,6 +34,7 @@ import "vue3-lottie/dist/style.css";
 import inputDiscountArea from "@/vues/functionArea/areaType2.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import inputJSON from "@/vues/json/graphic-design.json";
+import numberTwoJSON from "@/vues/json/number-2-animate.json";
 
 export default {
   components: {
@@ -40,7 +43,7 @@ export default {
     classicSmallItem,
   },
   setup() {
-    return { inputJSON };
+    return { inputJSON, numberTwoJSON };
   },
 };
 </script>

@@ -3,7 +3,9 @@
   <div class="space-y-10 xl:space-y-20 md:w-1/2">
     <div class="flex flex-row items-center justify-between">
       <classic-small-item :title="'STEP 3'"></classic-small-item>
-      <div class="w-20 xl:w-[120px] h-20 xl:h-[120px] bg-black"></div>
+      <div class="w-20 xl:w-[120px] h-20 xl:h-[120px]">
+        <Vue3Lottie :animationData="numberThreeJSON" class="" />
+      </div>
     </div>
     <div class="space-y-5 sm:space-y-10 xl:space-y-12 2xl:space-y-[60px]">
       <div
@@ -32,6 +34,7 @@ import "vue3-lottie/dist/style.css";
 import postCouponArea from "@/vues/functionArea/areaType3.vue";
 import classicSmallItem from "@/vues/classic/classicSmallItem.vue";
 import announcementJSON from "@/vues/json/announcement.json";
+import numberThreeJSON from "@/vues/json/number-3-animate.json";
 
 export default {
   components: {
@@ -40,7 +43,7 @@ export default {
     classicSmallItem,
   },
   setup() {
-    return { announcementJSON };
+    return { announcementJSON, numberThreeJSON };
   },
 };
 </script>

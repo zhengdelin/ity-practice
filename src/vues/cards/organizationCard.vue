@@ -10,7 +10,7 @@
       />
     </div>
     <div
-      class="flex justify-center items-end w-full h-1/6 lg:h-4/12 font-semibold md:font-bold text-lg xl:text-xl 2xl:text-2xl"
+      class="flex justify-center items-end w-full h-1/6 lg:h-4/12 font-semibold xl:font-bold text-lg xl:text-xl 2xl:text-2xl"
     >
       <p>{{ organizationCard.organizationName }}</p>
     </div>
@@ -20,7 +20,7 @@
       <router-link :to="{ name: '' }">
         <classic-button
           :name="'MORE'"
-          class="w-20 md:w-16 lg:w-24 xl:w-28 2xl:w-40 h-10 xl:h-12 2xl:h-16 rounded-md bg-[#9763AB] text-white hover:bg-gradient-to-r hover:from-[#f794a4] hover:to-[#fdd6bd]"
+          class="w-20 md:w-16 lg:w-24 xl:w-28 2xl:w-40 h-10 xl:h-12 2xl:h-16 rounded-md bg-[#9763AB] text-white hover:bg-gradient-to-r hover:from-[#fdd6bd] hover:to-[#f794a4]"
         ></classic-button
         ><!--background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);-->
       </router-link>

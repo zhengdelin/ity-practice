@@ -21,7 +21,7 @@
         <router-link :to="{ name: 'sellerMakeCoupon' }" class="w-full">
           <classic-button
             :name="'回上一步驟'"
-            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white hover:bg-gradient-to-r hover:from-[#ebebeb] hover:to-[#c4c5c7] text-[#2D2D2D]"
+            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white hover:bg-gradient-to-r hover:from-[#ebebeb] hover:to-[#dcdddf] text-[#2D2D2D]"
           ></classic-button
           ><!-- background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); -->
         </router-link>

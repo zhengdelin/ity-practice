@@ -40,7 +40,7 @@
         <div class="block space-y-4">
           <div class="w-full text-xl font-semibold">否</div>
           <div class="w-full text-lg">
-            點選否並不會影響系統營運狀況，敬請放心
+            此選擇並不會影響系統營運狀況，敬請放心
           </div>
         </div>
       </label>

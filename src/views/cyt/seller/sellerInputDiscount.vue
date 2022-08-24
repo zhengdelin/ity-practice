@@ -17,7 +17,7 @@
         <router-link :to="{ name: 'sellerChooseTemplate' }" class="w-full">
           <classic-button
             :name="'回上一步驟'"
-            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white hover:bg-gradient-to-r hover:from-[#ebebeb] hover:to-[#c4c5c7] text-[#2D2D2D]"
+            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white hover:bg-gradient-to-r hover:from-[#ebebeb] hover:to-[#dcdddf] text-[#2D2D2D]"
           ></classic-button>
         </router-link>
         <router-link :to="{ name: 'sellerPostCoupon' }" class="w-full">
