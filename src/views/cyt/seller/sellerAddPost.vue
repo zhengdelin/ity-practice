@@ -41,7 +41,7 @@
         :content="'撰寫文章內容'"
         class="w-full bg-[#76448A]"
       ></classic-title>
-      <tinymce-editor></tinymce-editor>
+      <tinymce-editor v-model:content="content"></tinymce-editor>
     </div>
     <div
       class="flex justify-center sm:justify-end w-full border-[0.2px] border-black py-6 xl:py-8 sm:pr-5 lg:pr-10 xl:pr-14 2xl:pr-20"
@@ -79,6 +79,7 @@ import locationIcon from "@/vues/icons/locationIcon.vue";
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import tinymceEditor from "@/vues/shared/tinymceEditor.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
+import { ref } from "vue";
 
 export default {
   name: "addPostPage",
@@ -92,7 +93,9 @@ export default {
   },
   setup() {
     const classicInputType2List = [{ title: "文章標題 Title" }];
-    return { classicInputType2List };
+    const content = ref();
+    content.value = "<p>撰寫欲發表之文章內容......</p>";
+    return { classicInputType2List, content };
   },
 };
 </script>

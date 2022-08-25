@@ -73,7 +73,7 @@ export default {
       {
         name: "簽署合約",
         icon: contractIcon,
-        routeName: "",
+        routeName: "organizationContractIntro",
         type: "router",
       },
       {
@@ -85,7 +85,7 @@ export default {
       {
         name: "個人資料",
         icon: profileIcon,
-        routeName: "",
+        routeName: "organizationInfo",
         type: "router",
       },
       {

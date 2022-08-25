@@ -39,8 +39,9 @@
           >
             <classic-button
               :name="'編輯個人資訊'"
-              class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] text-white"
-            ></classic-button>
+              class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] hover:bg-gradient-to-r hover:from-[#fddb92] hover:to-[#d1fdff] text-white hover:text-[#4B4B4B]"
+            ></classic-button
+            ><!-- background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); -->
           </router-link>
         </div>
       </div>

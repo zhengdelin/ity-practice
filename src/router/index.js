@@ -359,6 +359,28 @@ const routes = [
     },
   },
   {
+    path: "/cyt/organization-contract-intro",
+    name: "organizationContractIntro",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationContractIntro.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/organization-info",
+    name: "organizationInfo",
+    components: {
+      default: () => import("@/views/cyt/organization/organizationInfo.vue"),
+      ityOrganizationHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/iris",
     name: "iris",
     component: () => import("@/views/iris"),
