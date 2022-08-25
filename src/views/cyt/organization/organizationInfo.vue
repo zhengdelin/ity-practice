@@ -1,15 +1,13 @@
 <template>
-  <div
-    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
-  >
+  <div class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] mb-20 pt-5">
     <div class="flex flex-row justify-between space-x-5 lg:space-x-10">
-      <div class="flex flex-col bg-black w-1/4">
+      <div class="flex flex-col justify-between w-1/4">
         <!-- organizationPic -->
         <div
-          class="flex flex-col justify-center items-center w-full h-40 sm:h-56 xl:h-64 2xl:h-[400px] space-y-2 sm:space-y-4 xl:space-y-6 2xl:space-y-10 rounded-lg sm:rounded-xl bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')]"
+          class="flex flex-col justify-center items-center w-full h-40 sm:h-56 xl:h-72 2xl:h-[350px] rounded-lg sm:rounded-xl bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')]"
         >
           <div
-            class="flex w-24 h-24 sm:w-32 sm:h-32 2xl:w-60 2xl:h-60 rounded-full mt-4 lg:mt-6 2xl:mt-10"
+            class="flex w-24 h-24 sm:w-32 sm:h-32 2xl:w-60 2xl:h-60 rounded-full"
           >
             <img
               class="rounded-full"

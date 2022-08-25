@@ -42,11 +42,11 @@ export default {
       modelValue.value ? "" : props.placeholder
     );
     //上傳進度條
-    const percent = ref();
-    const uploadProgress = (progressEvent) => {
-      percent.value =
-        (progressEvent.loaded / progressEvent.total).toFixed(2) * 100;
-    };
+    // const percent = ref();
+    // const uploadProgress = (progressEvent) => {
+    //   percent.value =
+    //     (progressEvent.loaded / progressEvent.total).toFixed(2) * 100;
+    // };
     const config = {
       // selector: "#tinymce_editor",
       //inline模式

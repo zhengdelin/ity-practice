@@ -1,7 +1,7 @@
 <!--Use:-->
 <template>
   <div
-    class="flex flex-col justify-center w-full sm:w-9/12 2xl:w-3/4 h-60 sm:h-80 space-y-8 sm:space-y-12 2xl:space-y-10 p-10 text-[#4B4B4B]"
+    class="flex flex-col justify-center w-full sm:w-9/12 2xl:w-3/4 h-60 sm:h-80 xl:h-[400px] 2xl:h-[500px] space-y-8 sm:space-y-12 xl:space-y-14 2xl:space-y-14 p-10 text-[#4B4B4B]"
   >
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
       <!--icon-->
@@ -13,7 +13,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        {{ organizationName }} 學生會
+        學生會組織名稱 : {{ organizationName }} 學生會
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -24,7 +24,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        {{ location }}
+        組織位址 : {{ location }}
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -35,7 +35,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        {{ telephone }}
+        組織聯繫電話 : {{ telephone }}
       </p>
     </div>
     <div class="flex flex-row items-center space-x-4 h-4 2xl:h-10">
@@ -46,7 +46,7 @@
       <p
         class="text-base sm:text-lg lg:text-xl 2xl:text-2xl font-medium sm:font-semibold text-left"
       >
-        {{ representative }}
+        學生會會長姓名 : {{ representative }}
       </p>
     </div>
   </div>

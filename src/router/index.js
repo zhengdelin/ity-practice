@@ -371,6 +371,18 @@ const routes = [
     },
   },
   {
+    path: "/cyt/organization-joint-launch-events",
+    name: "organizationJointLaunchEvents",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationJointLaunchEvents.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/organization-info",
     name: "organizationInfo",
     components: {
