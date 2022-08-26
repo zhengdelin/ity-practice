@@ -393,6 +393,17 @@ const routes = [
     },
   },
   {
+    path: "/cyt/organization-info",
+    name: "reviseOrganizationInfo",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/reviseOrganizationInfo.vue"),
+      ityOrganizationHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/iris",
     name: "iris",
     component: () => import("@/views/iris"),

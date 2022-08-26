@@ -68,7 +68,7 @@ import classicRadio from "@/vues/classic/classicRadioType1.vue";
 import { useRouter } from "vue-router";
 
 export default {
-  name: "eachSellerInfo",
+  name: "reviseSellerInfo",
   components: {
     sellerCard,
     classicFileInput,

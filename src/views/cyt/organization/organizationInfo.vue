@@ -15,7 +15,10 @@
             />
           </div>
         </div>
-        <router-link :to="{ name: '' }" class="flex justify-center w-full">
+        <router-link
+          :to="{ name: 'reviseOrganizationInfo' }"
+          class="flex justify-center w-full"
+        >
           <classic-button
             :name="'編輯學生會資訊'"
             class="w-full 2xl:w-[520px] h-16 2xl:h-[84px] rounded-md xl:rounded-xl bg-[#76448A] hover:bg-gradient-to-r hover:from-[#fddb92] hover:to-[#d1fdff] text-white hover:text-[#4B4B4B]"
