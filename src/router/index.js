@@ -372,10 +372,20 @@ const routes = [
   },
   {
     path: "/cyt/organization-joint-launch-events",
-    name: "organizationJointLaunchEvents",
+    name: "jointLaunchEvents",
     components: {
-      default: () =>
-        import("@/views/cyt/organization/organizationJointLaunchEvents.vue"),
+      default: () => import("@/views/cyt/organization/jointLaunchEvents.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/organization-joint-launch-events/add",
+    name: "addJointLaunchEvent",
+    components: {
+      default: () => import("@/views/cyt/organization/addJointLaunchEvent.vue"),
       ityOrganizationHeader,
       backTop,
       chatItem,

@@ -79,7 +79,7 @@ export default {
       {
         name: "聯合活動",
         icon: collaborateIcon,
-        routeName: "organizationJointLaunchEvents",
+        routeName: "jointLaunchEvents",
         type: "router",
       },
       {
