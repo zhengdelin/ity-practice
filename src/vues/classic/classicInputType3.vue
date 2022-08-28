@@ -1,13 +1,19 @@
 <template>
-  <div class="w-5/6 sm:w-full h-full 2xl:h-48 space-y-4 2xl:space-y-8">
-    <div class="text-left text-xl 2xl:text-3xl font-bold text-[#4B4B4B]">
-      {{ classicInputType3.title }}
+  <div class="flex flex-row w-full h-16 sm:h-20 xl:h-[100px] 2xl:h-[120px]">
+    <div class="flex justify-center items-center w-1/3 h-full bg-[#909090]">
+      <div
+        class="px-2 lg:px-3 text-base sm:text-xl xl:text-2xl 2xl:text-3xl font-medium xl:font-semibold text-white"
+      >
+        {{ classicInputType3.title }}
+      </div>
     </div>
-    <input
-      type="text"
-      class="w-full h-16 sm:h-14 lg:h-16 2xl:h-[100px] px-6 text-base md:text-lg lg:text-xl 2xl:text-2xl font-normal text-[#4B4B4B] bg-white border-2 xl:border-[3px] border-solid border-[#4B4B4B] rounded-md lg:rounded-lg transition ease-in-out m-0 focus:text-[#76448A] focus:bg-white focus:border-[#76448A] focus:outline-none"
-      placeholder="請輸入......"
-    />
+    <div class="w-2/3 h-full">
+      <input
+        type="text"
+        class="w-full h-full px-6 text-base md:text-lg lg:text-xl 2xl:text-2xl text-black bg-white transition ease-in-out m-0 focus:text-[#4B4B4B] focus:bg-[#F9F9F9] focus:outline-none"
+        placeholder="請輸入......"
+      />
+    </div>
   </div>
 </template>
 
