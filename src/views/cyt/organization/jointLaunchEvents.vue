@@ -1,10 +1,12 @@
 <template>
   <router-link :to="{ name: 'addJointLaunchEvent' }">
     <div
-      class="fixed flex justify-center items-center right-5 xl:right-16 2xl:right-10 top-1/6 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[120px] h-14 sm:h-16 lg:h-20 2xl:h-[120px] bg-[#9763AB] cursor-pointer rounded-full"
+      class="fixed flex justify-center items-center right-5 xl:right-16 2xl:right-10 top-1/6 z-50 p-5 w-14 sm:w-16 lg:w-20 2xl:w-[120px] h-14 sm:h-16 lg:h-20 2xl:h-[120px] bg-[#9763AB] hover:bg-gradient-to-r hover:from-[#B6CEE8] hover:to-[#F578DC] cursor-pointer rounded-full"
     >
-      <newspaper-Icon></newspaper-Icon></div
-  ></router-link>
+      <!-- background-image: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%); -->
+      <newspaper-Icon></newspaper-Icon>
+    </div>
+  </router-link>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-20 lg:space-y-[100px] xl:space-y-[120px] mb-20 2xl:mb-40 pt-5"
   >

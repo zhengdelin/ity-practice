@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-row w-full h-16 sm:h-20 xl:h-[100px] 2xl:h-[120px]">
+  <div class="flex flex-row w-full h-12 sm:h-20 2xl:h-[100px]">
     <div class="flex justify-center items-center w-1/3 h-full bg-[#909090]">
       <div
-        class="px-2 lg:px-3 text-base sm:text-xl xl:text-2xl 2xl:text-3xl font-medium xl:font-semibold text-white"
+        class="px-2 lg:px-3 text-base sm:text-xl xl:text-2xl font-medium xl:font-semibold text-white tracking-wider"
       >
         {{ classicInputType3.title }}
       </div>
