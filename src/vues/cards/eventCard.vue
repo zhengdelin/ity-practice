@@ -1,6 +1,6 @@
 <!--Use:-->
 <template>
-  <router-link :to="{ name: 'eachJointLaunchEvent' }">
+  <router-link :to="{ name: 'eachJointLaunchEvent' }" class="bg-white">
     <div
       class="flex flex-col w-60 sm:w-64 md:w-full h-96 md:h-[400px] xl:h-[480px] 2xl:h-[600px] rounded-xl drop-shadow-md lg:drop-shadow-lg bg-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 overflow-hidden"
     >

@@ -10,14 +10,18 @@
       <div
         class="flex justify-start items-center space-x-5 sm:space-x-8 xl:space-x-10"
       >
-        <badges-item :content="'國立臺中科技大學學生'"></badges-item>
-        <badges-item :content="'資訊管理系學生'"></badges-item>
+        <badges-item
+          v-for="(item, index) in badgesItemList"
+          :key="index"
+          :badgesItem="item"
+        >
+        </badges-item>
       </div>
     </div>
     <div class="space-y-10 sm:space-y-12 md:space-y-10 xl:space-y-[60px]">
       <classic-title
         :content="'活動摘要'"
-        class="w-full bg-[#76448A]"
+        class="w-full bg-[#DDA4F1]"
       ></classic-title>
       <div class="flex justify-center items-center">
         <classic-file-input
@@ -42,7 +46,7 @@
     <div class="space-y-10 sm:space-y-12 md:space-y-10 xl:space-y-[60px]">
       <classic-title
         :content="'詳細資訊'"
-        class="w-full bg-[#76448A]"
+        class="w-full bg-[#DDA4F1]"
       ></classic-title>
       <classic-input-type-3
         v-for="(item, index) in classicInputType3DetailList"
@@ -92,6 +96,10 @@ export default {
     classicButton,
   },
   setup() {
+    const badgesItemList = [
+      { content: "國立臺中科技大學學生" },
+      { content: "資訊管理系學生" },
+    ];
     const classicInputType3SummaryList = [
       { title: "活動標題" },
       { title: "活動期間" },
@@ -110,6 +118,7 @@ export default {
     // };
 
     return {
+      badgesItemList,
       classicInputType3SummaryList,
       classicInputType3DetailList,
       content,

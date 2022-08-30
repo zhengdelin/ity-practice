@@ -29,7 +29,7 @@
         />
       </form>
     </div>
-    <div class="flex justify-center items-center w-5/6">
+    <div class="flex justify-center items-center w-full">
       <classic-button
         @click="save"
         :name="'儲存'"
