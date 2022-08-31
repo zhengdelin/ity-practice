@@ -23,7 +23,10 @@
         </p>
       </div>
     </div>
-    <router-link :to="{ name: '' }" class="flex justify-center w-full pt-5">
+    <router-link
+      :to="{ name: 'organizationContractStatus' }"
+      class="flex justify-center w-full pt-5"
+    >
       <classic-button
         :name="'開始'"
         class="w-2/3 lg:w-1/2 h-12 md:h-16 xl:h-20 2xl:h-[100px] rounded-md md:rounded-lg bg-[#9763AB] hover:bg-gradient-to-r hover:from-[#fccb90] hover:to-[#d57eeb] text-white"

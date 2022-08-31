@@ -371,6 +371,53 @@ const routes = [
     },
   },
   {
+    path: "/cyt/organization-contract-status",
+    name: "organizationContractStatus",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationContractStatus.vue"),
+      ityOrganizationHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/organization-signed-contract",
+    name: "organizationSignedContract",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationSignedContract.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/organization-edit-online-contract",
+    name: "organizationEditOnlineContract",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationEditOnlineContract.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/organization-confirm-contract",
+    name: "organizationConfirmContract",
+    components: {
+      default: () =>
+        import("@/views/cyt/organization/organizationConfirmContract.vue"),
+      ityOrganizationHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/organization-joint-launch-events",
     name: "jointLaunchEvents",
     components: {
