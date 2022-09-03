@@ -1,6 +1,8 @@
 <!--Note:BeforeLogin-->
 <template>
-  <div><seller-post></seller-post></div>
+  <div>
+    <seller-post></seller-post>
+  </div>
 </template>
 
 <script>

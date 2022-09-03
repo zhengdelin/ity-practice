@@ -6,6 +6,11 @@
       :key="index"
       :menuItem="item"
     ></menu-item>
+    <click-div
+      v-for="(item, index) in clickDivList"
+      :key="index"
+      :clickDiv="item"
+    ></click-div>
   </div>
 </template>
 
@@ -14,6 +19,8 @@ import menuItem from "@/vues/shows/menuItem.vue";
 import sushiPhoto from "@/vues/photos/sushiPhoto.vue";
 import shrimpPhoto from "@/vues/photos/shrimpPhoto.vue";
 import oysterPhoto from "@/vues/photos/oysterPhoto.vue";
+import clickDiv from "@/vues/buttons/clickDiv.vue";
+import menuAnimation from "@/vues/animation/menuAnimation.vue";
 
 export default {
   name: "menuPage",
@@ -22,6 +29,8 @@ export default {
     // sushiPhoto,
     // shrimpPhoto,
     // oysterPhoto,
+    clickDiv,
+    // menuAnimation,
   },
   setup() {
     const menuItemList = [
@@ -44,7 +53,8 @@ export default {
         price: 200,
       },
     ];
-    return { menuItemList };
+    const clickDivList = [{ animation: menuAnimation, title: "新增菜單" }];
+    return { menuItemList, clickDivList };
   },
 };
 </script>

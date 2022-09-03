@@ -13,6 +13,11 @@
     <div class="flex justify-center">
       <accordion-Item :title="'賣家優惠券使用規則'"></accordion-Item>
     </div>
+    <click-div
+      v-for="(item, index) in clickDivList"
+      :key="index"
+      :clickDiv="item"
+    ></click-div>
   </div>
 </template>
 
@@ -20,6 +25,9 @@
 import couponType3 from "@/vues/coupons/couponType3.vue";
 import couponType4 from "@/vues/coupons/couponType4.vue";
 import accordionItem from "@/vues/shows/accordionItem.vue";
+import clickDiv from "@/vues/buttons/clickDiv.vue";
+import chooseAnimation from "@/vues/animation/chooseAnimation.vue";
+import findTargetAnimation from "@/vues/animation/findTargetAnimation.vue";
 
 export default {
   name: "couponPage",
@@ -27,6 +35,19 @@ export default {
     couponType3,
     couponType4,
     accordionItem,
+    clickDiv,
+    // chooseAnimation,
+    //  findTargetAnimation,
+  },
+  setup() {
+    const clickDivList = [
+      { animation: chooseAnimation, title: "選擇推出哪一款優惠券" },
+      {
+        animation: findTargetAnimation,
+        title: "製作符合貴店家行銷決策的專屬優惠券",
+      },
+    ];
+    return { clickDivList };
   },
 };
 </script>
