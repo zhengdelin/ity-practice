@@ -5,7 +5,7 @@
   >
     <!--Card-->
     <div
-      class="flex flex-col justify-between items-center lg:flex-row w-full sm:w-2/3 p-6 sm:p-4 lg:p-10 bg-[#B983CE] text-white rounded-md sm:rounded-2xl shadow-2xl"
+      class="flex flex-col justify-between items-center lg:flex-row w-full sm:w-2/3 p-6 sm:p-4 lg:p-10 bg-[#B983CE] text-white rounded-md sm:rounded-2xl shadow-lg xl:shadow-xl"
     >
       <div
         class="flex flex-col justify-center items-start w-2/3 space-y-5 sm:space-y-8 lg:space-y-12 2xl:space-y-[60px]"

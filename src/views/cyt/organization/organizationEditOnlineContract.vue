@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-10 sm:space-y-[60px] lg:space-y-20 2xl:space-y-40 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
+    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-10 sm:space-y-[60px] lg:space-y-20 2xl:space-y-[60px] mt-5 lg:mt-10 mb-20 2xl:mb-40"
   >
     <div class="space-y-5 sm:space-y-8 lg:space-y-10 2xl:space-y-[60px]">
       <classic-title
@@ -8,6 +8,8 @@
         class="w-full bg-[#DDA4F1]"
       ></classic-title>
       <div class="relative bg-[#F2F2F2] p-5 sm:p-10" v-html="content"></div>
+    </div>
+    <div class="space-y-5 sm:space-y-8 lg:space-y-10 2xl:space-y-[60px]">
       <classic-title
         :content="'甲方須簽核部分'"
         class="w-full bg-[#DDA4F1]"
@@ -31,28 +33,24 @@
           />
         </div>
       </div>
-      <!--<div><tinymce-editor v-model:content="content"></tinymce-editor></div>-->
-      <div class="flex justify-center w-full pt-10 sm:pt-4">
-        <div class="flex flex-row w-4/5 space-x-10">
-          <router-link
-            :to="{ name: 'organizationSignedContract' }"
-            class="w-full"
-          >
-            <classic-button
-              :name="'返回'"
-              class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
-            ></classic-button>
-          </router-link>
-          <router-link
-            :to="{ name: 'organizationContractStatus' }"
-            class="w-full"
-          >
-            <classic-button
-              :name="'確定簽署'"
-              class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md bg-[#76448A] text-white"
-            ></classic-button>
-          </router-link>
-        </div>
+    </div>
+    <div class="flex justify-center w-full">
+      <div class="flex flex-row w-4/5 space-x-10">
+        <router-link
+          :to="{ name: 'organizationSignedContract' }"
+          class="w-full"
+        >
+          <classic-button
+            :name="'返回'"
+            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md border border-black bg-white text-[#2D2D2D]"
+          ></classic-button>
+        </router-link>
+        <router-link :to="{ name: '' }" class="w-full">
+          <classic-button
+            :name="'確定簽署'"
+            class="w-full h-16 lg:h-20 xl:h-24 2xl:h-[100px] rounded-md bg-[#76448A] text-white"
+          ></classic-button>
+        </router-link>
       </div>
     </div>
   </div>
