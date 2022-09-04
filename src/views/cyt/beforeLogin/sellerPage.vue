@@ -1,4 +1,3 @@
-<!--此頁面尚未修改成VUE3.js版本-->
 <template>
   <div
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-6 sm:space-y-10 mb-20 2xl:mb-40"
@@ -29,7 +28,7 @@
       <!-- <before-login-contact-card
         :tel="'0971-635-338'"
       ></before-login-contact-card> -->
-      <consumer-contact-card></consumer-contact-card>
+      <consumer-contact-card :tel="'0971-635-338'"></consumer-contact-card>
       <!-- <seller-contact-card></seller-contact-card>
       <organization-contact-card></organization-contact-card> -->
     </div>
