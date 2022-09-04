@@ -26,7 +26,12 @@
         :website="'https://retty.me/'"
         class="bg-[#F9F9F9]"
       ></seller-Info-Card>
-      <contact-card :tel="'0971-635-338'"></contact-card>
+      <!-- <before-login-contact-card
+        :tel="'0971-635-338'"
+      ></before-login-contact-card> -->
+      <consumer-contact-card></consumer-contact-card>
+      <!-- <seller-contact-card></seller-contact-card>
+      <organization-contact-card></organization-contact-card> -->
     </div>
     <!--Tabs-->
     <!--Below sm-->
@@ -69,7 +74,10 @@
 <script>
 import sellerCard from "@/vues/cards/sellerCard.vue";
 import sellerInfoCard from "@/vues/cards/sellerInfoCard.vue";
-import contactCard from "@/vues/cards/contactCard.vue";
+import beforeLoginContactCard from "@/vues/cards/contactCard/beforeLoginContactCard.vue";
+import consumerContactCard from "@/vues/cards/contactCard/consumerContactCard.vue";
+import sellerContactCard from "@/vues/cards/contactCard/sellerContactCard.vue";
+import organizationContactCard from "@/vues/cards/contactCard/organizationContactCard.vue";
 //tabs
 import postPage from "@/vues/sellerInfoPage/postPage.vue";
 import menuPage from "@/vues/sellerInfoPage/menuPage.vue";
@@ -83,7 +91,10 @@ export default {
   components: {
     sellerCard,
     sellerInfoCard,
-    contactCard,
+    beforeLoginContactCard,
+    consumerContactCard,
+    sellerContactCard,
+    organizationContactCard,
     //tabs
     postPage,
     menuPage,
