@@ -25,12 +25,18 @@
         :website="'https://retty.me/'"
         class="bg-[#F9F9F9]"
       ></seller-Info-Card>
-      <!-- <before-login-contact-card
+      <!-- v-if permission=='beforeLogin' -->
+      <before-login-contact-card
         :tel="'0971-635-338'"
-      ></before-login-contact-card> -->
-      <consumer-contact-card :tel="'0971-635-338'"></consumer-contact-card>
-      <!-- <seller-contact-card></seller-contact-card>
-      <organization-contact-card></organization-contact-card> -->
+      ></before-login-contact-card>
+      <!-- v-if permission=='consumer'
+      <consumer-contact-card :tel="'0971-635-338'"></consumer-contact-card> -->
+      <!-- v-if permission=='seller'
+      <seller-contact-card :tel="'0971-635-338'"></seller-contact-card> -->
+      <!-- v-if permission=='organization'
+      <organization-contact-card
+        :tel="'0971-635-338'"
+      ></organization-contact-card> -->
     </div>
     <!--Tabs-->
     <!--Below sm-->

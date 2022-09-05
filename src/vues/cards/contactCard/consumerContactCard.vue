@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center px-4 py-8 sm:p-0 2xl:px-12 w-full sm:w-5/12 h-60 sm:h-[400px] xl:h-[300px] 2xl:h-80 bg-[#ECECEC] space-y-10"
+    class="flex flex-col items-center justify-center px-4 py-8 sm:p-0 2xl:px-12 w-full sm:w-5/12 h-60 sm:h-[400px] xl:h-[300px] 2xl:h-80 bg-[#ECECEC] space-y-8 sm:space-y-5 xl:space-y-10"
   >
     <div
       class="flex flex-row sm:flex-col xl:flex-row justify-center 2xl:justify-between items-center w-full space-x-5 sm:space-x-0 xl:space-x-5 sm:space-y-5 lg:space-y-6 xl:space-y-0"
@@ -24,11 +24,11 @@
       <!-- 撰寫評論按鈕 -->
       <router-link :to="{ name: '' }">
         <div
-          class="flex flex-row justify-center items-center border-2 border-[#76448A] w-[200px] 2xl:w-[280px] h-20 sm:h-[60px] xl:h-20 2xl:h-[100px] bg-white hover:bg-[#F9F9F9] space-x-10 rounded-md"
+          class="flex flex-row justify-center items-center border-2 border-[#76448A] w-[200px] sm:w-40 md:w-52 2xl:w-[280px] h-20 sm:h-[60px] xl:h-20 2xl:h-[100px] bg-white hover:bg-[#F9F9F9] space-x-10 rounded-md"
         >
           <div>
             <chat-icon
-              class="w-8 sm:w-6 lg:w-8 h-8 sm:h-6 lg:h-8 stroke-[#76448A]"
+              class="w-8 sm:w-6 lg:w-8 xl:w-7 2xl:w-8 h-8 sm:h-6 lg:h-8 xl:h-7 2xl:h-8 stroke-[#76448A]"
             ></chat-icon>
           </div>
           <div
@@ -41,15 +41,16 @@
     </div>
 
     <div
-      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white text-[#76448A] hover:bg-[#B983CE] hover:text-white"
+      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#96fbc4] hover:to-[#f9f586] text-[#76448A] hover:text-[#2D2D2D]"
     >
+      <!-- background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); -->
       <div>
         <phone-icon
           class="sm:w-5 sm:h-5 lg:w-7 lg:h-7 stroke-[#76448A] fill-white"
         ></phone-icon>
       </div>
-      <div>
-        <p class="text-xl sm:text-base lg:text-xl xl:text-2xl">{{ tel }}</p>
+      <div class="xl:font-medium text-xl sm:text-base lg:text-xl xl:text-2xl">
+        {{ tel }}
       </div>
     </div>
   </div>
