@@ -6,6 +6,8 @@ import ityOrganizationHeader from "@/vues/shared/ityOrganizationHeader.vue";
 import ityFooter from "@/vues/shared/ityFooter.vue";
 import chatItem from "@/vues/shared/chatItem.vue";
 import backTop from "@/vues/shared/backTopItem.vue";
+import placeOrderButton from "@/vues/shared/placeOrderButton.vue";
+
 const routes = [
   {
     path: "/",
@@ -62,6 +64,8 @@ const routes = [
       ityHeaderBeforeLogin,
       backTop,
       ityFooter,
+      /* v-if permission == 'afterLogin' */
+      placeOrderButton,
     },
   },
   {

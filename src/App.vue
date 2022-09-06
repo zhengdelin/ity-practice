@@ -7,6 +7,7 @@
   <router-view name="ityFooter"></router-view>
   <router-view name="chatItem"></router-view>
   <router-view name="backTop"></router-view>
+  <router-view name="placeOrderButton"></router-view>
 </template>
 
 <style>
