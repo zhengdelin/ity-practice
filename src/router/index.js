@@ -145,6 +145,17 @@ const routes = [
     },
   },
   {
+    path: "/cyt/reservation/place-order",
+    name: "consumerPlaceOrder",
+    components: {
+      default: () => import("@/views/cyt/consumer/consumerPlaceOrder.vue"),
+      ityConsumerHeader,
+      backTop,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
     path: "/cyt/consumer-info",
     name: "consumerInfo",
     components: {

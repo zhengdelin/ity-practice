@@ -4,7 +4,7 @@
     class="flex items-center justify-center px-4 py-8 sm:p-0 2xl:px-12 w-full sm:w-5/12 h-24 sm:h-32 2xl:h-[180px] bg-[#ECECEC]"
   >
     <div
-      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#96fbc4] hover:to-[#f9f586] text-[#76448A] hover:text-[#2D2D2D]"
+      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#d9ded8] hover:to-[#ebc0fd] text-[#76448A]"
     >
       <div>
         <phone-icon
