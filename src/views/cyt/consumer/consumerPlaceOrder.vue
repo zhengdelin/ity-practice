@@ -1,72 +1,53 @@
 <template>
   <div
-    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-10 sm:space-y-[60px] lg:space-y-20 2xl:space-y-[120px] mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
+    class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-20 sm:space-y-[100px] lg:space-y-[120px] 2xl:space-y-40 mt-10 lg:mt-[60px] mb-20 2xl:mb-40"
   >
     <!-- 店家資訊區塊 -->
-    <div class="space-y-[60px]">
+    <div class="space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-[60px]">
       <classic-title
         :content="'店家資訊'"
         class="w-full bg-[#76448A]"
       ></classic-title>
       <div class="flex flex-col space-y-8 lg:space-y-10 xl:space-y-12">
-        <!--這個做成component-->
-        <div class="flex flex-row h-16 xl:h-20 space-x-5 xl:space-x-10">
-          <div
-            class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
-          >
-            店家名稱
-          </div>
-          <div
-            class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
-          >
-            誰說海的味道都是鹹的
-          </div>
-        </div>
-        <!--這個做成component-->
-        <div class="flex flex-row h-16 xl:h-20 space-x-5 xl:space-x-10">
-          <div
-            class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
-          >
-            地址
-          </div>
-          <div
-            class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
-          >
-            R東西線 ／ 新福島駅 徒歩4分
-          </div>
-        </div>
-        <!--這個做成component-->
-        <div class="flex flex-row h-16 xl:h-20 space-x-5 xl:space-x-10">
-          <div
-            class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
-          >
-            營業時間
-          </div>
-          <div
-            class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
-          >
-            營業時間：09:00 - 20:00
-          </div>
-        </div>
+        <show-item
+          :title="'店家名稱'"
+          :content="'誰說海的味道都是鹹的'"
+        ></show-item>
+        <show-item
+          :title="'地址'"
+          :content="'R東西線 ／ 新福島駅 徒歩4分'"
+        ></show-item>
+        <show-item :title="'營業時間'" :content="'09:00 - 20:00'"></show-item>
       </div>
     </div>
     <!-- 菜單區塊 -->
-    <div class="space-y-[60px]">
+    <div class="space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-[60px]">
       <classic-title
         :content="'菜單'"
         class="w-full bg-[#76448A]"
       ></classic-title>
+      <div>
+        <classic-quantity-select
+          v-for="(item, index) in classicQuantitySelectList"
+          :key="index"
+          :classicQuantitySelect="item"
+        ></classic-quantity-select>
+      </div>
       <!-- total field -->
       <div
-        class="flex justify-center items-center w-full h-[150px] bg-[#B983CE]"
+        class="flex justify-center items-center w-full h-20 sm:h-24 lg:h-32 xl:h-[150px] bg-[#B983CE]"
       >
-        <div class="text-4xl text-white tracking-widest">
+        <div
+          class="text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl text-white tracking-widest"
+        >
           TOTAL : NT { 1160 }
         </div>
       </div>
     </div>
     <!-- 備註區塊 -->
-    <div class="space-y-[60px]">
+    <div
+      class="flex flex-col justify-center items-center space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-[60px]"
+    >
       <classic-title
         :content="'備註'"
         class="w-full bg-[#76448A]"
@@ -98,7 +79,9 @@
 
 <script>
 import classicTitle from "@/vues/classic/classicTitle.vue";
-// import badgesItem from "@/vues/shows/badgesItem.vue";
+import showItem from "@/vues/shows/showItem.vue";
+import classicQuantitySelect from "@/vues/classic/classicQuantitySelect.vue";
+import sushiPhoto from "@/vues/photos/sushiPhoto.vue";
 import classicInputType2 from "@/vues/classic/classicInputType2.vue";
 import classicButton from "@/vues/classic/classicButton.vue";
 
@@ -106,24 +89,59 @@ export default {
   name: "placeOrderPage",
   components: {
     classicTitle,
-    // badgesItem,
+    showItem,
+    classicQuantitySelect,
     classicInputType2,
     classicButton,
   },
   setup() {
-    // const badgesItemList = [
-    //   { content: "國立臺中科技大學學生" },
-    //   { content: "資訊管理系學生" },
-    // ];
-    // const classicInputType3SummaryList = [
-    //   { title: "活動標題" },
-    //   { title: "活動期間" },
-    //   { title: "如何領取優惠" },
-    // ];
+    const classicQuantitySelectList = [
+      {
+        photo: sushiPhoto,
+        name: "ししゃも",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 300,
+      },
+      {
+        photo: sushiPhoto,
+        name: "すじこ",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 500,
+      },
+      {
+        photo: sushiPhoto,
+        name: "いぶりがっこ",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 200,
+      },
+      {
+        photo: sushiPhoto,
+        name: "くんたま",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 200,
+      },
+      {
+        photo: sushiPhoto,
+        name: "チーズ",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 250,
+      },
+      {
+        photo: sushiPhoto,
+        name: "ゆでタン",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 530,
+      },
+      {
+        photo: sushiPhoto,
+        name: "会津馬刺し",
+        desc: "パンケーキ目当てで行ったのですが、メニューから無くなっており残念でしたが",
+        price: 580,
+      },
+    ];
     const classicInputType2List = [{ title: "備註欄位" }];
     return {
-      //   badgesItemList,
-      //   classicInputType3SummaryList,
+      classicQuantitySelectList,
       classicInputType2List,
     };
   },

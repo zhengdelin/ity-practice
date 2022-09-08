@@ -60,7 +60,7 @@
           ></classic-button>
         </router-link>
         <div class="flex flex-row">
-          <router-link :to="{ name: 'loginPage' }"
+          <router-link :to="{ name: 'likedSeller' }"
             ><!--暫時連接到此頁面而已-->
             <div
               class="flex justify-center items-center w-16 md:w-14 xl:w-16 2xl:w-20 h-16 md:h-14 lg:h-[60px] xl:h-16 2xl:h-20 hover:bg-[#F6F6F6]"
@@ -70,7 +70,7 @@
               ></love-icon>
             </div>
           </router-link>
-          <router-link :to="{ name: 'loginPage' }"
+          <router-link :to="{ name: 'consumerPlaceOrder' }"
             ><!--暫時連接到此頁面而已-->
             <div
               class="flex justify-center items-center w-16 md:w-14 xl:w-16 2xl:w-20 h-16 md:h-14 lg:h-[60px] xl:h-16 2xl:h-20 hover:bg-[#F6F6F6]"

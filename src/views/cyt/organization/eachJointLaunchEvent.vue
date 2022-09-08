@@ -8,11 +8,7 @@
       :badgesItem="item"
     >
     </badges-item>
-    <!-- <badges-item :content="'國立臺中科技大學學生'"></badges-item>
-    <badges-item :content="'資訊管理系學生'"></badges-item>
-    <badges-item :content="'必須登入 ITY'"></badges-item> -->
   </div>
-  <!-- space-x-5 sm:space-x-8 xl:space-x-10 pl-10 xl:pl-20 -->
   <div
     class="relative flex items-center justify-center px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] w-full h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] bg-no-repeat bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')]"
     style="background-position: 50%"
@@ -30,32 +26,20 @@
     class="px-5 sm:px-10 lg:px-20 xl:px-[120px] 2xl:px-[140px] space-y-[60px] xl:space-y-[100px] mt-10 xl:mt-20 mb-20 2xl:mb-40"
   >
     <div class="flex flex-col space-y-8 lg:space-y-10 xl:space-y-12">
-      <!--這個做成component-->
-      <div class="flex flex-row h-16 xl:h-20 space-x-5 xl:space-x-10">
-        <div
-          class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
-        >
-          活動標題
-        </div>
-        <div
-          class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
-        >
-          蘇坤蔚牛排 X 中科大資訊管理系 資訊人の好康
-        </div>
-      </div>
-      <!--這個做成component-->
-      <div class="flex flex-row h-16 xl:h-20 space-x-5 xl:space-x-10">
-        <div
-          class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
-        >
-          活動期間
-        </div>
-        <div
-          class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
-        >
-          2022年10月10日(一)17:00 ~ 2022年12月2日(五) 20:00
-        </div>
-      </div>
+      <show-item
+        :title="'活動標題'"
+        :content="'蘇坤蔚牛排 X 中科大資訊管理系 資訊人の好康'"
+      ></show-item>
+      <show-item
+        :title="'活動期間'"
+        :content="'2022年10月10日(一)17:00 ~ 2022年12月2日(五) 20:00'"
+      ></show-item>
+      <!-- <show-item
+        v-for="(item, index) in showItemList"
+        :key="index"
+        :showItem="item"
+      ></show-item> -->
+
       <!--領取優惠券方法-->
       <div
         class="flex flex-col justify-center items-start border border-black text-black w-full h-[150px] space-y-5 px-6"
@@ -134,6 +118,7 @@
 <script>
 import classicTitle from "@/vues/classic/classicTitle.vue";
 import badgesItem from "@/vues/shows/badgesItem.vue";
+import showItem from "@/vues/shows/showItem.vue";
 import clickButton from "@/vues/buttons/clickButton.vue";
 import infoItem from "@/vues/shows/infoItem.vue";
 import { ref } from "vue";
@@ -143,6 +128,7 @@ export default {
   components: {
     classicTitle,
     badgesItem,
+    showItem,
     clickButton,
     infoItem,
   },
@@ -152,6 +138,16 @@ export default {
       { content: "資訊管理系學生" },
       { content: "必須登入 ITY" },
     ];
+    // const showItemList = [
+    //   {
+    //     title: "活動標題",
+    //     content: "蘇坤蔚牛排 X 中科大資訊管理系 資訊人の好康",
+    //   },
+    //   {
+    //     title: "活動期間",
+    //     content: "2022年10月10日(一)17:00 ~ 2022年12月2日(五) 20:00",
+    //   },
+    // ];
     const clickButtonList = [
       { title: "舉辦單位" },
       { title: "活動內容" },
@@ -174,7 +170,12 @@ export default {
     const eventContent = ref();
     eventContent.value =
       '<div class="text-left text-[#2D2D2D] space-y-10 text-lg sm:text-xl"><div class="space-y-2"><p>台中海線必吃美食 #梧棲漁港刺身</p><p>誰說海的味道都是鹹的 / 台中梧棲店</p></div><div class="space-y-6 xl:space-y-2"><p>🌟 超載鮭魚卵控丼丼簡而言之就是一個鮭魚卵滿出來的丼飯，推薦給喜歡鮭魚卵的朋友。新鮮順口的鮭魚卵搭配池上米飯，大口咬下，彷彿在舌尖上開一場嘉年華會!</p><p>🌟 海鮮炙燒丼丼 不太敢吃生的客人可以點炙燒的，食材非常新鮮，不用擔心會過敏；此丼飯份量非常足夠，推薦給食量中上以上的客人。</p><p>給5星好評再多送一份炙燒旗魚握壽司，數量有限，送完為止 心動不如馬上行動，快揪朋友享用CP值爆表的海線刺身美食!也歡迎事先打電話預約</p></div></div>';
-    return { badgesItemList, clickButtonList, infoItemList, eventContent };
+    return {
+      badgesItemList,
+      clickButtonList,
+      infoItemList,
+      eventContent,
+    };
   },
 };
 </script>
