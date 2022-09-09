@@ -1,8 +1,20 @@
 <!--sellerInfoPage/feedbackPage-->
 <template>
-  <div class="w-full h-fit shadow-xl">
+  <div class="relative w-full h-fit shadow-xl bg-black">
+    <!-- v-if :permission = '' -->
     <div
-      class="flex flex-row items-center w-full h-48 sm:h-56 lg:h-80 2xl:h-[400px] pl-6 sm:pl-10 lg:pl-20 pr-4 space-x-10 sm:space-x-14 lg:space-x-32 bg-white"
+      class="absolute right-6 2xl:right-[100px] top-10 lg:top-20 2xl:top-20 flex justify-center items-center w-10 sm:w-14 lg:w-16 xl:w-20 h-10 sm:h-14 lg:h-16 xl:h-20 bg-white cursor-pointer"
+    >
+      <edit-icon class="stroke-[#4B4B4B]"></edit-icon>
+    </div>
+    <!-- v-if :permission = '' -->
+    <div
+      class="absolute right-6 2xl:right-[100px] top-28 sm:top-32 lg:top-48 2xl:top-56 flex justify-center items-center w-10 sm:w-14 lg:w-16 xl:w-20 h-10 sm:h-14 lg:h-16 xl:h-20 bg-white cursor-pointer"
+    >
+      <trash-icon class="stroke-[#4B4B4B]"></trash-icon>
+    </div>
+    <div
+      class="flex flex-row items-center w-full h-48 sm:h-56 lg:h-80 2xl:h-[400px] pl-6 sm:pl-10 lg:pl-20 pr-4 space-x-10 sm:space-x-14 lg:space-x-32"
     >
       <div
         class="flex w-32 md:w-48 lg:w-[250px] h-32 md:h-48 lg:h-[250px] rounded-full overflow-hidden bg-no-repeat bg-cover bg-black"
@@ -64,6 +76,8 @@
 // import criticInfoCard from "@/vues/cards/criticInfoCard.vue";
 // import ratingItem from "@/vues/shows/ratingItem.vue";
 // import feedbackContent from "@/vues/shows/feedbackContent.vue";
+import editIcon from "@/vues/icons/editIcon.vue";
+import trashIcon from "@/vues/icons/trashIcon.vue";
 import starIcon from "@/vues/icons/starIcon.vue";
 import { ref } from "vue";
 
@@ -75,6 +89,8 @@ export default {
     // criticInfoCard,
     // ratingItem,
     // feedbackContent,
+    editIcon,
+    trashIcon,
     starIcon,
   },
   setup() {
