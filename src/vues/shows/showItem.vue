@@ -3,20 +3,19 @@
     <div
       class="flex justify-center items-center rounded-sm xl:rounded w-1/3 xl:w-1/6 text-lg xl:text-xl text-white bg-[#909090]"
     >
-      {{ title }}
+      {{ showItem.title }}
     </div>
     <div
       class="flex justify-start items-center w-2/3 xl:w-5/6 pl-5 xl:pl-10 text-base xl:text-xl bg-[#F9F9F9] truncate"
     >
-      {{ content }}
+      {{ showItem.content }}
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: { title: String, content: String },
-  //   showItem: { type: Object, default: () => ({}) },
+  props: { showItem: { type: Object, default: () => ({}) } },
   setup() {},
 };
 </script>

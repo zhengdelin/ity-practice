@@ -22,7 +22,7 @@
         ></hand-down-icon>
       </div>
       <!-- 撰寫評論按鈕 -->
-      <router-link :to="{ name: '' }">
+      <router-link :to="{ name: 'addFeedback' }">
         <div
           class="flex flex-row justify-center items-center border-2 border-[#76448A] w-[200px] sm:w-40 md:w-52 2xl:w-[280px] h-20 sm:h-[60px] xl:h-20 2xl:h-[100px] bg-white hover:bg-[#F9F9F9] space-x-10 rounded-md"
         >
@@ -41,7 +41,7 @@
     </div>
 
     <div
-      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#d9ded8] hover:to-[#ebc0fd] text-[#76448A]"
+      class="flex flex-row items-center justify-center w-4/5 2xl:w-[540px] h-16 2xl:h-20 space-x-8 sm:space-x-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#fad0c4] hover:to-[#fecfef] text-[#76448A] hover:text-[#4B4B4B]"
     >
       <!-- background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%); -->
       <div>

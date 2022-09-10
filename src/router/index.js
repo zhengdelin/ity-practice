@@ -166,6 +166,26 @@ const routes = [
       ityFooter,
     },
   },
+  {
+    path: "/cyt/feedback/revise",
+    name: "reviseFeedback",
+    components: {
+      default: () => import("@/views/cyt/consumer/reviseFeedback.vue"),
+      ityConsumerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/feedback/add",
+    name: "addFeedback",
+    components: {
+      default: () => import("@/views/cyt/consumer/addFeedback.vue"),
+      //ityConsumerHeader,
+      backTop,
+      ityFooter,
+    },
+  },
   //sellerIdentity
   {
     path: "/cyt/seller-home",

@@ -26,11 +26,11 @@
         class="bg-[#F9F9F9]"
       ></seller-Info-Card>
       <!-- v-if permission=='beforeLogin' -->
-      <before-login-contact-card
+      <!-- <before-login-contact-card
         :tel="'0971-635-338'"
-      ></before-login-contact-card>
-      <!-- v-if permission=='consumer'
-      <consumer-contact-card :tel="'0971-635-338'"></consumer-contact-card> -->
+      ></before-login-contact-card> -->
+      <!-- v-if permission=='consumer' -->
+      <consumer-contact-card :tel="'0971-635-338'"></consumer-contact-card>
       <!-- v-if permission=='seller'
       <seller-contact-card :tel="'0971-635-338'"></seller-contact-card> -->
       <!-- v-if permission=='organization'

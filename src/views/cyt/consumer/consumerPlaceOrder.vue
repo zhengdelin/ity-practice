@@ -9,7 +9,7 @@
         class="w-full bg-[#76448A]"
       ></classic-title>
       <div class="flex flex-col space-y-8 lg:space-y-10 xl:space-y-12">
-        <show-item
+        <!-- <show-item
           :title="'店家名稱'"
           :content="'誰說海的味道都是鹹的'"
         ></show-item>
@@ -17,7 +17,12 @@
           :title="'地址'"
           :content="'R東西線 ／ 新福島駅 徒歩4分'"
         ></show-item>
-        <show-item :title="'營業時間'" :content="'09:00 - 20:00'"></show-item>
+        <show-item :title="'營業時間'" :content="'09:00 - 20:00'"></show-item> -->
+        <show-item
+          v-for="(item, index) in showItemList"
+          :key="index"
+          :showItem="item"
+        ></show-item>
       </div>
     </div>
     <!-- 菜單區塊 -->
@@ -95,6 +100,20 @@ export default {
     classicButton,
   },
   setup() {
+    const showItemList = [
+      {
+        title: "店家名稱",
+        content: "誰說海的味道都是鹹的",
+      },
+      {
+        title: "地址",
+        content: "R東西線 ／ 新福島駅 徒歩4分",
+      },
+      {
+        title: "營業時間",
+        content: "09:00 - 20:00",
+      },
+    ];
     const classicQuantitySelectList = [
       {
         photo: sushiPhoto,
@@ -141,6 +160,7 @@ export default {
     ];
     const classicInputType2List = [{ title: "備註欄位" }];
     return {
+      showItemList,
       classicQuantitySelectList,
       classicInputType2List,
     };
