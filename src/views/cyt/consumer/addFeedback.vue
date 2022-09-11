@@ -37,29 +37,32 @@
         </div>
       </div>
     </div>
+    <!-- 下半部分 -->
+    <div
+      class="space-y-[60px] md:space-y-20 lg:space-y-[100px] 2xl:space-y-[120px]"
+    >
+      <!-- 評分區塊 -->
+      <div class="space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-[60px]">
+        <classic-title
+          :content="'評分'"
+          class="w-full bg-[#76448A]"
+        ></classic-title>
+        <div>
+          <classic-select-input></classic-select-input>
+        </div>
+      </div>
 
-    <!-- 評分區塊 -->
-    <div class="space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
-      <classic-title
-        :content="'評分'"
-        class="w-full bg-[#76448A]"
-      ></classic-title>
-      <div>
-        <classic-select-input></classic-select-input>
+      <!-- 撰寫評分內容區塊 -->
+      <div class="space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-[60px]">
+        <classic-title
+          :content="'撰寫評分內容'"
+          class="w-full bg-[#76448A]"
+        ></classic-title>
+        <div>
+          <tinymce-editor v-model:content="content"></tinymce-editor>
+        </div>
       </div>
     </div>
-
-    <!-- 撰寫評分內容區塊 -->
-    <div class="space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
-      <classic-title
-        :content="'撰寫評分內容'"
-        class="w-full bg-[#76448A]"
-      ></classic-title>
-      <div>
-        <tinymce-editor v-model:content="content"></tinymce-editor>
-      </div>
-    </div>
-
     <div class="flex justify-center w-full">
       <div class="flex flex-row w-4/5 space-x-10">
         <router-link :to="{ name: 'eachsellerPage' }" class="w-full">

@@ -23,7 +23,12 @@
           :classicInputType2="item"
         >
         </classic-input-type-2>
-        <classic-radio-type-2></classic-radio-type-2>
+        <classic-radio-type-2
+          :title="'選擇註冊身分'"
+          :option1="'消費者端'"
+          :option2="'店家端'"
+          :option3="'組織端'"
+        ></classic-radio-type-2>
         <!--<div class="flex justify-between items-center py-2 w-5/6 sm:w-full">
           <div
             class="flex justify-center items-center form-group form-check space-x-4 lg:space-x-6 2xl:space-x-8"

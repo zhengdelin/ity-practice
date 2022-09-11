@@ -6,6 +6,16 @@
       :key="index"
       :menuItem="item"
     ></menu-item>
+    <!-- addMenuItem -->
+    <div
+      class="flex justify-center items-center w-full h-48 md:h-64 lg:h-72 2xl:h-[300px] p-10 bg-gradient-to-r from-[#ddd6f3] to-[#faaca8] hover:from-[#f3e7e9] hover:to-[#e3eeff] drop-shadow-md cursor-pointer"
+    >
+      <Vue3Lottie
+        :animationData="addJSON"
+        class="w-36 md:w-48 lg:w-52 xl:w-60 2xl:w-[280px] h-36 md:h-48 lg:h-52 xl:h-60 2xl:h-[280px]"
+      />
+    </div>
+    <!-- 當沒有任何菜單品項時才出現此點擊區域 -->
     <click-div
       v-for="(item, index) in clickDivList"
       :key="index"
@@ -15,6 +25,9 @@
 </template>
 
 <script>
+import { Vue3Lottie } from "vue3-lottie";
+import "vue3-lottie/dist/style.css";
+import addJSON from "@/vues/json/add-files-button.json";
 import menuItem from "@/vues/shows/menuItem.vue";
 import sushiPhoto from "@/vues/photos/sushiPhoto.vue";
 import shrimpPhoto from "@/vues/photos/shrimpPhoto.vue";
@@ -25,6 +38,7 @@ import menuAnimation from "@/vues/animation/menuAnimation.vue";
 export default {
   name: "menuPage",
   components: {
+    Vue3Lottie,
     menuItem,
     // sushiPhoto,
     // shrimpPhoto,
@@ -53,8 +67,13 @@ export default {
         price: 200,
       },
     ];
-    const clickDivList = [{ animation: menuAnimation, title: "新增菜單" }];
-    return { menuItemList, clickDivList };
+    const clickDivList = [
+      {
+        animation: menuAnimation,
+        title: "目前尚未有任何菜單 快新增菜單品項吧 !",
+      },
+    ];
+    return { menuItemList, addJSON, clickDivList };
   },
 };
 </script>

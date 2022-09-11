@@ -183,6 +183,7 @@ const routes = [
       default: () => import("@/views/cyt/consumer/addFeedback.vue"),
       //ityConsumerHeader,
       backTop,
+      chatItem,
       ityFooter,
     },
   },
@@ -359,10 +360,30 @@ const routes = [
     },
   },
   {
-    path: "/cyt/revise-seller-info",
+    path: "/cyt/seller-info/revise",
     name: "reviseSellerInfo",
     components: {
       default: () => import("@/views/cyt/seller/reviseSellerInfo.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-menuitem/revise",
+    name: "reviseMenuItem",
+    components: {
+      default: () => import("@/views/cyt/seller/reviseMenuItem.vue"),
+      itySellerHeader,
+      chatItem,
+      ityFooter,
+    },
+  },
+  {
+    path: "/cyt/seller-menuitem/add",
+    name: "addMenuItem",
+    components: {
+      default: () => import("@/views/cyt/seller/addMenuItem.vue"),
       itySellerHeader,
       backTop,
       chatItem,
@@ -497,7 +518,7 @@ const routes = [
     },
   },
   {
-    path: "/cyt/organization-info",
+    path: "/cyt/organization-info/revise",
     name: "reviseOrganizationInfo",
     components: {
       default: () =>

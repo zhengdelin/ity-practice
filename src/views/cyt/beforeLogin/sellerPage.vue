@@ -43,7 +43,7 @@
     <select
       id="tabs"
       v-model="id"
-      class="border bg-[#9763AB] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#B983CE] focus:border-[#76448A] w-full p-3 sm:hidden"
+      class="border bg-[#4B4B4B] border-[#76448A] text-white text-sm tracking-widest leading-loose rounded-md focus:bg-[#4B4B4B] focus:border-[#4B4B4B] w-full p-3 sm:hidden"
     >
       <option
         :class="item.id == id"

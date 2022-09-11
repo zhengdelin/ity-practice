@@ -10,13 +10,15 @@
       ></exclamationTriangle-icon>
     </div> -->
     <!-- v-if :permission = 'consumer' -->
-    <div
-      class="absolute right-6 xl:right-10 2xl:right-[100px] top-10 lg:top-14 2xl:top-20 flex justify-center items-center w-10 sm:w-14 lg:w-16 2xl:w-20 h-10 sm:h-14 lg:h-16 2xl:h-20 bg-white hover:bg-[#F9F9F9] cursor-pointer"
-    >
-      <edit-icon
-        class="stroke-[#4B4B4B] w-5 md:w-6 xl:w-8 2xl:w-10 h-5 md:h-6 xl:h-8 2xl:h-10"
-      ></edit-icon>
-    </div>
+    <router-link :to="{ name: 'reviseFeedback' }">
+      <div
+        class="absolute right-6 xl:right-10 2xl:right-[100px] top-10 lg:top-14 2xl:top-20 flex justify-center items-center w-10 sm:w-14 lg:w-16 2xl:w-20 h-10 sm:h-14 lg:h-16 2xl:h-20 bg-white hover:bg-[#F9F9F9] cursor-pointer"
+      >
+        <edit-icon
+          class="stroke-[#4B4B4B] w-5 md:w-6 xl:w-8 2xl:w-10 h-5 md:h-6 xl:h-8 2xl:h-10"
+        ></edit-icon>
+      </div>
+    </router-link>
     <!-- v-if :permission = 'consumer' -->
     <div
       class="absolute right-6 xl:right-10 2xl:right-[100px] top-28 sm:top-32 lg:top-44 xl:top-48 2xl:top-56 flex justify-center items-center w-10 sm:w-14 lg:w-16 2xl:w-20 h-10 sm:h-14 lg:h-16 2xl:h-20 bg-white hover:bg-[#F9F9F9] cursor-pointer"

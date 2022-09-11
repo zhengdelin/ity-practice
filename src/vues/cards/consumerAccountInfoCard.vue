@@ -13,7 +13,12 @@
       :classicInputType2="item"
     >
     </classic-input-type-2>
-    <classic-radio-type-2></classic-radio-type-2>
+    <classic-radio-type-2
+      :title="'性別 Gender'"
+      :option1="'男性'"
+      :option2="'女性'"
+      :option3="'不回答'"
+    ></classic-radio-type-2>
     <!--datetime-->
     <div class="w-5/6 sm:w-full space-y-4 2xl:space-y-8">
       <div class="text-left text-xl 2xl:text-3xl font-bold text-[#4B4B4B]">
