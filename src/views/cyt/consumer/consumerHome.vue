@@ -65,6 +65,21 @@
         ></shop-card>
       </div>
     </div>
+    <div class="space-y-10 md:space-y-[60px]">
+      <classic-title
+        :content="'周邊商店'"
+        class="w-full bg-[#DDA4F1]"
+      ></classic-title>
+      <div
+        class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white gap-x-2 sm:gap-x-4 md:gap-x-5 2xl:gap-x-10 gap-y-5 sm:gap-y-6 md:gap-y-8 2xl:gap-y-10"
+      >
+        <shop-card
+          v-for="(item, index) in shopCardList"
+          :key="index"
+          :shopCard="item"
+        ></shop-card>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-row w-full h-16 sm:h-20 xl:h-[100px] 2xl:h-[120px]">
-    <div class="flex justify-center items-center w-1/3 h-full bg-[#FFF7D0]">
+    <div class="flex justify-center items-center w-1/3 h-full bg-[#FFD971]">
       <div
-        class="px-2 lg:px-3 text-base sm:text-xl xl:text-2xl font-medium xl:font-semibold text-[#6F6F6F] tracking-wider"
+        class="px-2 lg:px-3 text-base sm:text-xl xl:text-2xl font-medium xl:font-semibold text-[#4B4B4B] tracking-wider"
       >
         是否需登入才可領取優惠
       </div>
